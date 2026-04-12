@@ -1,0 +1,244 @@
+MCAT TOPIC CONFIDENCE MAP v2
+=====================================
+
+STUDENT: Haroldas (Limitz)
+LAST UPDATED: —
+
+HOW TO USE:
+- Review this every 7 days (Saturday after your CARS + review session)
+- Rate each topic honestly based on how well you could answer an MCAT question on it RIGHT NOW
+- Upload the updated version to your Claude Project
+- Claude will use this to flag stalling topics, adjust your schedule, and target weak areas
+
+RATING SCALE:
+  [0] — Haven't studied yet
+  [1] — Studied but nothing stuck
+  [2] — Recognize concepts but can't apply them
+  [3] — Can answer straightforward questions
+  [4] — Can handle passage-based reasoning questions
+  [5] — Could teach this to someone else
+
+⭐ = High-yield (appears on nearly every exam)
+⚠️ = Known Kaplan gap (supplement with KA / 300-page doc / UWorld)
+
+=====================================
+BB — BIOLOGY / BIOCHEMISTRY
+=====================================
+
+BIOCHEMISTRY — MOLECULES
+Amino Acids — All 20 Structures & Properties ⭐     [0]
+Protein Structure & Folding (1°–4°)                  [0]
+Enzyme Kinetics (Michaelis-Menten, L-B Plots) ⭐     [0]
+Enzyme Regulation & Inhibition Types ⭐              [0]
+Non-Enzymatic Protein Function                        [0]
+Carbohydrate Structure (Mono/Di/Polysaccharides)      [0]
+Lipid Structure (FA, Phospholipids, Steroids)         [0]
+Nucleotide Structure & Base Pairing                   [0]
+
+MOLECULAR BIOLOGY
+DNA Structure & Replication                           [0]
+DNA Repair Mechanisms ⚠️                             [0]
+Transcription & RNA Processing                        [0]
+Translation & Post-Translational Modifications        [0]
+Gene Regulation — Prokaryotic (Operons)               [0]
+Gene Regulation — Eukaryotic (Epigenetics, miRNA) ⚠️ [0]
+Biotechnology & Recombinant DNA (PCR, Blotting, CRISPR) [0]
+
+CELL BIOLOGY
+Cell Structure, Organelles & Cytoskeleton             [0]
+Membrane Structure & Transport ⭐                    [0]
+Cell Signaling & Signal Transduction ⭐              [0]
+Cell Cycle, Mitosis & Cancer Biology                  [0]
+Apoptosis (Intrinsic/Extrinsic Pathways)              [0]
+
+GENETICS & EVOLUTION
+Meiosis & Genetic Diversity Mechanisms                [0]
+Mendelian Genetics (Crosses, Punnett Squares)         [0]
+Non-Mendelian Inheritance & Linkage                   [0]
+Mutations (Point, Chromosomal)                        [0]
+Population Genetics & Hardy-Weinberg                  [0]
+Natural Selection & Evolution                         [0]
+
+METABOLISM
+Glycolysis & Fermentation                             [0]
+Pyruvate Dehydrogenase & TCA Cycle                    [0]
+Electron Transport Chain & Oxidative Phosphorylation  [0]
+ETC Inhibitors & Uncouplers ⭐                       [0]
+Gluconeogenesis & Cori Cycle                          [0]
+Glycogen Metabolism & Hormonal Regulation             [0]
+Pentose Phosphate Pathway (NADPH, Ribose-5-P)         [0]
+Lipid Metabolism (β-Oxidation, FA Synthesis)          [0]
+Ketogenesis & Ketone Body Utilization                 [0]
+Amino Acid Metabolism & Urea Cycle                    [0]
+Metabolic Integration (Fed/Fasting/Starvation) ⭐    [0]
+
+MICROBIOLOGY & IMMUNOLOGY
+Bacteria (Structure, Genetics, Gram Staining)         [0]
+Viruses (Lytic/Lysogenic, Retroviruses)               [0]
+Fungi & Prions ⚠️                                   [0]
+Innate Immunity (Barriers, Complement, Inflammation)  [0]
+Adaptive Immunity — Humoral (B Cells, Antibodies) ⭐ [0]
+Adaptive Immunity — Cell-Mediated (T Cells, MHC) ⭐  [0]
+
+ORGAN SYSTEMS
+Cardiovascular System & Blood ⭐                     [0]
+Respiratory System & Gas Exchange                     [0]
+O₂-Hemoglobin Dissociation Curve (Bohr Effect) ⭐   [0]
+Digestive System & Nutrient Absorption                [0]
+Excretory/Renal System & Nephron Physiology ⭐       [0]
+Countercurrent Multiplier & RAAS                      [0]
+Endocrine System & Hormonal Regulation ⭐            [0]
+Nervous System & Neurotransmitters ⭐                [0]
+Musculoskeletal (Sarcomere, Sliding Filament)          [0]
+Reproductive System & Gametogenesis                   [0]
+Embryology (Gastrulation, Germ Layers, Neurulation)   [0]
+Integumentary & Lymphatic Systems                     [0]
+
+LAB TECHNIQUES ⭐
+SDS-PAGE, Native PAGE & Isoelectric Focusing          [0]
+Gel Electrophoresis & Blotting (Southern/Northern/Western) [0]
+PCR, RT-PCR & qPCR                                   [0]
+Chromatography (TLC, Column, Ion-Exchange, Affinity)  [0]
+Centrifugation (Differential, Density Gradient)       [0]
+ELISA, Flow Cytometry & Immunoprecipitation           [0]
+Spectroscopy (UV-Vis, Beer-Lambert Law)               [0]
+Gene Cloning, Sequencing & CRISPR                     [0]
+
+=====================================
+CP — CHEMISTRY / PHYSICS
+=====================================
+
+GENERAL CHEMISTRY
+Atomic Structure & Periodic Trends                    [0]
+Bonding & Intermolecular Forces                       [0]
+Lewis Structures, VSEPR & Hybridization               [0]
+Stoichiometry, Solutions & Concentration              [0]
+Colligative Properties (BP elevation, FP depression)  [0]
+Thermodynamics & Thermochemistry (ΔG, ΔH, ΔS)       [0]
+Chemical Kinetics & Rate Laws                         [0]
+Chemical Equilibrium & Le Châtelier's                [0]
+Acids, Bases & Buffers ⭐                            [0]
+Henderson-Hasselbalch & Titration Curves ⭐          [0]
+Electrochemistry (Galvanic/Electrolytic, Nernst) ⭐  [0]
+Nuclear Chemistry & Radioactive Decay                 [0]
+
+ORGANIC CHEMISTRY
+Functional Groups & Nomenclature                      [0]
+Stereochemistry (R/S, E/Z, Meso, Optical Activity)   [0]
+SN1/SN2/E1/E2 Reactions ⭐                          [0]
+Carbonyl Chemistry (Aldol, Nucleophilic Addition)     [0]
+Carboxylic Acid Derivatives & Acyl Substitution       [0]
+IR Spectroscopy (Key Absorptions)                     [0]
+¹H NMR (Chemical Shift, Splitting, Integration)      [0]
+Mass Spectrometry (Fragmentation Patterns)            [0]
+Separations & Purification Techniques ⭐             [0]
+
+PHYSICS
+Kinematics & Newton's Laws                            [0]
+Work, Energy & Momentum                               [0]
+Torque & Static Equilibrium                           [0]
+Fluids (Bernoulli's, Archimedes', Poiseuille's) ⭐  [0]
+Electrostatics & Magnetism                            [0]
+Circuits & Electricity (Ohm's, Kirchhoff's) ⭐      [0]
+Waves, Sound & Doppler Effect                         [0]
+Light & Optics (Snell's, Thin Lens, Mirrors) ⭐     [0]
+Thin-Film Interference & Diffraction ⚠️             [0]
+
+MATH & DATA SKILLS
+Scientific Notation & No-Calculator Estimation        [0]
+Logarithms, Trig & Dimensional Analysis               [0]
+Graphical Analysis (Slope, Linearization)              [0]
+
+=====================================
+PS — PSYCHOLOGY / SOCIOLOGY
+=====================================
+
+PSYCHOLOGY
+Biological Bases of Behavior & Neuroscience           [0]
+Neurotransmitter Systems & Behavioral Effects         [0]
+Sensation & Perception ⭐                            [0]
+Signal Detection Theory & Weber's Law                 [0]
+Gestalt Principles                                    [0]
+Learning — Classical Conditioning (Pavlov) ⭐         [0]
+Learning — Operant Conditioning (Skinner) ⭐          [0]
+Observational Learning (Bandura)                      [0]
+Memory — Encoding, Storage & Retrieval                [0]
+Memory — Forgetting & Interference                    [0]
+Cognition — Heuristics & Biases                       [0]
+Language (Broca's, Wernicke's, Chomsky, Sapir-Whorf) [0]
+Piaget's Cognitive Development Stages ⭐             [0]
+Consciousness & Sleep Stages (N1-N3, REM) ⚠️        [0]
+Drug Effects & Reward Pathway                         [0]
+Motivation Theories (Maslow, Yerkes-Dodson) ⭐        [0]
+Theories of Emotion (James-Lange, Cannon-Bard, S-S) ⭐ [0]
+Stress Response & General Adaptation Syndrome         [0]
+Erikson's Psychosocial Development ⭐                [0]
+Kohlberg's Moral Development                          [0]
+Freud's Psychosexual Stages & Defense Mechanisms      [0]
+Attachment Theory (Bowlby/Ainsworth) ⭐              [0]
+Personality Theories (Big Five, Psychoanalytic, etc.) [0]
+Psychological Disorders — Anxiety & OCD               [0]
+Psychological Disorders — Depression & Bipolar        [0]
+Schizophrenia (Positive/Negative Symptoms) ⭐        [0]
+Personality Disorders (Clusters A, B, C)              [0]
+
+SOCIOLOGY
+Attribution Theory & Fundamental Attribution Error ⭐ [0]
+Prejudice, Discrimination & Stereotype Threat         [0]
+Attitudes & Cognitive Dissonance                      [0]
+Elaboration Likelihood Model ⭐                      [0]
+Conformity (Asch), Obedience (Milgram) ⭐            [0]
+Group Behavior (Polarization, Groupthink, Social Loafing) [0]
+Sociological Theories (Functionalism, Conflict, SI) ⭐⚠️ [0]
+Dramaturgical Analysis (Goffman) & Social Constructionism ⚠️ [0]
+Social Institutions (Education, Family, Religion, Gov) ⚠️ [0]
+Medicalization & Sick Role (Parsons) ⭐⚠️           [0]
+Demographics & Demographic Transition Model ⚠️       [0]
+Social Stratification & Mobility                      [0]
+Cultural Capital (Bourdieu) & Social Capital ⚠️      [0]
+Health Disparities & Social Determinants of Health ⭐⚠️ [0]
+Deviance (Labeling Theory, Strain Theory) ⚠️         [0]
+
+RESEARCH METHODS & BIOSTATISTICS ⭐⚠️
+Study Design Types (RCT, Cohort, Case-Control, Cross-Sectional) [0]
+Variables (IV, DV, Confounding, Moderating, Mediating) [0]
+Validity (Internal, External, Construct, Criterion)   [0]
+Reliability (Test-Retest, Inter-Rater, Cronbach's α)  [0]
+Sampling Methods (Random, Stratified, Convenience)    [0]
+Descriptive Statistics (Mean, Median, SD, Distributions) [0]
+Inferential Statistics (p-value, Type I/II, Power, CI) [0]
+Statistical Tests (t-test, ANOVA, Chi-Square, Correlation) ⚠️ [0]
+Sensitivity, Specificity, PPV, NPV ⚠️               [0]
+Incidence vs Prevalence, Relative Risk, Odds Ratio ⚠️ [0]
+Research Biases (Hawthorne, Selection, Experimenter)  [0]
+Ethics (Informed Consent, IRB, Belmont Report)        [0]
+
+=====================================
+CARS — CRITICAL ANALYSIS
+=====================================
+
+Passage Comprehension & Main Idea                     [0]
+Author Tone & Rhetorical Strategy                     [0]
+Evidence vs Opinion Identification                    [0]
+Inference & Implication Questions                     [0]
+Strengthen / Weaken Questions                         [0]
+Reasoning Beyond the Text (Apply, New Info)           [0]
+Timing & Pacing (~10 min/passage)                     [0]
+Process of Elimination Technique                      [0]
+Humanities Passages (Philosophy, Ethics, Art)          [0]
+Social Science Passages (Econ, History, PoliSci)      [0]
+
+=====================================
+CHANGE LOG
+=====================================
+
+Track meaningful shifts here so Claude can see trends:
+
+[DATE] — Notes
+e.g. "Bumped Glycolysis from 2→4, finally clicked after redoing Kaplan ch9"
+e.g. "Acids/Bases still at 2 for third week — need dedicated review"
+e.g. "Sociological theories 0→3 after watching KA videos"
+
+=====================================
+END OF CONFIDENCE MAP v2
+=====================================

@@ -150,8 +150,4 @@ Track all full-length scores here. Update after each FL.
 
 ## Phase Summaries
 
-Update after completing each phase. Raw session logs stay in their weekly files.
-
-**Phase 1 (Content Review):** --
-**Phase 2 (Practice & Integration):** --
-**Phase 3 (AAMC Materials):** --
+Stored in `progression/PHASE_SUMMARIES.md`. Update after completing each phase.

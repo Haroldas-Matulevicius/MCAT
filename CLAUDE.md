@@ -49,60 +49,18 @@ Update this section when transitioning between phases.
 
 ## Project File Structure
 
-### Tracking Files (read as needed)
-- `MCAT STUDY LOG.txt` -- Session-by-session study log. Student pastes entries after each study session.
-- `MCAT TOPIC CONFIDENCE MAP v2.txt` -- Self-rated confidence (0-5) on every testable topic. Updated weekly.
-- `IDENTITY.txt` -- Original identity file (superseded by this CLAUDE.md, kept for reference).
+### Progression Tracking -- `progression/`
+- `progression/MCAT STUDY LOG.txt` -- Session-by-session study log. Student pastes entries after each study session.
+- `progression/MCAT TOPIC CONFIDENCE MAP v2.txt` -- Self-rated confidence (0-5) on every testable topic. Updated weekly.
 
 ### Schedule
 - `schedule/MCAT_STUDY_SCHEDULE.md` -- Full 22-week study schedule with daily topics and times.
 
 ### Content Reference Files (topic outlines)
 
-These files list every testable MCAT topic organized by foundational concept with Kaplan chapter references and gap flags. They are the **outline/map** of what to study. Split into sub-files by topic area.
+Topic outlines organized by foundational concept with Kaplan chapter references and gap flags. Split into `Content/BB/` (9 files) and `Content/CP/` (12 files), plus root-level PS, CARS, Research Methods, Lab Techniques, and Kaplan Map/Gaps files.
 
-**BB (Bio/Biochem) -- `Content/BB/`**
-
-| File | Foundational Concept | Contents |
-|------|---------------------|----------|
-| `Content/BB/BB_Protein_Structure_Function.md` | FC1A | Amino acids, protein structure, enzyme kinetics, signal transduction |
-| `Content/BB/BB_Gene_Expression.md` | FC1B | DNA, replication, transcription, translation, gene regulation, biotechnology |
-| `Content/BB/BB_Heredity_Evolution.md` | FC1C | Mendelian/non-Mendelian genetics, meiosis, mutations, population genetics |
-| `Content/BB/BB_Metabolism.md` | FC1D | Glycolysis, TCA, ETC, gluconeogenesis, glycogen, PPP, lipid/AA metabolism |
-| `Content/BB/BB_Cell_Biology.md` | FC2A | Organelles, cytoskeleton, membrane, transport, cell junctions |
-| `Content/BB/BB_Prokaryotes_Viruses.md` | FC2B | Bacteria, viruses, prions, fungi |
-| `Content/BB/BB_Cell_Division.md` | FC2C | Cell cycle, mitosis, apoptosis, cancer, stem cells |
-| `Content/BB/BB_Nervous_Endocrine.md` | FC3A | Neurons, neural signaling, brain anatomy, endocrine system |
-| `Content/BB/BB_Organ_Systems.md` | FC3B | Respiratory, cardiovascular, immune, digestive, renal, musculoskeletal, reproductive |
-
-**CP (Chem/Phys) -- `Content/CP/`**
-
-| File | Foundational Concept | Contents |
-|------|---------------------|----------|
-| `Content/CP/CP_Mechanics.md` | FC4A | Kinematics, forces, work, energy, momentum, torque |
-| `Content/CP/CP_Fluids_Gases.md` | FC4B | Fluids, gas laws, Starling forces |
-| `Content/CP/CP_Electrochem_Circuits.md` | FC4C | Electrostatics, magnetism, circuits, electrochemistry |
-| `Content/CP/CP_Light_Sound.md` | FC4D | Waves, sound, optics, photoelectric effect |
-| `Content/CP/CP_Atoms_Nuclear.md` | FC4E | Atomic structure, periodic trends, nuclear decay, stoichiometry |
-| `Content/CP/CP_Acids_Bases.md` | FC5A | Acid-base, buffers, titrations, solutions, colligative properties |
-| `Content/CP/CP_Molecular_Structure_IMFs.md` | FC5B | Lewis structures, VSEPR, hybridization, IMFs, stereochemistry |
-| `Content/CP/CP_Separations.md` | FC5C | Chromatography, electrophoresis, distillation, extraction |
-| `Content/CP/CP_Bio_Molecules.md` | FC5D | Amino acids, lipids, carbs, nucleic acids, organic reactions |
-| `Content/CP/CP_Thermo_Kinetics_Enzymes.md` | FC5E | Thermodynamics, kinetics, equilibrium, enzymes, bioenergetics |
-| `Content/CP/CP_Spectroscopy.md` | -- | IR, NMR, mass spec, UV-Vis |
-| `Content/CP/CP_Math_Skills.md` | -- | No-calculator math, logs, trig, estimation, graphical analysis |
-
-**Other Content Files (not split)**
-
-| File | Contents |
-|------|----------|
-| `Content/PS_Psych_Soc.md` | Psychology, sociology (FC 6-10) |
-| `Content/CARS.md` | CARS passage types, skills tested, question categories |
-| `Content/Research_Methods.md` | Study design, variables, validity/reliability, statistics, epidemiology, bias, ethics |
-| `Content/Lab_Techniques.md` | Separation/purification techniques, molecular biology techniques, spectroscopy tables |
-| `Content/Kaplan_Map_and_Gaps.md` | Kaplan chapter map, gap analysis, supplement recommendations |
-
-Legacy files kept as backup: `Content/BB_Bio_Biochem.md`, `Content/CP_Chemical_Physical.md`, `Content/MCAT_CONTENT_REFERENCE (1).md`.
+**Content files mirror Research files 1:1 with identical filenames.** Use the Research INDEX files (`research/INDEX.md` → `research/BB/INDEX.md` or `research/CP/INDEX.md`) to route to the correct file — then load BOTH the Content file (outline) AND the matching Research file (deep-dive).
 
 ### Research Files (deep-dive content)
 
@@ -120,28 +78,37 @@ Root-level research files (not in BB/ or CP/): `PS_Psych_Soc.md`, `CARS.md`, `Re
 
 **Rule: Load the SMALLEST set of files needed. Never load all files at once.**
 
-**During a study session or teaching:**
-1. Check `schedule/MCAT_STUDY_SCHEDULE.md` to find today's topic.
-2. Read `research/INDEX.md` to identify the subject area.
-3. If BB topic → read `research/BB/INDEX.md` to find the exact file.
-4. If CP topic → read `research/CP/INDEX.md` to find the exact file.
-5. Load the matching **Content sub-file** (topic outline) AND the matching **Research file** (deep-dive).
-6. Follow cross-loading rules in the INDEX files (lab techniques, research methods, etc.).
+**Topic routing:** Use `research/INDEX.md` to find the right subfolder, then the subfolder's `INDEX.md` for the exact file. Always load BOTH the Content file (outline) and matching Research file (deep-dive).
 
-**When the student asks "what else do I need to learn" or "what's left":**
-- Load the relevant Content sub-file(s) AND `MCAT TOPIC CONFIDENCE MAP v2.txt`.
-- Cross-reference: topics rated 0-2 in the confidence map = gaps.
-- Also check `Content/Kaplan_Map_and_Gaps.md` for known Kaplan gaps.
+**By context:**
+- **Study session / teaching:** Check `schedule/MCAT_STUDY_SCHEDULE.md` for today's topic → route via Research INDEX files → load Content + Research pair
+- **Quiz:** Load Content + Research file for the section being quizzed
+- **"What's left" / gaps:** Load relevant Content sub-file(s) + `progression/MCAT TOPIC CONFIDENCE MAP v2.txt` + `Content/Kaplan_Map_and_Gaps.md`. Topics rated 0-2 = gaps.
+- **Schedule adjustments:** Load `schedule/MCAT_STUDY_SCHEDULE.md` + `Content/Kaplan_Map_and_Gaps.md` + confidence map
+- **Progress / trends:** Load `progression/MCAT STUDY LOG.txt` + confidence map only. No content/research files unless asking about specific topics.
 
-**When the student asks to be quizzed:**
-- Load the Content sub-file + Research file for the section being quizzed. Use both to generate MCAT-style questions.
+## Update Rules
 
-**When planning or adjusting the schedule:**
-- Load `schedule/MCAT_STUDY_SCHEDULE.md` and `Content/Kaplan_Map_and_Gaps.md`.
-- Cross-reference with `MCAT TOPIC CONFIDENCE MAP v2.txt`.
+Use today's date against `schedule/MCAT_STUDY_SCHEDULE.md` to determine current week and what should have been covered.
 
-**When reviewing progress or trends:**
-- Load `MCAT STUDY LOG.txt` and `MCAT TOPIC CONFIDENCE MAP v2.txt`. Do NOT load content/research files unless asking about specific topics.
+**After every session (student-driven):**
+- Student pastes session log entry into `progression/MCAT STUDY LOG.txt`
+
+**Every Saturday (weekly review -- prompt the student):**
+- Update `progression/MCAT TOPIC CONFIDENCE MAP v2.txt` -- rate all topics covered that week (0-5 scale)
+- Update the **Section Confidence Tracker** below based on confidence map trends
+- Update **Top 3 weak topics** below based on recurring low scores or error patterns
+- If the same topic has been rated 0-2 for 2+ consecutive weeks, flag it for a dedicated review day
+
+**After Week 3, then every 4 weeks (progress milestones):**
+- Update **Strengths** and **Weaknesses** in Student Profile based on accumulated session logs + confidence data
+- Cross-reference confidence map against schedule: are we on pace? Any sections falling behind?
+- Suggest schedule adjustments if needed (swap topics, add review days)
+
+**After each full-length practice exam:**
+- Update the **Practice Exam Scores** table below
+- Update Section Confidence Tracker ratings based on section scores
+- Revise Strengths/Weaknesses if scores reveal new patterns
 
 ## Section Confidence Tracker
 

@@ -46,6 +46,7 @@ Update this section when transitioning between phases.
 - CARS: always use passage-based reasoning, never outside knowledge
 - Adapt difficulty upward as confidence grows
 - Every 4 weeks: suggest a lighter review/consolidation day
+- If the student asks about a topic not covered in the research files, research it inline and flag the gap for future addition to the appropriate research file
 
 ## Project File Structure
 
@@ -119,50 +120,9 @@ Run this automatically at the start of every conversation. Do NOT prompt the use
    - This is a FILE WRITE, not a prompt. The user sees it only if they read the week file.
 5. Tell the user: today's date, current week/phase, today's topic, and any carry-over items.
 
-### Session End — Prompted by User
+### Session End / Schedule Shift / Updates
 
-Triggered when the user says "done", "wrap up", "end session", or similar.
-
-1. Ask the user to paste their session log entry for today.
-2. Once pasted, append it to the current week file's Session Logs section.
-3. Mark today's row as `[x]` in the Logged column.
-4. Ask for a confidence rating (0-5) on today's topic.
-5. If it's **Saturday**: also prompt for the Weekly Review checklist items:
-   - Update confidence map for all topics this week
-   - Update Section Confidence Tracker below
-   - Update Top 3 weak topics below
-6. If it's a **4-week milestone** (weeks 4, 8, 12, 16, 20): also prompt to update Strengths/Weaknesses in Student Profile.
-7. If it's a **full-length exam day**: update the Practice Exam Scores table below.
-
-### Schedule Shift Protocol
-
-Triggered when the user says "push back", "shift schedule", "I missed X days", "start [topic] on [new date]", or similar.
-
-1. **Identify the shift:** Which week/day is the starting point, and how many days to push forward.
-2. **Read `progression/INDEX.md`** to get current date ranges.
-3. **For each affected week file** (from the shift point onward):
-   - Recalculate all dates in the schedule table (shift by N days, preserving day-of-week pattern: Mon/Tue/Wed/Thu/Fri/Sat with Sun off).
-   - Update the date range in the file header.
-   - **Do NOT touch** the Session Logs section or any `[x]` checkmarks — completed work stays intact.
-   - Update the Pre-flight block if it references specific dates.
-4. **Update `progression/INDEX.md`** with new date ranges for all affected weeks.
-5. **Regenerate the ICS file:** Update dates in `progression/gen_ics.py` to match the new schedule, then run `python progression/gen_ics.py` to regenerate `progression/mcat_schedule.ics`.
-6. **Report:** Show the user what shifted, new date ranges, and remind them to reimport the ICS into Google Calendar.
-
-**Important:** Week files are never renamed. `week_01.md` is always "week 1 of study" regardless of what dates it falls on. Only the dates inside change.
-
-### Update Rules Summary
-
-| What | When | Who |
-|------|------|-----|
-| Session log entry | End of every session | Student pastes, Claude appends to week file |
-| Logged checkbox | End of every session | Claude marks after log is pasted |
-| Confidence map | Every Saturday | Student rates, Claude prompts |
-| Section Confidence Tracker | Every Saturday | Claude updates based on data |
-| Top 3 weak topics | Every Saturday | Claude updates based on patterns |
-| Strengths / Weaknesses | Weeks 4, 8, 12, 16, 20 | Claude updates based on accumulated data |
-| Practice Exam Scores | After each FL | Claude updates table |
-| Pre-flight check | First session of each week | Claude writes silently to week file |
+**When the user says "done", "wrap up", "end session", "end study session", "push back", or "shift schedule":** read `progression/END_SESSION.md` and follow the protocol inside.
 
 ## Section Confidence Tracker
 
@@ -188,9 +148,10 @@ Track all full-length scores here. Update after each FL.
 |------|------|-----|------|-----|-----|-------|-------|
 | -- | -- | -- | -- | -- | -- | -- | -- |
 
-## History
+## Phase Summaries
 
-After every 30 logged sessions, move older entries to a summary block here:
+Update after completing each phase. Raw session logs stay in their weekly files.
 
-[DATE] to [DATE]
-- Topics covered, confidence changes, key milestones
+**Phase 1 (Content Review):** --
+**Phase 2 (Practice & Integration):** --
+**Phase 3 (AAMC Materials):** --

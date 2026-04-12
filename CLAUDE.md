@@ -49,12 +49,20 @@ Update this section when transitioning between phases.
 
 ## Project File Structure
 
-### Progression Tracking -- `progression/`
-- `progression/MCAT STUDY LOG.txt` -- Session-by-session study log. Student pastes entries after each study session.
+### Progression -- `progression/`
+
+All schedule, logs, and tracking live here. Split by week for lean context loading.
+
+- `progression/week_00_kickoff.md` through `progression/week_22.md` -- One file per week containing: schedule, session logs, pre-flight check, and weekly review checklist.
 - `progression/MCAT TOPIC CONFIDENCE MAP v2.txt` -- Self-rated confidence (0-5) on every testable topic. Updated weekly.
 
-### Schedule
-- `schedule/MCAT_STUDY_SCHEDULE.md` -- Full 22-week study schedule with daily topics and times.
+**Week file date ranges:**
+- Kickoff: Apr 12 | Weeks 1-12: Apr 13 - Jul 4 (Phase 1: Content Review)
+- Weeks 13-17: Jul 6 - Aug 8 (Phase 2: Practice & Integration)
+- Weeks 18-22: Aug 10 - Sep 12 (Phase 3: AAMC Materials)
+
+**Weekly time blocks (constant):**
+Mon 7AM-12PM (BB) | Tue 1-6PM (CP) | Wed 4-9PM (PS) | Thu 1-6PM (BB) | Fri 12:30-5:30PM (CP) | Sat 7AM-12PM (CARS) | Sun OFF
 
 ### Content Reference Files (topic outlines)
 
@@ -81,34 +89,60 @@ Root-level research files (not in BB/ or CP/): `PS_Psych_Soc.md`, `CARS.md`, `Re
 **Topic routing:** Use `research/INDEX.md` to find the right subfolder, then the subfolder's `INDEX.md` for the exact file. Always load BOTH the Content file (outline) and matching Research file (deep-dive).
 
 **By context:**
-- **Study session / teaching:** Check `schedule/MCAT_STUDY_SCHEDULE.md` for today's topic → route via Research INDEX files → load Content + Research pair
+- **Study session / teaching:** Load current week file for today's topic → route via Research INDEX files → load Content + Research pair
 - **Quiz:** Load Content + Research file for the section being quizzed
 - **"What's left" / gaps:** Load relevant Content sub-file(s) + `progression/MCAT TOPIC CONFIDENCE MAP v2.txt` + `Content/Kaplan_Map_and_Gaps.md`. Topics rated 0-2 = gaps.
-- **Schedule adjustments:** Load `schedule/MCAT_STUDY_SCHEDULE.md` + `Content/Kaplan_Map_and_Gaps.md` + confidence map
-- **Progress / trends:** Load `progression/MCAT STUDY LOG.txt` + confidence map only. No content/research files unless asking about specific topics.
+- **Schedule adjustments:** Load current + adjacent week files + `Content/Kaplan_Map_and_Gaps.md` + confidence map
+- **Progress / trends:** Load recent week files (session logs are inside them) + confidence map. No content/research files unless asking about specific topics.
 
-## Update Rules
+## Session Protocols
 
-Use today's date against `schedule/MCAT_STUDY_SCHEDULE.md` to determine current week and what should have been covered.
+### Session Start — Silent Pre-flight
 
-**After every session (student-driven):**
-- Student pastes session log entry into `progression/MCAT STUDY LOG.txt`
+Run this automatically at the start of every conversation. Do NOT prompt the user about previous logs — write the result silently.
 
-**Every Saturday (weekly review -- prompt the student):**
-- Update `progression/MCAT TOPIC CONFIDENCE MAP v2.txt` -- rate all topics covered that week (0-5 scale)
-- Update the **Section Confidence Tracker** below based on confidence map trends
-- Update **Top 3 weak topics** below based on recurring low scores or error patterns
-- If the same topic has been rated 0-2 for 2+ consecutive weeks, flag it for a dedicated review day
+1. Check today's date → calculate current week number (Week 1 starts Apr 13).
+2. Load `progression/week_XX.md` for the current week.
+3. Check the **Pre-flight** section:
+   - If already filled → skip (already checked in a prior session). Move to step 5.
+   - If `[pending check]` → continue to step 4.
+4. Load the **previous week's file** and silently check:
+   - Are all `Logged` columns marked `[x]`?
+   - Is the Weekly Review checklist complete?
+   - Scan the Session Logs for forward-looking notes ("review tomorrow", "still shaky on X", "redo Y").
+   - Write the result into the **current week's Pre-flight block:**
+     - `Previous week: ✓ Complete` or `Previous week: ✗ Missing logs for [days]`
+     - `Carry-over: [specific items]` or `Carry-over: --`
+   - This is a FILE WRITE, not a prompt. The user sees it only if they read the week file.
+5. Tell the user: today's date, current week/phase, today's topic, and any carry-over items.
 
-**After Week 3, then every 4 weeks (progress milestones):**
-- Update **Strengths** and **Weaknesses** in Student Profile based on accumulated session logs + confidence data
-- Cross-reference confidence map against schedule: are we on pace? Any sections falling behind?
-- Suggest schedule adjustments if needed (swap topics, add review days)
+### Session End — Prompted by User
 
-**After each full-length practice exam:**
-- Update the **Practice Exam Scores** table below
-- Update Section Confidence Tracker ratings based on section scores
-- Revise Strengths/Weaknesses if scores reveal new patterns
+Triggered when the user says "done", "wrap up", "end session", or similar.
+
+1. Ask the user to paste their session log entry for today.
+2. Once pasted, append it to the current week file's Session Logs section.
+3. Mark today's row as `[x]` in the Logged column.
+4. Ask for a confidence rating (0-5) on today's topic.
+5. If it's **Saturday**: also prompt for the Weekly Review checklist items:
+   - Update confidence map for all topics this week
+   - Update Section Confidence Tracker below
+   - Update Top 3 weak topics below
+6. If it's a **4-week milestone** (weeks 4, 8, 12, 16, 20): also prompt to update Strengths/Weaknesses in Student Profile.
+7. If it's a **full-length exam day**: update the Practice Exam Scores table below.
+
+### Update Rules Summary
+
+| What | When | Who |
+|------|------|-----|
+| Session log entry | End of every session | Student pastes, Claude appends to week file |
+| Logged checkbox | End of every session | Claude marks after log is pasted |
+| Confidence map | Every Saturday | Student rates, Claude prompts |
+| Section Confidence Tracker | Every Saturday | Claude updates based on data |
+| Top 3 weak topics | Every Saturday | Claude updates based on patterns |
+| Strengths / Weaknesses | Weeks 4, 8, 12, 16, 20 | Claude updates based on accumulated data |
+| Practice Exam Scores | After each FL | Claude updates table |
+| Pre-flight check | First session of each week | Claude writes silently to week file |
 
 ## Section Confidence Tracker
 

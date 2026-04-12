@@ -108,9 +108,13 @@ Legacy files kept as backup: `Content/BB_Bio_Biochem.md`, `Content/CP_Chemical_P
 
 These files contain **in-depth explanations** of every topic -- mechanisms, reasoning, worked examples, MCAT-specific tips, and cross-topic connections. They mirror the Content files 1:1 but contain the actual teaching material instead of topic outlines.
 
-**BB Research -- `research/BB/`**: 9 files mirroring `Content/BB/` (same filenames)
-**CP Research -- `research/CP/`**: 12 files mirroring `Content/CP/` (same filenames)
-**Other Research -- `research/`**: `PS_Psych_Soc.md`, `CARS.md`, `Research_Methods.md`, `Lab_Techniques.md`
+Each research subfolder has an **INDEX.md** with trigger keywords for routing to the right file:
+
+- `research/INDEX.md` -- Top-level routing: identifies subject area, points to the right subfolder or root-level file
+- `research/BB/INDEX.md` -- BB file routing: 9 files, trigger keywords for each
+- `research/CP/INDEX.md` -- CP file routing: 12 files, trigger keywords for each
+
+Root-level research files (not in BB/ or CP/): `PS_Psych_Soc.md`, `CARS.md`, `Research_Methods.md`, `Lab_Techniques.md`
 
 ### When to Load Files
 
@@ -118,39 +122,11 @@ These files contain **in-depth explanations** of every topic -- mechanisms, reas
 
 **During a study session or teaching:**
 1. Check `schedule/MCAT_STUDY_SCHEDULE.md` to find today's topic.
-2. Load the matching **Content sub-file** (topic outline) AND the matching **Research file** (deep-dive) using the mapping below.
-3. If the topic involves lab techniques, also load `research/Lab_Techniques.md`.
-4. If the topic involves research methods or statistics, also load `research/Research_Methods.md`.
-
-**Schedule Topic → File Mapping:**
-
-| Schedule Topic Keywords | Content File | Research File |
-|------------------------|--------------|---------------|
-| Amino acid, Protein structure, Enzyme kinetics, Signal transduction | `Content/BB/BB_Protein_Structure_Function.md` | `research/BB/BB_Protein_Structure_Function.md` |
-| DNA, Replication, Transcription, Translation, Gene regulation, Biotechnology, Molecular techniques | `Content/BB/BB_Gene_Expression.md` | `research/BB/BB_Gene_Expression.md` |
-| Meiosis, Mendelian, Non-Mendelian, Genetics, Mutations, Evolution | `Content/BB/BB_Heredity_Evolution.md` | `research/BB/BB_Heredity_Evolution.md` |
-| Glycolysis, Fermentation, TCA, Pyruvate, ETC, Oxidative phosphorylation, Gluconeogenesis, Glycogen, Pentose phosphate, Lipid metabolism, Amino acid metabolism, Metabolic integration | `Content/BB/BB_Metabolism.md` | `research/BB/BB_Metabolism.md` |
-| Cell structure, Organelle, Cytoskeleton, Membrane, Transport, Cell signaling | `Content/BB/BB_Cell_Biology.md` | `research/BB/BB_Cell_Biology.md` |
-| Microbiology, Bacteria, Virus, Prion | `Content/BB/BB_Prokaryotes_Viruses.md` | `research/BB/BB_Prokaryotes_Viruses.md` |
-| Cell cycle, Mitosis, Cancer, Cell division | `Content/BB/BB_Cell_Division.md` | `research/BB/BB_Cell_Division.md` |
-| Nervous system, Neuron, Brain, Endocrine, Hormone | `Content/BB/BB_Nervous_Endocrine.md` | `research/BB/BB_Nervous_Endocrine.md` |
-| Immunology, Immune, Cardiovascular, Heart, Blood, Respiratory, Lung, Gas exchange, Digestive, Renal, Kidney, Muscle, Bone, Reproductive, Embryology | `Content/BB/BB_Organ_Systems.md` | `research/BB/BB_Organ_Systems.md` |
-| Kinematics, Newton, Forces, Work, Energy, Momentum | `Content/CP/CP_Mechanics.md` | `research/CP/CP_Mechanics.md` |
-| Fluid, Gas law, Pressure, Bernoulli | `Content/CP/CP_Fluids_Gases.md` | `research/CP/CP_Fluids_Gases.md` |
-| Electrostatics, Magnetism, Circuit, Electricity, Electrochemistry, Redox | `Content/CP/CP_Electrochem_Circuits.md` | `research/CP/CP_Electrochem_Circuits.md` |
-| Wave, Sound, Doppler, Light, Optics, Diffraction | `Content/CP/CP_Light_Sound.md` | `research/CP/CP_Light_Sound.md` |
-| Atomic structure, Periodic, Nuclear, Radioactive, Electron configuration | `Content/CP/CP_Atoms_Nuclear.md` | `research/CP/CP_Atoms_Nuclear.md` |
-| Acid, Base, Buffer, Titration, pH, Solution, Colligative | `Content/CP/CP_Acids_Bases.md` | `research/CP/CP_Acids_Bases.md` |
-| Bonding, Intermolecular, VSEPR, Stereochemistry, Isomer | `Content/CP/CP_Molecular_Structure_IMFs.md` | `research/CP/CP_Molecular_Structure_IMFs.md` |
-| Separation, Purification, Chromatography, Analytical techniques | `Content/CP/CP_Separations.md` | `research/CP/CP_Separations.md` |
-| Organic chemistry, Functional group, Nomenclature, Carbonyl, Carboxylic, SN1/SN2 | `Content/CP/CP_Bio_Molecules.md` | `research/CP/CP_Bio_Molecules.md` |
-| Thermodynamics, Thermochemistry, Kinetics, Equilibrium, Enzyme | `Content/CP/CP_Thermo_Kinetics_Enzymes.md` | `research/CP/CP_Thermo_Kinetics_Enzymes.md` |
-| Spectroscopy, IR, NMR, Mass spec | `Content/CP/CP_Spectroscopy.md` | `research/CP/CP_Spectroscopy.md` |
-| Stoichiometry, Concentration, Math, Units, Dimensional analysis, Data interpretation | `Content/CP/CP_Math_Skills.md` | `research/CP/CP_Math_Skills.md` |
-| PS topics (any) | `Content/PS_Psych_Soc.md` | `research/PS_Psych_Soc.md` |
-| CARS | `Content/CARS.md` | `research/CARS.md` |
-| Research design, Statistics, Bias, Ethics | `Content/Research_Methods.md` | `research/Research_Methods.md` |
-| Lab techniques, Experimental design | `Content/Lab_Techniques.md` | `research/Lab_Techniques.md` |
+2. Read `research/INDEX.md` to identify the subject area.
+3. If BB topic → read `research/BB/INDEX.md` to find the exact file.
+4. If CP topic → read `research/CP/INDEX.md` to find the exact file.
+5. Load the matching **Content sub-file** (topic outline) AND the matching **Research file** (deep-dive).
+6. Follow cross-loading rules in the INDEX files (lab techniques, research methods, etc.).
 
 **When the student asks "what else do I need to learn" or "what's left":**
 - Load the relevant Content sub-file(s) AND `MCAT TOPIC CONFIDENCE MAP v2.txt`.

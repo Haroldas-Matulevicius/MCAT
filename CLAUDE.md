@@ -53,8 +53,11 @@ Update this section when transitioning between phases.
 
 All schedule, logs, and tracking live here. Split by week for lean context loading.
 
+- `progression/INDEX.md` -- **Read this first.** Date-to-week lookup table. Maps today's date to the correct week file.
 - `progression/week_00_kickoff.md` through `progression/week_22.md` -- One file per week containing: schedule, session logs, pre-flight check, and weekly review checklist.
 - `progression/MCAT TOPIC CONFIDENCE MAP v2.txt` -- Self-rated confidence (0-5) on every testable topic. Updated weekly.
+- `progression/mcat_schedule.ics` -- Google Calendar import file. Regenerate after any schedule shift.
+- `progression/gen_ics.py` -- Script to regenerate the ICS file.
 
 **Week file date ranges:**
 - Kickoff: Apr 12 | Weeks 1-12: Apr 13 - Jul 4 (Phase 1: Content Review)
@@ -101,8 +104,8 @@ Root-level research files (not in BB/ or CP/): `PS_Psych_Soc.md`, `CARS.md`, `Re
 
 Run this automatically at the start of every conversation. Do NOT prompt the user about previous logs — write the result silently.
 
-1. Check today's date → calculate current week number (Week 1 starts Apr 13).
-2. Load `progression/week_XX.md` for the current week.
+1. Check today's date → read `progression/INDEX.md` → find which week file contains today's date.
+2. Load that week file.
 3. Check the **Pre-flight** section:
    - If already filled → skip (already checked in a prior session). Move to step 5.
    - If `[pending check]` → continue to step 4.
@@ -130,6 +133,23 @@ Triggered when the user says "done", "wrap up", "end session", or similar.
    - Update Top 3 weak topics below
 6. If it's a **4-week milestone** (weeks 4, 8, 12, 16, 20): also prompt to update Strengths/Weaknesses in Student Profile.
 7. If it's a **full-length exam day**: update the Practice Exam Scores table below.
+
+### Schedule Shift Protocol
+
+Triggered when the user says "push back", "shift schedule", "I missed X days", "start [topic] on [new date]", or similar.
+
+1. **Identify the shift:** Which week/day is the starting point, and how many days to push forward.
+2. **Read `progression/INDEX.md`** to get current date ranges.
+3. **For each affected week file** (from the shift point onward):
+   - Recalculate all dates in the schedule table (shift by N days, preserving day-of-week pattern: Mon/Tue/Wed/Thu/Fri/Sat with Sun off).
+   - Update the date range in the file header.
+   - **Do NOT touch** the Session Logs section or any `[x]` checkmarks — completed work stays intact.
+   - Update the Pre-flight block if it references specific dates.
+4. **Update `progression/INDEX.md`** with new date ranges for all affected weeks.
+5. **Regenerate the ICS file:** Update dates in `progression/gen_ics.py` to match the new schedule, then run `python progression/gen_ics.py` to regenerate `progression/mcat_schedule.ics`.
+6. **Report:** Show the user what shifted, new date ranges, and remind them to reimport the ICS into Google Calendar.
+
+**Important:** Week files are never renamed. `week_01.md` is always "week 1 of study" regardless of what dates it falls on. Only the dates inside change.
 
 ### Update Rules Summary
 

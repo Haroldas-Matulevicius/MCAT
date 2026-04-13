@@ -98,6 +98,21 @@ Each research subfolder has an **INDEX.md** with trigger keywords for routing to
 
 Root-level research files (not in BB/ or CP/): `PS_Psych_Soc.md`, `CARS.md`, `Research_Methods.md`, `Lab_Techniques.md`
 
+### Mnemonics -- `mnemonics/`
+
+Verified memory aids (mnemonics) for every MCAT topic. Mirrors the Content/Research file structure 1:1 with identical filenames.
+
+- `mnemonics/INDEX.md` -- Top-level routing
+- `mnemonics/BB/INDEX.md` -- BB mnemonics routing (9 files)
+- `mnemonics/CP/INDEX.md` -- CP mnemonics routing (12 files)
+- Root-level: `PS_Psych_Soc.md`, `CARS.md`, `Research_Methods.md`, `Lab_Techniques.md`
+
+**Loading rules:**
+- **Do NOT load mnemonics files unless the student explicitly asks** for a mnemonic, memory trick, or easy way to remember something.
+- When loading, load ONLY the single mnemonics file matching the topic being studied -- never load all mnemonics files at once.
+- Route via `mnemonics/INDEX.md` → subfolder INDEX → specific file, same as Research routing.
+- Example: student asks "is there a mnemonic for the TCA cycle?" → load `mnemonics/BB/BB_Metabolism.md` only.
+
 ### When to Load Files
 
 **Rule: Load the SMALLEST set of files needed. Never load all files at once.**

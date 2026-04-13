@@ -26,31 +26,41 @@ By the Cahn-Ingold-Pratt system, most L-amino acids are (S)-configured. The exce
 
 ### 1.3 Classifications and Side Chain Properties
 
-You need to know these groupings cold. The logic behind the grouping matters more than rote memorization because the MCAT tests application.
+You need to know these groupings cold. The logic behind the grouping matters more than rote memorization because the MCAT tests application. Classifications below follow Kaplan's system: grouped by side chain properties at physiological pH (7.4).
 
-#### Nonpolar / Hydrophobic (G, A, V, L, I, P, F, W, M)
+#### Nonpolar, Nonaromatic (G, A, V, L, I, M, P)
 
-These have side chains made predominantly of carbon and hydrogen. They are driven into the **interior** of globular proteins in aqueous solution by the **hydrophobic effect** (the thermodynamic driving force is the increase in entropy of water molecules released from ordered cages around the nonpolar surface).
+Aliphatic side chains -- mostly carbon and hydrogen. Driven into the **interior** of globular proteins in aqueous solution by the **hydrophobic effect** (the thermodynamic driving force is the increase in entropy of water molecules released from ordered cages around the nonpolar surface).
 
-- **Glycine (G, Gly):** R-group is just a hydrogen. The simplest amino acid. It is the only **achiral** amino acid (two hydrogens on the alpha-carbon). Its small size gives the backbone extraordinary flexibility -- glycine is found in tight turns and loops where other residues would cause steric clashes. It is abundant in **collagen** (every third residue is Gly because the triple helix interior has no room for anything larger).
-- **Alanine (A, Ala):** Methyl group. The "default" nonpolar amino acid. Good alpha-helix former.
-- **Valine (V, Val), Leucine (L, Leu), Isoleucine (I, Ile):** Branched-chain amino acids. Bulky hydrophobic side chains. Valine and isoleucine are **beta-branched** (the branching occurs at C-beta), which sterically hinders alpha-helix formation. Leucine is the strongest alpha-helix former of this group because its branching starts at C-gamma, one carbon further out.
-- **Proline (P, Pro):** The side chain cyclizes back to the backbone nitrogen, creating a rigid five-membered ring. This has two huge consequences: (1) proline is a **helix breaker** because the ring locks the phi angle and prevents the backbone from adopting alpha-helical geometry; (2) proline introduces a fixed **kink** or bend in the chain, making it common in turns. Proline is technically an imino acid (secondary amine), not an amino acid, though the MCAT often ignores this distinction. In collagen, proline and its hydroxylated derivative **hydroxyproline** (requires vitamin C for the hydroxylation reaction) are critical for stability.
-- **Phenylalanine (F, Phe):** Benzyl side chain. Purely hydrophobic aromatic. Absorbs UV at ~257 nm but weakly. Accumulated in **phenylketonuria (PKU)** when phenylalanine hydroxylase is defective (cannot convert Phe to Tyr).
-- **Tryptophan (W, Trp):** The largest amino acid. Indole ring system (bicyclic aromatic). The dominant contributor to **UV absorbance at 280 nm** -- this is how protein concentration is estimated spectrophotometrically. Also the precursor to **serotonin** and **melatonin**.
+- **Glycine (G, Gly):** R-group is just a hydrogen. The simplest amino acid. It is the only **achiral** amino acid (two hydrogens on the alpha-carbon). Its small size gives the backbone extraordinary flexibility -- glycine is found in tight turns and loops where other residues would cause steric clashes. It is abundant in **collagen** (every third residue is Gly because the triple helix interior has no room for anything larger). Also an **inhibitory neurotransmitter** in the spinal cord.
+- **Alanine (A, Ala):** Methyl group. The "default" nonpolar amino acid. The strongest **alpha-helix former**.
+- **Valine (V, Val), Leucine (L, Leu), Isoleucine (I, Ile):** Branched-chain amino acids. Bulky hydrophobic side chains. Valine and isoleucine are **beta-branched** (the branching occurs at C-beta), which sterically hinders alpha-helix formation and favors **beta-sheets**. Leucine is the strongest alpha-helix former of this group because its branching starts at C-gamma, one carbon further out. Isoleucine has a **second chiral center** at C-beta (like threonine).
 - **Methionine (M, Met):** Contains a thioether (sulfur flanked by two carbons). The **start codon (AUG)** codes for methionine, so every protein begins with Met (though it is often cleaved post-translationally). The sulfur can be oxidized but does not form disulfide bonds (unlike cysteine) because it is in a thioether, not a thiol.
+- **Proline (P, Pro):** The side chain cyclizes back to the backbone nitrogen, creating a rigid five-membered ring. This has two huge consequences: (1) proline is a **helix breaker** because the ring locks the phi angle and prevents the backbone from adopting alpha-helical geometry; (2) proline introduces a fixed **kink** or bend in the chain, making it common in turns. Proline is technically an imino acid (secondary amine), not an amino acid, though the MCAT often ignores this distinction. In collagen, proline and its hydroxylated derivative **hydroxyproline** (requires vitamin C for the hydroxylation reaction) are critical for stability.
 
-#### Polar Uncharged (S, T, C, N, Q)
+#### Aromatic (F, W, Y)
 
-These have side chains capable of hydrogen bonding but do not carry a formal charge at pH 7.
+All three have ring systems and absorb UV light. They are grouped together because the aromatic ring dominates their chemistry, but they differ in polarity.
+
+- **Phenylalanine (F, Phe):** Benzyl side chain. **Nonpolar** aromatic. Absorbs UV at ~257 nm but weakly. Accumulated in **phenylketonuria (PKU)** when phenylalanine hydroxylase is defective (cannot convert Phe to Tyr).
+- **Tryptophan (W, Trp):** The largest amino acid. Indole ring system (bicyclic). **Nonpolar** aromatic. The dominant contributor to **UV absorbance at 280 nm** -- this is how protein concentration is estimated spectrophotometrically. Also the precursor to **serotonin** and **melatonin**.
+- **Tyrosine (Y, Tyr):** Phenol side chain (--OH on an aromatic ring). **Polar** aromatic -- the hydroxyl group makes it polar, ionizable, and functionally distinct from Phe and Trp. Absorbs UV at ~275 nm (contributes to the 280 nm protein absorbance reading alongside Trp). The --OH has a pKa of ~10.5: uncharged at physiological pH, but deprotonates to --O⁻ at high pH. This ionizable side chain means Tyr is one of the 7 amino acids (D, E, C, Y, H, K, R) whose side chain pKa must be considered in pI calculations. Tyrosine is the target for **tyrosine kinases** (RTKs phosphorylate Tyr, distinct from Ser/Thr kinases). Synthesized from phenylalanine by phenylalanine hydroxylase (the reaction blocked in PKU).
+
+> **Key within-group distinction:** Phe and Trp are hydrophobic aromatics. Tyr's --OH makes it polar, ionizable, and a phosphorylation target -- functionally very different despite being in the same structural family. The three phosphorylation targets across all categories are Ser, Thr (polar), and Tyr (aromatic).
+
+#### Polar (S, T, C, N, Q)
+
+These have side chains capable of hydrogen bonding but do not carry a formal charge at pH 7.4.
 
 - **Serine (S, Ser) and Threonine (T, Thr):** Hydroxyl (-OH) groups. Key targets for **phosphorylation** by kinases (serine/threonine kinases are the most common class). Threonine has a second chiral center at C-beta (the only common amino acid with two stereocenters besides isoleucine). Serine is found in enzyme active sites (e.g., serine proteases like trypsin, chymotrypsin, elastase -- the catalytic triad is Ser-His-Asp).
-- **Cysteine (C, Cys):** Thiol (-SH) side chain. Two cysteines can be oxidized to form a **disulfide bond** (-S-S-), a covalent cross-link that stabilizes tertiary and quaternary structure. Disulfide bonds are most common in **extracellular** proteins (the cytoplasm is a reducing environment that keeps cysteines reduced). The pKa of the thiol is ~8.3, so it is mostly protonated at pH 7 -- but in enzyme active sites, the local environment can lower this pKa. Cysteine is also found in the catalytic site of cysteine proteases.
+- **Cysteine (C, Cys):** Thiol (-SH) side chain. Two cysteines can be oxidized to form a **disulfide bond** (-S-S-), a covalent cross-link that stabilizes tertiary and quaternary structure. Disulfide bonds are most common in **extracellular** proteins (the cytoplasm is a reducing environment that keeps cysteines reduced). The pKa of the thiol is ~8.3, so it is mostly protonated at pH 7 -- but in enzyme active sites, the local environment can lower this pKa. Cysteine is also found in the catalytic site of cysteine proteases. Note: Cys is classified as polar (uncharged at pH 7.4), but its ionizable side chain means it is one of the 7 amino acids whose side chain pKa matters for charge calculations.
 - **Asparagine (N, Asn) and Glutamine (Q, Gln):** Amide-containing side chains (carboxamide). They are the amide derivatives of aspartate and glutamate, respectively. They can donate AND accept hydrogen bonds. Asparagine is the attachment point for **N-linked glycosylation** (sugar attached to the nitrogen of the amide).
 
 > **MCAT Trap:** Do not confuse Asn/Gln (amides, uncharged) with Asp/Glu (carboxylates, negatively charged at pH 7). The difference is one oxygen vs one nitrogen on the side chain, but the charge consequences are enormous.
 
-#### Positively Charged at pH 7 (K, R, H)
+> **Truly never-charged polar residues:** Ser, Thr, Asn, and Gln -- their side chains do not ionize at any biologically relevant pH. Cys (pKa ~8.3) and Tyr (pKa ~10.5) are polar at pH 7.4 but can become charged under different pH conditions.
+
+#### Positively Charged at pH 7.4 (K, R, H)
 
 These have side chains with pKa values above 7 (for K and R, far above), so they are protonated and carry a +1 charge under physiological conditions.
 
@@ -58,12 +68,12 @@ These have side chains with pKa values above 7 (for K and R, far above), so they
 - **Arginine (R, Arg):** pKa ~12.5 (guanidinium group). The **most basic** amino acid. The guanidinium group is stabilized by resonance across three nitrogens, making it almost always protonated under any physiological condition. It forms strong salt bridges and is often found in active sites where it stabilizes negatively charged substrates or transition states.
 - **Histidine (H, His):** pKa ~6.0 (imidazole ring). This is the most testable pKa on the exam. Because the pKa is near physiological pH, histidine can act as both a **proton donor and acceptor** at pH 7 -- making it perfect for **acid-base catalysis** in enzyme active sites. Found in the catalytic triad of serine proteases (His acts as a general base), in hemoglobin (proximal and distal His coordinate the heme iron), and in carbonic anhydrase (three His residues coordinate the Zn2+ ion).
 
-#### Negatively Charged at pH 7 (D, E)
+#### Negatively Charged at pH 7.4 (D, E)
 
 - **Aspartate (D, Asp):** pKa ~3.65. Carboxylate side chain, one carbon shorter than glutamate.
 - **Glutamate (E, Glu):** pKa ~4.25. Carboxylate side chain. Glutamate is also a major **excitatory neurotransmitter** in the CNS and a metabolic intermediate (alpha-ketoglutarate link).
 
-Both are fully deprotonated (negatively charged) at pH 7 because their pKa values are well below 7. They form **salt bridges** with positively charged residues (Lys, Arg) and coordinate metal ions in metalloenzymes. Aspartate is part of the catalytic triad in serine proteases.
+Both are fully deprotonated (negatively charged) at pH 7.4 because their pKa values are well below 7. They form **salt bridges** with positively charged residues (Lys, Arg) and coordinate metal ions in metalloenzymes. Aspartate is part of the catalytic triad in serine proteases.
 
 ### 1.4 Acid-Base Behavior and pI Calculations
 

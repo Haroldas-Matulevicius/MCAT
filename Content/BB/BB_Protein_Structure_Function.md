@@ -6,8 +6,9 @@ Parent section: Foundational Concept 1 — Biomolecules have unique properties
 
 AMINO ACIDS -- HIGHEST-YIELD BB TOPIC:
 - All 20 structures, 1-letter and 3-letter codes
-- Classifications: nonpolar (G,A,V,L,I,P,F,W,M), polar uncharged (S,T,C,N,Q), positive at pH 7 (K,R,H), negative at pH 7 (D,E)
-- Special properties: Gly (smallest, achiral), Pro (cyclic, disrupts alpha-helix), Cys (disulfide bonds), His (pKa ~6, enzyme active sites), Trp (largest, UV 280nm), Met (start codon)
+- Classifications (Kaplan, by side chain at pH 7.4): nonpolar nonaromatic (G,A,V,L,I,M,P), aromatic (F,W,Y), polar (S,T,N,Q,C), negatively charged (D,E), positively charged (K,R,H)
+- Aromatic subgroup: Phe/Trp are nonpolar aromatics, Tyr is polar aromatic (--OH on ring, ionizable pKa ~10.5, phosphorylation target for tyrosine kinases)
+- Special properties: Gly (smallest, achiral), Pro (cyclic, disrupts alpha-helix), Cys (disulfide bonds, pKa ~8.3), His (pKa ~6, enzyme active sites), Trp (largest, UV 280nm), Met (start codon), Tyr (UV 275nm, made from Phe, blocked in PKU)
 - Acid-base behavior: pKa values, pI calculations
 - L vs D stereochemistry
 

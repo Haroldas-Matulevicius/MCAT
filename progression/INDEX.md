@@ -6,8 +6,8 @@ Date-to-week lookup. Read this file to find the current week file based on today
 
 | Week | Dates | File | Phase |
 |------|-------|------|-------|
-| 0 | Apr 12 | week_00_kickoff.md | Kickoff |
-| 1 | Apr 13 - Apr 18 | week_01.md | 1: Content Review |
+| 0 | Apr 13 | week_00_kickoff.md | Kickoff |
+| 1 | Apr 14 - Apr 19 | week_01.md | 1: Content Review |
 | 2 | Apr 20 - Apr 25 | week_02.md | 1: Content Review |
 | 3 | Apr 27 - May 02 | week_03.md | 1: Content Review |
 | 4 | May 04 - May 09 | week_04.md | 1: Content Review |

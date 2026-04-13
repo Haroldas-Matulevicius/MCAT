@@ -1,5 +1,5 @@
 # Week 8 — Phase 1: Content Review
-**Jun 1 - Jun 6, 2026**
+**Jun 01 - Jun 06, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]

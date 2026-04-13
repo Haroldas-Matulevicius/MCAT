@@ -1,5 +1,5 @@
 # Week 17 — Phase 2: Practice & Integration
-**Aug 3 - Aug 8, 2026**
+**Aug 03 - Aug 08, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]

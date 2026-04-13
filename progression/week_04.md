@@ -1,5 +1,5 @@
 # Week 4 — Phase 1: Content Review
-**May 4 - May 9, 2026**
+**May 04 - May 09, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]

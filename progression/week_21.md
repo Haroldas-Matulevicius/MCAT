@@ -1,5 +1,5 @@
 # Week 21 — Phase 3: AAMC Materials
-**Aug 31 - Sep 5, 2026**
+**Aug 31 - Sep 05, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]

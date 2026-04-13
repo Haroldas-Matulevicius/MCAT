@@ -1,5 +1,5 @@
 # Week 9 — Phase 1: Content Review
-**Jun 8 - Jun 13, 2026**
+**Jun 08 - Jun 13, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]

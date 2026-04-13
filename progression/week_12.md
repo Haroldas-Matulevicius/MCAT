@@ -1,5 +1,5 @@
 # Week 12 — Phase 1: Content Review
-**Jun 29 - Jul 4, 2026**
+**Jun 29 - Jul 04, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]

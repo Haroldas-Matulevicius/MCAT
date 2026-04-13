@@ -61,7 +61,7 @@ All schedule, logs, and tracking live here. Split by week for lean context loadi
 - `progression/gen_ics.py` -- Script to regenerate the ICS file.
 
 **Week file date ranges:**
-- Kickoff: Apr 12 | Weeks 1-12: Apr 13 - Jul 4 (Phase 1: Content Review)
+- Kickoff: Apr 13 | Weeks 1-12: Apr 14 - Jul 4 (Phase 1: Content Review)
 - Weeks 13-17: Jul 6 - Aug 8 (Phase 2: Practice & Integration)
 - Weeks 18-22: Aug 10 - Sep 12 (Phase 3: AAMC Materials)
 
@@ -73,6 +73,18 @@ Mon 7AM-12PM (BB) | Tue 1-6PM (CP) | Wed 4-9PM (PS) | Thu 1-6PM (BB) | Fri 12:30
 Topic outlines organized by foundational concept with Kaplan chapter references and gap flags. Split into `Content/BB/` (9 files) and `Content/CP/` (12 files), plus root-level PS, CARS, Research Methods, Lab Techniques, and Kaplan Map/Gaps files.
 
 **Content files mirror Research files 1:1 with identical filenames.** Use the Research INDEX files (`research/INDEX.md` → `research/BB/INDEX.md` or `research/CP/INDEX.md`) to route to the correct file — then load BOTH the Content file (outline) AND the matching Research file (deep-dive).
+
+**Which Content file to load:**
+- BB topics → use `Content/BB/<filename>.md` sub-files (20-91 lines each)
+- CP topics → use `Content/CP/<filename>.md` sub-files (15-49 lines each)
+- PS / CARS / Research Methods / Lab Techniques → use root-level `Content/<filename>.md` (no sub-files exist for these)
+
+**Never load (truly redundant):**
+- `Content/MCAT_CONTENT_REFERENCE (1).md` — 1453-line legacy monolith, superseded by all split Content files
+
+**Default to sub-files, but monolith is allowed for big-picture requests:**
+- `Content/BB_Bio_Biochem.md` (444 lines) — only load if the student asks for a full BB section overview. For topic-specific work, always use `Content/BB/` sub-files instead.
+- `Content/CP_Chemical_Physical.md` (344 lines) — only load if the student asks for a full CP section overview. For topic-specific work, always use `Content/CP/` sub-files instead.
 
 ### Research Files (deep-dive content)
 
@@ -90,14 +102,29 @@ Root-level research files (not in BB/ or CP/): `PS_Psych_Soc.md`, `CARS.md`, `Re
 
 **Rule: Load the SMALLEST set of files needed. Never load all files at once.**
 
-**Topic routing:** Use `research/INDEX.md` to find the right subfolder, then the subfolder's `INDEX.md` for the exact file. Always load BOTH the Content file (outline) and matching Research file (deep-dive).
+**Topic routing:** Use `research/INDEX.md` to find the right subfolder, then the subfolder's `INDEX.md` for the exact file. Only read the INDEX for the subject being studied — skip unrelated subject indexes. Always load BOTH the Content file (outline) and matching Research file (deep-dive).
 
 **By context:**
 - **Study session / teaching:** Load current week file for today's topic → route via Research INDEX files → load Content + Research pair
 - **Quiz:** Load Content + Research file for the section being quizzed
-- **"What's left" / gaps:** Load relevant Content sub-file(s) + `progression/MCAT TOPIC CONFIDENCE MAP v2.txt` + `Content/Kaplan_Map_and_Gaps.md`. Topics rated 0-2 = gaps.
+- **"What's left" / gaps:** Load `Content/Kaplan_Map_and_Gaps.md` + `progression/MCAT TOPIC CONFIDENCE MAP v2.txt` ONLY. Do not load individual Content or Research files unless the student asks to drill into a specific gap topic.
 - **Schedule adjustments:** Load current + adjacent week files + `Content/Kaplan_Map_and_Gaps.md` + confidence map
 - **Progress / trends:** Load recent week files (session logs are inside them) + confidence map. No content/research files unless asking about specific topics.
+
+**Cross-loading cap:** Load at most 1 cross-referenced file per session beyond the primary Content + Research pair. If multiple cross-load triggers apply (e.g., lab techniques AND research methods), pick the one most relevant to the student's actual question. The primary pair always takes priority.
+
+**Context budget:** A typical study session should load ≤5 files beyond the week file and INDEX lookups.
+
+**Topic switch mid-session:** When the student shifts to a different subject and new files would push past the context budget (or the conversation is already long):
+1. Write a **mid-session snapshot** to today's entry in the week file's Session Logs section:
+   - Topics covered so far
+   - Key concepts explained
+   - Mistakes or weak spots identified
+   - Any "revisit later" flags
+2. Tell the student: "Snapshot saved to the week file. Safe to `/clear`."
+3. After `/clear`, the pre-flight picks up the current week file — the snapshot is visible for continuity.
+
+Do NOT raw-clear without saving a snapshot first. The conversation is the raw material for the log — clearing without capturing it means that context is gone.
 
 ## Session Protocols
 

@@ -1,5 +1,5 @@
 # Week 13 — Phase 2: Practice & Integration
-**Jul 6 - Jul 11, 2026**
+**Jul 06 - Jul 11, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]

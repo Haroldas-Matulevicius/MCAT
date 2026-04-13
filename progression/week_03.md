@@ -1,5 +1,5 @@
 # Week 3 — Phase 1: Content Review
-**Apr 27 - May 2, 2026**
+**Apr 27 - May 02, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]

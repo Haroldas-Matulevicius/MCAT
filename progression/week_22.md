@@ -1,5 +1,5 @@
 # Week 22 — Phase 3: AAMC Materials (Final Week)
-**Sep 7 - Sep 12, 2026**
+**Sep 07 - Sep 12, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]

@@ -4,10 +4,12 @@ Read this file when the user says "done", "wrap up", "end session", "end study s
 
 ## Steps
 
-1. **Collect the session log.** Ask the user to paste their session log entry for today.
-2. **Append to week file.** Once pasted, add it to the current week file's Session Logs section.
-3. **Mark today as logged.** Change today's row from `[ ]` to `[x]` in the Logged column.
-4. **Confidence rating.** Ask for a confidence rating (0-5) on today's topic.
+1. **Check for mid-session snapshots.** Look at today's entry in the week file's Session Logs section. If any mid-session snapshots were written (from topic switches), note them — they'll be consolidated in step 3.
+2. **Collect the session log.** Ask the user to paste their session log entry for today (covering the final segment of study).
+3. **Consolidate into one log entry.** If mid-session snapshots exist, merge them with the user's final log into a single cohesive entry for the day. The final log should read as one unified summary — not separate snapshot fragments.
+4. **Append to week file.** Write the consolidated log to the current week file's Session Logs section (replacing any raw snapshot entries).
+5. **Mark today as logged.** Change today's row from `[ ]` to `[x]` in the Logged column.
+6. **Confidence rating.** Ask for a confidence rating (0-5) on today's topic.
 
 ## Saturday Escalation (Weekly Review)
 

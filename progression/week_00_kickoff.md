@@ -1,5 +1,5 @@
 # Kickoff — Pre-Week
-**Apr 12, 2026 (Sunday)**
+**Apr 13, 2026 (Monday)**
 
 ## Pre-flight
 - **Previous week:** N/A (first session)
@@ -9,7 +9,7 @@
 
 | Date | Day | Time | Session | Logged |
 |------|-----|------|---------|--------|
-| Apr 12 | Sun | 11:30 AM – 3:30 PM | MCAT: Kickoff — Amino Acid Foundations | [ ] |
+| Apr 13 | Mon | 11:30 AM – 3:30 PM | MCAT: Kickoff — Amino Acid Foundations | [ ] |
 
 ## Session Logs
 

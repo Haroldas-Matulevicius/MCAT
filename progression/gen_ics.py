@@ -13,17 +13,17 @@ def add(date_str, start_time, end_time, section, topic, week, phase):
     events.append((dtstart, dtend, section, topic, week, phase))
 
 # Kickoff
-add("2026-04-12", "11:30", "15:30", "ALL", "MCAT: Kickoff -- Amino Acid Foundations", 0, 1)
+add("2026-04-13", "11:30", "15:30", "ALL", "MCAT: Kickoff -- Amino Acid Foundations", 0, 1)
 
 # Phase 1: Content Review (Weeks 1-12)
 sessions = [
-    # Week 1
-    ("2026-04-13","07:00","12:00","BB","Amino Acids -- All 20 Structures & Properties",1),
-    ("2026-04-14","13:00","18:00","CP","Atomic Structure & Periodic Trends",1),
-    ("2026-04-15","16:00","21:00","PS","Biological Bases of Behavior & Neuroscience",1),
-    ("2026-04-16","13:00","18:00","BB","Protein Structure & Folding (1-4)",1),
-    ("2026-04-17","12:30","17:30","CP","Bonding & Intermolecular Forces",1),
-    ("2026-04-18","07:00","12:00","CARS","Foundations -- Main Idea & Passage Mapping",1),
+    # Week 1 (Tue-Sun, one-time shift due to kickoff moving to Mon Apr 13)
+    ("2026-04-14","07:00","12:00","BB","Amino Acids -- All 20 Structures & Properties",1),
+    ("2026-04-15","13:00","18:00","CP","Atomic Structure & Periodic Trends",1),
+    ("2026-04-16","16:00","21:00","PS","Biological Bases of Behavior & Neuroscience",1),
+    ("2026-04-17","13:00","18:00","BB","Protein Structure & Folding (1-4)",1),
+    ("2026-04-18","12:30","17:30","CP","Bonding & Intermolecular Forces",1),
+    ("2026-04-19","07:00","12:00","CARS","Foundations -- Main Idea & Passage Mapping",1),
     # Week 2
     ("2026-04-20","07:00","12:00","BB","Enzyme Kinetics & Regulation",2),
     ("2026-04-21","13:00","18:00","CP","Stoichiometry, Solutions & Concentration",2),

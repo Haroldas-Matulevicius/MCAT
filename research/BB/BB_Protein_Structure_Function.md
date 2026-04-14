@@ -130,7 +130,19 @@ For amino acids with an acidic side chain (Asp, Glu):
 For amino acids with a basic side chain (Lys, Arg, His):
 - You average the two highest pKa values: pI = (pKa2 + pKaR) / 2. For Lys: ~(9.5 + 10.5) / 2 = ~10.0.
 
-> **MCAT Tip:** A common question format shows electrophoresis or isoelectric focusing and asks which direction a peptide migrates at a given pH. If pH < pI, the molecule carries net positive charge and migrates toward the cathode (negative electrode). If pH > pI, net negative charge, migrates toward the anode (positive electrode). At pH = pI, no net migration.
+### 1.5b Electrophoresis and pI — Predicting Migration Direction
+
+This is a high-frequency MCAT question type. They give you a peptide's pI and the gel pH, and ask which direction it migrates. The rule:
+
+- **pH < pI** → the molecule has **net positive charge** (solution is more acidic than the neutral point, so extra protons keep it protonated) → migrates toward the **cathode (negative electrode)**
+- **pH > pI** → the molecule has **net negative charge** (solution is more basic, protons stripped off) → migrates toward the **anode (positive electrode)**
+- **pH = pI** → net zero charge → **no migration**
+
+**The intuition:** pI is the pH where the molecule is neutral. If the actual pH is lower (more acidic), there are more H⁺ in solution pushing the equilibrium toward protonation — the molecule becomes more positive. If the pH is higher (more basic), the molecule loses protons and becomes more negative. Opposite charges attract: positive molecules move toward the negative electrode, negative molecules toward the positive electrode.
+
+**Worked example:** A peptide with pI = 5.5 is placed in a gel at pH 8.0. Since pH (8.0) > pI (5.5), the peptide carries a net negative charge and migrates toward the anode (positive electrode).
+
+> **Isoelectric focusing (IEF):** A technique that separates proteins by pI. The gel has an immobilized pH gradient. Each protein migrates until it reaches the zone where pH = its pI, at which point it has zero net charge and stops. Proteins with different pI values stop at different positions.
 
 ### 1.6 Peptide Bond Formation
 

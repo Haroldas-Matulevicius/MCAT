@@ -85,7 +85,27 @@ These have side chains with pKa values above 7 (for K and R, far above), so they
 
 Both are fully deprotonated (negatively charged) at pH 7.4 because their pKa values are well below 7. They form **salt bridges** with positively charged residues (Lys, Arg) and coordinate metal ions in metalloenzymes. Aspartate is part of the catalytic triad in serine proteases.
 
-### 1.4 Acid-Base Behavior and pI Calculations
+### 1.4 Hydrophobicity Spectrum and Protein Localization
+
+Understanding where residues end up in a folded protein requires thinking beyond the simple "polar vs nonpolar" binary. Residues fall on a **spectrum** of hydrophobicity, and their position on that spectrum determines whether they are driven to the protein interior, surface, or can go either way.
+
+| Category | Residues | Typical location | Why |
+|----------|----------|------------------|-----|
+| **Hydrophobic** | A, V, L, I, F, W, M, P | Protein interior | Large nonpolar surface area; burying them maximizes the entropic hydrophobic effect |
+| **In between** | S, T, C, Y, G | Either — context-dependent | Small polar groups (-OH, -SH) can H-bond but lack the pull to demand surface exposure |
+| **Hydrophilic** | D, E, K, R, H, N, Q | Protein surface | Full ionic charges or large polar amide groups interact strongly with water; burying a charge in the low-dielectric protein interior is thermodynamically very costly |
+
+**Why "polar" does not automatically mean "hydrophilic" in this context:**
+
+The polar uncharged residues Ser, Thr, Cys, and Tyr have small polar groups — a single -OH or -SH. A single hydroxyl can hydrogen bond, but that interaction alone is not strong enough to force the residue to the protein surface. These residues are regularly found **both** on the surface and buried in the interior. This is functionally important: when Ser, Thr, or Cys are buried in an enzyme active site, their polar groups are what make them catalytically useful (e.g., the serine in the catalytic triad is buried, not surface-exposed). Cys residues forming disulfide bonds are often in the protein core.
+
+By contrast, burying a fully charged residue like Glu in the hydrophobic protein interior almost never happens unless it serves a very specific catalytic role, because placing a full charge in a low-dielectric environment is extremely unfavorable.
+
+Glycine lands in the middle as well — it is so small it has almost no hydrophobic or hydrophilic preference.
+
+> **MCAT Tip:** The exam most often tests the extremes (charged = surface, hydrophobic = core). But passages may describe a mutation that replaces a buried hydrophobic residue with a charged one — recognize that this destabilizes the protein because you are forcing a hydrophilic residue into the interior.
+
+### 1.5 Acid-Base Behavior and pI Calculations
 
 Every amino acid has at least two ionizable groups: the alpha-amino group (pKa ~9-10) and the alpha-carboxyl group (pKa ~2). Amino acids with ionizable side chains (D, E, C, Y, H, K, R) have a third pKa.
 
@@ -112,7 +132,7 @@ For amino acids with a basic side chain (Lys, Arg, His):
 
 > **MCAT Tip:** A common question format shows electrophoresis or isoelectric focusing and asks which direction a peptide migrates at a given pH. If pH < pI, the molecule carries net positive charge and migrates toward the cathode (negative electrode). If pH > pI, net negative charge, migrates toward the anode (positive electrode). At pH = pI, no net migration.
 
-### 1.5 Peptide Bond Formation
+### 1.6 Peptide Bond Formation
 
 Amino acids link through **peptide bonds** -- a condensation reaction between the carboxyl group of one amino acid and the amino group of the next, releasing water. The peptide bond has **partial double-bond character** due to resonance (the lone pair on nitrogen delocalizes into the carbonyl), which means:
 

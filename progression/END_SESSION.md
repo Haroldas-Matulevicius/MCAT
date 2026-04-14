@@ -10,6 +10,10 @@ Read this file when the user says "done", "wrap up", "end session", "end study s
 4. **Append to week file.** Write the consolidated log to the current week file's Session Logs section (replacing any raw snapshot entries).
 5. **Mark today as logged.** Change today's row from `[ ]` to `[x]` in the Logged column.
 6. **Confidence rating.** Ask for a confidence rating (0-5) on today's topic.
+7. **Commit and push to GitHub.** After all logs are written:
+   - Stage only the changed files (week file, research files, etc.)
+   - Commit with message format: `log: Day X [topic] — [brief progress summary]` (e.g., `log: Day 0 kickoff — amino acid foundations, quiz 6/10`)
+   - Push to remote automatically. Do not ask for confirmation — this is a routine log push.
 
 ## Saturday Escalation (Weekly Review)
 

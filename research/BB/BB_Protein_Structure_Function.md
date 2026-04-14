@@ -18,7 +18,17 @@ At physiological pH (~7.4), the amino group is protonated (positive) and the car
 
 ### 1.2 Stereochemistry: L vs D
 
-The alpha-carbon of every amino acid except glycine is a **chiral center** (four different groups). Biological proteins use exclusively **L-amino acids**. The naming convention comes from the Fischer projection: with the carboxyl group on top, the amino group is on the **left** for L-amino acids.
+The alpha-carbon of every amino acid except glycine is a **chiral center** (four different groups). Biological proteins use exclusively **L-amino acids**. The naming convention comes from the **Fischer projection**:
+
+```
+        COO⁻          (carboxyl group on TOP)
+         |
+  H₃N⁺—Cα—H          (amino group on the LEFT = L-amino acid)
+         |
+         R             (side chain on BOTTOM)
+```
+
+**How to read it:** In a Fischer projection, the horizontal bonds point **toward you** (out of the page) and the vertical bonds point **away from you** (into the page). For **L-amino acids**, the amino group (-NH₃⁺) is on the **left** side. For D-amino acids, it would be on the right. The "L" literally stands for *levo* (Latin for left). Remember: **L = Left = Life** (all biological amino acids are L).
 
 By the Cahn-Ingold-Pratt system, most L-amino acids are (S)-configured. The exception is **L-cysteine**, which is (R) because the sulfur in the side chain changes the priority ranking. This is a classic MCAT trap -- they love to test whether you understand that L/D and R/S are independent naming systems.
 

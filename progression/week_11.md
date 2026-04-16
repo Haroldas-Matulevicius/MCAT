@@ -1,5 +1,5 @@
-# Week 11 — Phase 1: Content Review
-**Jun 22 - Jun 27, 2026**
+# Week 11 — Phase 1/2 Transition
+**Jun 22 - Jun 28, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]
@@ -7,20 +7,21 @@
 
 ## Schedule
 
-| Date | Day | Time | Section | Topic | Logged |
-|------|-----|------|---------|-------|--------|
-| Jun 22 | Mon | 7:00 AM – 12:00 PM | BB | Immunology — Innate & Adaptive Immunity | [ ] |
-| Jun 23 | Tue | 1:00 PM – 6:00 PM | CP | Light, Optics & Diffraction | [ ] |
-| Jun 24 | Wed | 4:00 PM – 9:00 PM | PS | Sociological Theories & Social Institutions | [ ] |
-| Jun 25 | Thu | 1:00 PM – 6:00 PM | BB | Cardiovascular System & Blood | [ ] |
-| Jun 26 | Fri | 12:30 PM – 5:30 PM | CP | Nuclear Chemistry & Radioactive Decay | [ ] |
-| Jun 27 | Sat | 7:00 AM – 12:00 PM | CARS | Full Section Practice #2 + Comprehensive Review | [ ] |
+| Date | Day | Time | Section | Topic/Session | Logged |
+|------|-----|------|---------|-------------|--------|
+| Jun 22 | Mon | 7:00 AM – 12:00 PM | PS | Demographics, Stratification & Health Disparities | [ ] |
+| Jun 23 | Tue | 1:00 PM – 6:00 PM | BB | Digestive System & Nutrient Absorption | [ ] |
+| Jun 24 | Wed | 4:00 PM – 9:00 PM | CP | Research Design & Data Interpretation | [ ] |
+| Jun 25 | Thu | 1:00 PM – 6:00 PM | CARS | Timed Practice + Phase 1 Final Assessment | [ ] |
+| Jun 26 | Fri | 12:30 PM – 5:30 PM | ALL | Third-Party FL #1 (Full-Length) | [ ] |
+| Jun 27 | Sat | 7:00 AM – 12:00 PM | CP/CARS | FL #1 Review — CP & CARS | [ ] |
+| Jun 28 | Sun | 7:00 AM – 12:00 PM | BB/PS | FL #1 Review — BB & PS | [ ] |
 
 ## Session Logs
 
 <!-- Paste session log entries below after each study day -->
 
-## Weekly Review (Saturday)
+## Weekly Review (Sunday)
 - [ ] All session logs complete
 - [ ] Confidence map updated
 - [ ] Section confidence tracker updated

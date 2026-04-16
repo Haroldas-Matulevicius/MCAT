@@ -1,5 +1,5 @@
-# Week 17 — Phase 2: Practice & Integration
-**Aug 03 - Aug 08, 2026**
+# Week 17 — Phase 3: AAMC Materials
+**Aug 3 - Aug 9, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]
@@ -8,19 +8,20 @@
 ## Schedule
 
 | Date | Day | Time | Section | Session | Logged |
-|------|-----|------|---------|---------|--------|
-| Aug 03 | Mon | 7:00 AM – 12:00 PM | ALL | Third-Party FL #5 (Full-Length) | [ ] |
-| Aug 04 | Tue | 1:00 PM – 6:00 PM | ALL | FL #5 Full Review + Score Trend Analysis | [ ] |
-| Aug 05 | Wed | 4:00 PM – 9:00 PM | BB/CP | Content Gap Remediation — BB & CP | [ ] |
-| Aug 06 | Thu | 1:00 PM – 6:00 PM | PS/CARS | Content Gap Remediation — PS & CARS Maintenance | [ ] |
-| Aug 07 | Fri | 12:30 PM – 5:30 PM | ALL | Mixed Timed Practice + Strategy Review | [ ] |
-| Aug 08 | Sat | 7:00 AM – 12:00 PM | ALL | Phase 2 Assessment + Phase 3 Planning | [ ] |
+|------|-----|------|---------|-------|--------|
+| Aug 3 | Mon | 7:00 AM – 12:00 PM | CP | AAMC Section Bank — CP | [ ] |
+| Aug 4 | Tue | 1:00 PM – 6:00 PM | PS | AAMC Section Bank — PS | [ ] |
+| Aug 5 | Wed | 4:00 PM – 9:00 PM | ALL | Section Bank Full Review Day | [ ] |
+| Aug 6 | Thu | 1:00 PM – 6:00 PM | ALL | AAMC FL 1 (Full-Length) | [ ] |
+| Aug 7 | Fri | 12:30 PM – 5:30 PM | ALL | AAMC FL 1 — Full Review | [ ] |
+| Aug 8 | Sat | 7:00 AM – 12:00 PM | ALL | Targeted Weak Area Review | [ ] |
+| Aug 9 | Sun | 7:00 AM – 12:00 PM | ALL | AAMC FL 2 (Full-Length) | [ ] |
 
 ## Session Logs
 
 <!-- Paste session log entries below after each study day -->
 
-## Weekly Review (Saturday)
+## Weekly Review (Sunday)
 - [ ] All session logs complete
 - [ ] Confidence map updated
 - [ ] Section confidence tracker updated

@@ -5,10 +5,10 @@ You are an MCAT coach and tutor built specifically for Haroldas (Limitz). You ar
 ## Student Profile
 
 - **Name:** Haroldas (Limitz)
-- **Target exam:** Early October 2026
+- **Target exam:** Mid-October 2026
 - **Baseline:** Content review phase, starting from scratch on most topics
 - **Goal:** Competitive MCAT score (518+)
-- **Schedule:** 6 days/week, ~5 hrs/day
+- **Schedule:** 7 days/week, ~5 hrs/day
 - **Study tools:** Kaplan 2024 books, JackSparrow Anki deck, Anki (Windows 24.x)
 - **Strengths:** TBD after first few weeks
 - **Weaknesses:** TBD after first few weeks
@@ -21,9 +21,10 @@ You are an MCAT coach and tutor built specifically for Haroldas (Limitz). You ar
 - Daily structure: 3 hrs content | 1.5 hrs Anki | 30 min practice Qs
 
 Phases:
-1. Content Review (Apr--Jul)
-2. Practice & Integration (Jul--Aug)
-3. AAMC Materials (Sep--Oct)
+1. Content Review (Apr 14 -- Jun 25, Weeks 1-10 + first half of Week 11)
+2. Practice & Integration (Jun 26 -- Jul 26, second half of Week 11 through Week 15)
+3. AAMC Materials (Jul 26 -- Aug 20, Weeks 15-19)
+4. Buffer & Review (Aug 21 -- Sep 12, Weeks 20-22, all free days)
 
 Update this section when transitioning between phases.
 
@@ -61,12 +62,18 @@ All schedule, logs, and tracking live here. Split by week for lean context loadi
 - `progression/gen_ics.py` -- Script to regenerate the ICS file.
 
 **Week file date ranges:**
-- Kickoff: Apr 13 | Weeks 1-12: Apr 14 - Jul 4 (Phase 1: Content Review)
-- Weeks 13-17: Jul 6 - Aug 8 (Phase 2: Practice & Integration)
-- Weeks 18-22: Aug 10 - Sep 12 (Phase 3: AAMC Materials)
+- Kickoff: Apr 13 | Week 1: Apr 14-19 (Tue-Sun)
+- Weeks 2-10: Apr 20 - Jun 21 (Phase 1: Content Review)
+- Week 11: Jun 22-28 (Phase 1/2 Transition)
+- Weeks 12-14: Jun 29 - Jul 19 (Phase 2: Practice & Integration)
+- Week 15: Jul 20-26 (Phase 2/3 Transition)
+- Weeks 16-19: Jul 27 - Aug 23 (Phase 3: AAMC Materials)
+- Weeks 20-22: Aug 24 - Sep 12 (Buffer & Review — all free days)
 
-**Weekly time blocks (constant):**
-Mon 7AM-12PM (BB) | Tue 1-6PM (CP) | Wed 4-9PM (PS) | Thu 1-6PM (BB) | Fri 12:30-5:30PM (CP) | Sat 7AM-12PM (CARS) | Sun OFF
+**Weekly time blocks (constant, 7 days/week):**
+Mon 7AM-12PM | Tue 1-6PM | Wed 4-9PM | Thu 1-6PM | Fri 12:30-5:30PM | Sat 7AM-12PM | Sun 7AM-12PM
+
+Note: Subjects rotate through days based on content sequence — no fixed day-subject mapping.
 
 ### Content Reference Files (topic outlines)
 

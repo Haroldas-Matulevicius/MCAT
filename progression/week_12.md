@@ -1,5 +1,5 @@
-# Week 12 — Phase 1: Content Review
-**Jun 29 - Jul 04, 2026**
+# Week 12 — Phase 2: Practice & Integration
+**Jun 29 - Jul 5, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]
@@ -7,20 +7,21 @@
 
 ## Schedule
 
-| Date | Day | Time | Section | Topic | Logged |
+| Date | Day | Time | Section | Session | Logged |
 |------|-----|------|---------|-------|--------|
-| Jun 29 | Mon | 7:00 AM – 12:00 PM | BB | Respiratory System & Gas Exchange | [ ] |
-| Jun 30 | Tue | 1:00 PM – 6:00 PM | CP | Math Skills, Units & Dimensional Analysis | [ ] |
-| Jul 01 | Wed | 4:00 PM – 9:00 PM | PS | Demographics, Stratification & Health Disparities | [ ] |
-| Jul 02 | Thu | 1:00 PM – 6:00 PM | BB | Digestive System & Nutrient Absorption | [ ] |
-| Jul 03 | Fri | 12:30 PM – 5:30 PM | CP | Research Design & Data Interpretation | [ ] |
-| Jul 04 | Sat | 7:00 AM – 12:00 PM | CARS | Timed Practice + Phase 1 Final Assessment | [ ] |
+| Jun 29 | Mon | 7:00 AM – 12:00 PM | BB | BB Passage-Based Practice (59 Qs timed) | [ ] |
+| Jun 30 | Tue | 1:00 PM – 6:00 PM | CP | CP Passage-Based Practice (59 Qs timed) | [ ] |
+| Jul 1 | Wed | 4:00 PM – 9:00 PM | CARS/PS | CARS Full Section + PS Practice | [ ] |
+| Jul 2 | Thu | 1:00 PM – 6:00 PM | VARIES | Weak Area Deep Dive #1 — Highest Priority | [ ] |
+| Jul 3 | Fri | 12:30 PM – 5:30 PM | VARIES | Weak Area Deep Dive #2 | [ ] |
+| Jul 4 | Sat | 7:00 AM – 12:00 PM | CARS | CARS Intensive — 6 Passages Timed | [ ] |
+| Jul 5 | Sun | 7:00 AM – 12:00 PM | ALL | Third-Party FL #2 (Full-Length) | [ ] |
 
 ## Session Logs
 
 <!-- Paste session log entries below after each study day -->
 
-## Weekly Review (Saturday)
+## Weekly Review (Sunday)
 - [ ] All session logs complete
 - [ ] Confidence map updated
 - [ ] Section confidence tracker updated

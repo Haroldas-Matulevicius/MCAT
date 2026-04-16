@@ -1,5 +1,5 @@
-# Week 16 — Phase 2: Practice & Integration
-**Jul 27 - Aug 01, 2026**
+# Week 16 — Phase 3: AAMC Materials
+**Jul 27 - Aug 2, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]
@@ -8,19 +8,20 @@
 ## Schedule
 
 | Date | Day | Time | Section | Session | Logged |
-|------|-----|------|---------|---------|--------|
-| Jul 27 | Mon | 7:00 AM – 12:00 PM | ALL | Third-Party FL #4 (Full-Length) | [ ] |
-| Jul 28 | Tue | 1:00 PM – 6:00 PM | ALL | FL #4 Full Review + Error Log Analysis | [ ] |
-| Jul 29 | Wed | 4:00 PM – 9:00 PM | BB | Biochemistry Integration Review | [ ] |
-| Jul 30 | Thu | 1:00 PM – 6:00 PM | CP | Physics + Gen Chem Problem-Solving | [ ] |
-| Jul 31 | Fri | 12:30 PM – 5:30 PM | PS | PS Comprehensive Section Practice | [ ] |
-| Aug 01 | Sat | 7:00 AM – 12:00 PM | CARS | CARS Strategy Refinement + Phase 3 Planning | [ ] |
+|------|-----|------|---------|-------|--------|
+| Jul 27 | Mon | 7:00 AM – 12:00 PM | CP | AAMC QPack — Chemistry Vol 1 | [ ] |
+| Jul 28 | Tue | 1:00 PM – 6:00 PM | CP | AAMC QPack — Physics | [ ] |
+| Jul 29 | Wed | 4:00 PM – 9:00 PM | BB | AAMC QPack — Biology Vol 2 | [ ] |
+| Jul 30 | Thu | 1:00 PM – 6:00 PM | CP | AAMC QPack — Chemistry Vol 2 | [ ] |
+| Jul 31 | Fri | 12:30 PM – 5:30 PM | CARS | AAMC CARS QPack Vol 1 | [ ] |
+| Aug 1 | Sat | 7:00 AM – 12:00 PM | CARS | AAMC CARS QPack Vol 2 | [ ] |
+| Aug 2 | Sun | 7:00 AM – 12:00 PM | BB | AAMC Section Bank — BB | [ ] |
 
 ## Session Logs
 
 <!-- Paste session log entries below after each study day -->
 
-## Weekly Review (Saturday)
+## Weekly Review (Sunday)
 - [ ] All session logs complete
 - [ ] Confidence map updated
 - [ ] Section confidence tracker updated

@@ -1,5 +1,5 @@
 # Week 13 — Phase 2: Practice & Integration
-**Jul 06 - Jul 11, 2026**
+**Jul 6 - Jul 12, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]
@@ -8,19 +8,20 @@
 ## Schedule
 
 | Date | Day | Time | Section | Session | Logged |
-|------|-----|------|---------|---------|--------|
-| Jul 06 | Mon | 7:00 AM – 12:00 PM | ALL | Third-Party FL #1 (Full-Length) | [ ] |
-| Jul 07 | Tue | 1:00 PM – 6:00 PM | CP/CARS | FL #1 Review — CP & CARS | [ ] |
-| Jul 08 | Wed | 4:00 PM – 9:00 PM | BB/PS | FL #1 Review — BB & PS | [ ] |
-| Jul 09 | Thu | 1:00 PM – 6:00 PM | BB | BB Passage-Based Practice (59 Qs timed) | [ ] |
-| Jul 10 | Fri | 12:30 PM – 5:30 PM | CP | CP Passage-Based Practice (59 Qs timed) | [ ] |
-| Jul 11 | Sat | 7:00 AM – 12:00 PM | CARS/PS | CARS Full Section + PS Practice | [ ] |
+|------|-----|------|---------|-------|--------|
+| Jul 6 | Mon | 7:00 AM – 12:00 PM | ALL | FL #2 Full Review | [ ] |
+| Jul 7 | Tue | 1:00 PM – 6:00 PM | ALL | Mixed Section Practice + Anki Marathon | [ ] |
+| Jul 8 | Wed | 4:00 PM – 9:00 PM | ALL | Third-Party FL #3 (Full-Length) | [ ] |
+| Jul 9 | Thu | 1:00 PM – 6:00 PM | ALL | FL #3 Full Review + Error Pattern Analysis | [ ] |
+| Jul 10 | Fri | 12:30 PM – 5:30 PM | BB/CP | Data Interpretation & Experimental Design | [ ] |
+| Jul 11 | Sat | 7:00 AM – 12:00 PM | PS | PS Deep Dive — Research Methods & Epidemiology | [ ] |
+| Jul 12 | Sun | 7:00 AM – 12:00 PM | CP | CP Calculation Drill + Physics Problem Workshop | [ ] |
 
 ## Session Logs
 
 <!-- Paste session log entries below after each study day -->
 
-## Weekly Review (Saturday)
+## Weekly Review (Sunday)
 - [ ] All session logs complete
 - [ ] Confidence map updated
 - [ ] Section confidence tracker updated

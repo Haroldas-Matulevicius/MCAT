@@ -1,9 +1,9 @@
 # Week 1 — Phase 1: Content Review
-**Apr 14 - Apr 19, 2026**
+**Apr 14 - Apr 20, 2026**
 
 ## Pre-flight
 - **Previous week:** ✓ Complete (Kickoff Day 0 logged, quiz 6/10)
-- **Carry-over:** pKa application under pressure still shaky; revisit denaturation vs degradation distinction and SDS-PAGE logic (flagged for Thu protein structure session)
+- **Carry-over:** pKa application under pressure still shaky; revisit denaturation vs degradation distinction and SDS-PAGE logic (flagged for protein structure session)
 
 ## Schedule
 
@@ -11,10 +11,11 @@
 |------|-----|------|---------|-------|--------|
 | Apr 14 | Tue | 1:00 PM – 6:00 PM | BB | Amino Acids — All 20 Structures & Properties | [x] |
 | Apr 15 | Wed | 4:00 PM – 9:00 PM | CP | Atomic Structure & Periodic Trends | [x] |
-| Apr 16 | Thu | 1:00 PM – 6:00 PM | CP | Nuclear Chemistry, Stoichiometry & Oxidation Numbers | [ ] |
-| Apr 17 | Fri | 12:30 PM – 5:30 PM | PS | Biological Bases of Behavior & Neuroscience | [ ] |
-| Apr 18 | Sat | 7:00 AM – 12:00 PM | BB | Protein Structure & Folding (1-4) | [ ] |
-| Apr 19 | Sun | 7:00 AM – 12:00 PM | CP | Bonding & Intermolecular Forces | [ ] |
+| Apr 16 | Thu | 1:00 PM – 6:00 PM | -- | REST / FLEX — catch-up Anki, light review, or off | [ ] |
+| Apr 17 | Fri | 12:30 PM – 5:30 PM | CP | Nuclear Chemistry, Stoichiometry & Oxidation Numbers | [ ] |
+| Apr 18 | Sat | 7:00 AM – 12:00 PM | PS | Biological Bases of Behavior & Neuroscience | [ ] |
+| Apr 19 | Sun | 7:00 AM – 12:00 PM | BB | Protein Structure & Folding (1-4) | [ ] |
+| Apr 20 | Mon | 7:00 AM – 12:00 PM | CP | Bonding & Intermolecular Forces | [ ] |
 
 ## Session Logs
 
@@ -67,7 +68,7 @@
 - Element families: alkali metals, alkaline earth, transition metals, halogens, noble gases, metalloids
 - Mnemonics reviewed: SPDF, BEAR, FONClBrISCH, Hotel Analogy
 
-**NOT covered (deferred to Thu Apr 16 — Part 2):**
+**NOT covered (deferred to Fri Apr 17 — Part 2):**
 - Nuclear chemistry (decay types, half-life, binding energy, medical applications)
 - Stoichiometry (moles, empirical/molecular formulas, limiting reagent, yield, oxidation numbers)
 
@@ -81,7 +82,10 @@
 
 **Schedule change:** Today's content was too dense (4 Kaplan chapters in one session). Split into 2 days, triggering full schedule restructure: Sundays added as study days, cascade applied, content now finishes ~3 weeks early with buffer weeks 20-22.
 
-## Weekly Review (Sunday)
+### Apr 16 — REST / FLEX DAY
+Schedule delayed by 1 day (Day 3 moved to Apr 17). Today is a catch-up / rest day. Suggested use: Anki reinforcement on yesterday's weak spots (F vs Cl EA, Cr/Cu exceptions, Cu²⁺ = [Ar] 3d⁹, Group 2→13 and 15→16 IE dips), light review of Day 1 & 2 notes, or full rest.
+
+## Weekly Review (Monday)
 - [ ] All session logs complete
 - [ ] Confidence map updated
 - [ ] Section confidence tracker updated

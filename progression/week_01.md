@@ -1,5 +1,5 @@
 # Week 1 — Phase 1: Content Review
-**Apr 14 - Apr 20, 2026**
+**Apr 14 - Apr 19, 2026**
 
 ## Pre-flight
 - **Previous week:** ✓ Complete (Kickoff Day 0 logged, quiz 6/10)
@@ -15,7 +15,6 @@
 | Apr 17 | Fri | 12:30 PM – 5:30 PM | CP | Nuclear Chemistry, Stoichiometry & Oxidation Numbers | [ ] |
 | Apr 18 | Sat | 7:00 AM – 12:00 PM | PS | Biological Bases of Behavior & Neuroscience | [ ] |
 | Apr 19 | Sun | 7:00 AM – 12:00 PM | BB | Protein Structure & Folding (1-4) | [ ] |
-| Apr 20 | Mon | 7:00 AM – 12:00 PM | CP | Bonding & Intermolecular Forces | [ ] |
 
 ## Session Logs
 
@@ -54,7 +53,7 @@
 **Research file updated:** Added Section 1.4 (Hydrophobicity Spectrum and Protein Localization) to BB_Protein_Structure_Function.md
 
 ### Apr 15 — Day 2: Atomic Structure & Periodic Trends (Part 1 of 2)
-**Confidence: 3/5** (covered 4 of 6 blocks — nuclear chem & stoich deferred to tomorrow)
+**Confidence: 3/5** (covered 4 of 6 blocks — nuclear chem & stoich deferred to Apr 17)
 
 **Topics covered:**
 - Atomic structure: subatomic particles, atomic/mass number, isotopes, ions
@@ -85,7 +84,7 @@
 ### Apr 16 — REST / FLEX DAY
 Schedule delayed by 1 day (Day 3 moved to Apr 17). Today is a catch-up / rest day. Suggested use: Anki reinforcement on yesterday's weak spots (F vs Cl EA, Cr/Cu exceptions, Cu²⁺ = [Ar] 3d⁹, Group 2→13 and 15→16 IE dips), light review of Day 1 & 2 notes, or full rest.
 
-## Weekly Review (Monday)
+## Weekly Review (Sunday)
 - [ ] All session logs complete
 - [ ] Confidence map updated
 - [ ] Section confidence tracker updated

@@ -1,5 +1,5 @@
 # Week 22 — Buffer & Review
-**Sep 8 - Sep 13, 2026**
+**Sep 7 - Sep 13, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]
@@ -9,6 +9,7 @@
 
 | Date | Day | Time | Section | Session | Logged |
 |------|-----|------|---------|-------|--------|
+| Sep 7 | Mon | 7:00 AM – 12:00 PM | -- | FREE — Review / Rest / Weak Areas | [ ] |
 | Sep 8 | Tue | 1:00 PM – 6:00 PM | -- | FREE — Review / Rest / Weak Areas | [ ] |
 | Sep 9 | Wed | 4:00 PM – 9:00 PM | -- | FREE — Review / Rest / Weak Areas | [ ] |
 | Sep 10 | Thu | 1:00 PM – 6:00 PM | -- | FREE — Review / Rest / Weak Areas | [ ] |

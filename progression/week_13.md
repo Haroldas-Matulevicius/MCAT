@@ -9,13 +9,13 @@
 
 | Date | Day | Time | Section | Session | Logged |
 |------|-----|------|---------|-------|--------|
-| Jul 6 | Mon | 7:00 AM – 12:00 PM | ALL | Third-Party FL #2 (Full-Length) | [ ] |
-| Jul 7 | Tue | 1:00 PM – 6:00 PM | ALL | FL #2 Full Review | [ ] |
-| Jul 8 | Wed | 4:00 PM – 9:00 PM | ALL | Mixed Section Practice + Anki Marathon | [ ] |
-| Jul 9 | Thu | 1:00 PM – 6:00 PM | ALL | Third-Party FL #3 (Full-Length) | [ ] |
-| Jul 10 | Fri | 12:30 PM – 5:30 PM | ALL | FL #3 Full Review + Error Pattern Analysis | [ ] |
-| Jul 11 | Sat | 7:00 AM – 12:00 PM | BB/CP | Data Interpretation & Experimental Design | [ ] |
-| Jul 12 | Sun | 7:00 AM – 12:00 PM | PS | PS Deep Dive — Research Methods & Epidemiology | [ ] |
+| Jul 6 | Mon | 7:00 AM – 12:00 PM | CARS | CARS Intensive — 6 Passages Timed | [ ] |
+| Jul 7 | Tue | 1:00 PM – 6:00 PM | ALL | Third-Party FL #2 (Full-Length) | [ ] |
+| Jul 8 | Wed | 4:00 PM – 9:00 PM | ALL | FL #2 Full Review | [ ] |
+| Jul 9 | Thu | 1:00 PM – 6:00 PM | ALL | Mixed Section Practice + Anki Marathon | [ ] |
+| Jul 10 | Fri | 12:30 PM – 5:30 PM | ALL | Third-Party FL #3 (Full-Length) | [ ] |
+| Jul 11 | Sat | 7:00 AM – 12:00 PM | ALL | FL #3 Full Review + Error Pattern Analysis | [ ] |
+| Jul 12 | Sun | 7:00 AM – 12:00 PM | BB/CP | Data Interpretation & Experimental Design | [ ] |
 
 ## Session Logs
 

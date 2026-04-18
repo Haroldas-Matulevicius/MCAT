@@ -9,13 +9,13 @@
 
 | Date | Day | Time | Section | Topic | Logged |
 |------|-----|------|---------|-----|--------|
-| Apr 27 | Mon | 7:00 AM – 12:00 PM | CARS | Author Tone & Rhetorical Strategy | [ ] |
-| Apr 28 | Tue | 1:00 PM – 6:00 PM | BB | DNA Structure, Replication & Repair | [ ] |
-| Apr 29 | Wed | 4:00 PM – 9:00 PM | CP | Chemical Kinetics | [ ] |
-| Apr 30 | Thu | 1:00 PM – 6:00 PM | PS | Learning — Classical & Operant Conditioning | [ ] |
-| May 1 | Fri | 12:30 PM – 5:30 PM | BB | Transcription & RNA Processing | [ ] |
-| May 2 | Sat | 7:00 AM – 12:00 PM | CP | Chemical Equilibrium | [ ] |
-| May 3 | Sun | 7:00 AM – 12:00 PM | CARS | Evidence vs Opinion & Argument Structure | [ ] |
+| Apr 27 | Mon | 7:00 AM – 12:00 PM | CP | Thermodynamics & Thermochemistry | [ ] |
+| Apr 28 | Tue | 1:00 PM – 6:00 PM | CARS | Author Tone & Rhetorical Strategy | [ ] |
+| Apr 29 | Wed | 4:00 PM – 9:00 PM | BB | DNA Structure, Replication & Repair | [ ] |
+| Apr 30 | Thu | 1:00 PM – 6:00 PM | CP | Chemical Kinetics | [ ] |
+| May 1 | Fri | 12:30 PM – 5:30 PM | PS | Learning — Classical & Operant Conditioning | [ ] |
+| May 2 | Sat | 7:00 AM – 12:00 PM | BB | Transcription & RNA Processing | [ ] |
+| May 3 | Sun | 7:00 AM – 12:00 PM | CP | Chemical Equilibrium | [ ] |
 
 ## Session Logs
 

@@ -2,7 +2,7 @@
 
 Date-to-week lookup. Read this file to find the current week file based on today's date.
 
-**Last updated:** 2026-04-16 (Day 3 delayed 1 day; Apr 16 now REST/FLEX. Weeks remain Mon-Sun; topics cascaded +1 day through queue so final prep day is now Sep 13.)
+**Last updated:** 2026-04-17 (Day 3 delayed AGAIN 1 day; Apr 17 now also REST/FLEX. Weeks remain Mon-Sun; topics cascaded +1 more day through queue. Final substantive prep day now Aug 22 (PS/CARS Final Light Review). Buffer weeks 20-22 absorb extra day with one less FREE day.)
 
 | Week | Dates | File | Phase |
 |------|-------|------|-------|

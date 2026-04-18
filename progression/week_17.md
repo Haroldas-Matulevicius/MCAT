@@ -9,13 +9,13 @@
 
 | Date | Day | Time | Section | Session | Logged |
 |------|-----|------|---------|-------|--------|
-| Aug 3 | Mon | 7:00 AM – 12:00 PM | BB | AAMC Section Bank — BB | [ ] |
-| Aug 4 | Tue | 1:00 PM – 6:00 PM | CP | AAMC Section Bank — CP | [ ] |
-| Aug 5 | Wed | 4:00 PM – 9:00 PM | PS | AAMC Section Bank — PS | [ ] |
-| Aug 6 | Thu | 1:00 PM – 6:00 PM | ALL | Section Bank Full Review Day | [ ] |
-| Aug 7 | Fri | 12:30 PM – 5:30 PM | ALL | AAMC FL 1 (Full-Length) | [ ] |
-| Aug 8 | Sat | 7:00 AM – 12:00 PM | ALL | AAMC FL 1 — Full Review | [ ] |
-| Aug 9 | Sun | 7:00 AM – 12:00 PM | ALL | Targeted Weak Area Review | [ ] |
+| Aug 3 | Mon | 7:00 AM – 12:00 PM | CARS | AAMC CARS QPack Vol 2 | [ ] |
+| Aug 4 | Tue | 1:00 PM – 6:00 PM | BB | AAMC Section Bank — BB | [ ] |
+| Aug 5 | Wed | 4:00 PM – 9:00 PM | CP | AAMC Section Bank — CP | [ ] |
+| Aug 6 | Thu | 1:00 PM – 6:00 PM | PS | AAMC Section Bank — PS | [ ] |
+| Aug 7 | Fri | 12:30 PM – 5:30 PM | ALL | Section Bank Full Review Day | [ ] |
+| Aug 8 | Sat | 7:00 AM – 12:00 PM | ALL | AAMC FL 1 (Full-Length) | [ ] |
+| Aug 9 | Sun | 7:00 AM – 12:00 PM | ALL | AAMC FL 1 — Full Review | [ ] |
 
 ## Session Logs
 

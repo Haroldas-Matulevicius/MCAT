@@ -12,9 +12,9 @@
 | Apr 14 | Tue | 1:00 PM – 6:00 PM | BB | Amino Acids — All 20 Structures & Properties | [x] |
 | Apr 15 | Wed | 4:00 PM – 9:00 PM | CP | Atomic Structure & Periodic Trends | [x] |
 | Apr 16 | Thu | 1:00 PM – 6:00 PM | -- | REST / FLEX — catch-up Anki, light review, or off | [ ] |
-| Apr 17 | Fri | 12:30 PM – 5:30 PM | CP | Nuclear Chemistry, Stoichiometry & Oxidation Numbers | [ ] |
-| Apr 18 | Sat | 7:00 AM – 12:00 PM | PS | Biological Bases of Behavior & Neuroscience | [ ] |
-| Apr 19 | Sun | 7:00 AM – 12:00 PM | BB | Protein Structure & Folding (1-4) | [ ] |
+| Apr 17 | Fri | 12:30 PM – 5:30 PM | -- | REST / FLEX — no study today (cascade +1 day) | [ ] |
+| Apr 18 | Sat | 7:00 AM – 12:00 PM | CP | Nuclear Chemistry, Stoichiometry & Oxidation Numbers | [ ] |
+| Apr 19 | Sun | 7:00 AM – 12:00 PM | PS | Biological Bases of Behavior & Neuroscience | [ ] |
 
 ## Session Logs
 
@@ -83,6 +83,9 @@
 
 ### Apr 16 — REST / FLEX DAY
 Schedule delayed by 1 day (Day 3 moved to Apr 17). Today is a catch-up / rest day. Suggested use: Anki reinforcement on yesterday's weak spots (F vs Cl EA, Cr/Cu exceptions, Cu²⁺ = [Ar] 3d⁹, Group 2→13 and 15→16 IE dips), light review of Day 1 & 2 notes, or full rest.
+
+### Apr 17 — REST / FLEX DAY (second cascade)
+Day 3 (Nuclear Chem, Stoichiometry & Oxidation Numbers) pushed back another day to Apr 18. Today became a no-study day. All downstream content cascaded +1 day; Week 1's final topic (BB Protein Structure & Folding) now lands on Week 2 Day 1 (Apr 20 Mon). End date pushes from Sep 13 → Sep 14 (absorbed by Week 22 buffer).
 
 ## Weekly Review (Sunday)
 - [ ] All session logs complete

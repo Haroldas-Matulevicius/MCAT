@@ -13,7 +13,7 @@
 | Apr 15 | Wed | 4:00 PM – 9:00 PM | CP | Atomic Structure & Periodic Trends | [x] |
 | Apr 16 | Thu | 1:00 PM – 6:00 PM | -- | REST / FLEX — catch-up Anki, light review, or off | [ ] |
 | Apr 17 | Fri | 12:30 PM – 5:30 PM | -- | REST / FLEX — no study today (cascade +1 day) | [ ] |
-| Apr 18 | Sat | 7:00 AM – 12:00 PM | CP | Nuclear Chemistry, Stoichiometry & Oxidation Numbers | [ ] |
+| Apr 18 | Sat | 7:00 AM – 12:00 PM | CP | Stoichiometry, Reactions & Ions (Gen Chem Ch 4) | [x] |
 | Apr 19 | Sun | 7:00 AM – 12:00 PM | PS | Biological Bases of Behavior & Neuroscience | [ ] |
 
 ## Session Logs
@@ -86,6 +86,38 @@ Schedule delayed by 1 day (Day 3 moved to Apr 17). Today is a catch-up / rest da
 
 ### Apr 17 — REST / FLEX DAY (second cascade)
 Day 3 (Nuclear Chem, Stoichiometry & Oxidation Numbers) pushed back another day to Apr 18. Today became a no-study day. All downstream content cascaded +1 day; Week 1's final topic (BB Protein Structure & Folding) now lands on Week 2 Day 1 (Apr 20 Mon). End date pushes from Sep 13 → Sep 14 (absorbed by Week 22 buffer).
+
+### Apr 18 — Day 3: Stoichiometry, Reactions & Ions (Gen Chem Ch 4)
+**Confidence: 4/5**
+
+**Topics covered:**
+- Complete Kaplan Gen Chem Ch 4: mole concept, Avogadro's number, molar mass conversions, empirical vs molecular formulas, percent composition
+- Equivalents, gram equivalent weight (GEW = molar mass / n), normality (N = M × n), equivalence-point relation (N_a V_a = N_b V_b)
+- Reaction classification: combination, decomposition, single displacement (always redox), double displacement (precipitation, neutralization — rarely redox), combustion (always redox), disproportionation
+- Activity series concept (metals above H react with acids; Cu/Ag/Au don't)
+- Balancing chemical equations (MNHO order; combustion CHO variant)
+- Limiting reagent 5-step workflow with worked examples
+- Theoretical / actual / percent yield
+- Oxidation number assignment rules (FOH sum priority) with worked examples
+- Ion nomenclature: monatomic cations/anions, transition metals (Stock vs classical -ic/-ous), polyatomic ions table, oxyanion prefix/suffix ladder (per-/-ate/-ite/hypo-), acid-from-anion conversion
+- Quiz: 10 MCAT-style questions, scored **8/10**
+
+**Weak spots:**
+- Limiting reagent edge case (Q2 miss): when reactants are in stoichiometrically exact ratios, NEITHER is limiting — both run out together. Trap answer pattern.
+- Classical cation suffixes (Q9 miss): "-ic = higher charge, -ous = lower charge" — missed despite being covered. Anki candidate.
+- Mercurous ion = Hg₂²⁺ (dimer, two Hg atoms sharing +2 charge), not Hg⁺ — unusual exception.
+
+**Note on schedule label:** Original Apr 18 label was "Nuclear Chemistry, Stoichiometry & Oxidation Numbers" — but nuclear chem has its own dedicated 5-hour slot on Jun 20 (Week 10). Today's scope correctly covered Ch 4 (Stoichiometry, Reactions & Ions) in full. Schedule labels updated in week_01.md, week_02.md (Apr 24 reverted to "Solutions & Concentration (Gen Chem Ch 9)"), and gen_ics.py. ICS regenerated — reimport to Google Calendar.
+
+**File updates (gap remediation):**
+- research/CP/CP_Atoms_Nuclear.md — added Section 7 "Reaction Classification" (Kaplan Ch 4 tagged); added "Equivalents and Normality" subsection; Section 6 re-titled with Ch 4 chapter pairing note; High-Yield Takeaways extended to 10 items
+- Content/CP/CP_Atoms_Nuclear.md — added outline bullets for equivalents/normality and reaction classification; Kaplan reference line updated
+- mnemonics/CP/CP_Atoms_Nuclear.md — added Ch 4 mnemonics section (OIL RIG, MNHO, Per is More/Hypo is Low, activity series sentence)
+
+**For tomorrow (Apr 19, Sun) — PS Day 1:**
+- Biological Bases of Behavior & Neuroscience
+- Anki carry-over: Day 2 weak spots (F vs Cl EA, Cr/Cu exceptions, Cu²⁺ = [Ar] 3d⁹, Group 2→13 and 15→16 IE dips) + Day 3 (classical cation suffixes, limiting reagent edge case, mercurous dimer Hg₂²⁺)
+- Sunday is end-of-week 1 — weekly review items deferred to tomorrow's wrap-up
 
 ## Weekly Review (Sunday)
 - [ ] All session logs complete

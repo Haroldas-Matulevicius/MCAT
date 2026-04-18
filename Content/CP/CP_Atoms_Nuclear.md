@@ -18,5 +18,7 @@ Parent section: Foundational Concept 4 — Physical processes underlie biologica
 - Medical applications: PET scans, radiation therapy
 - Stoichiometry: molecular weight, empirical/molecular formulas, mole concept, Avogadro's number, balancing equations, limiting reagents, theoretical yield, percent composition
 - Oxidation numbers
+- Equivalents, gram equivalent weight (GEW = molar mass / n), normality (N = M × n), equivalence-point relation (N_a V_a = N_b V_b)
+- Reaction classification (Ch 4): combination, decomposition, single displacement, double displacement (precipitation, neutralization), combustion, disproportionation — plus redox pattern recognition and activity series
 
-Kaplan: Gen Chem Ch 1 (Atomic Structure), Ch 2 (Periodic Table), Ch 4 (Stoichiometry), Physics Ch 9 (Atomic/Nuclear)
+Kaplan: Gen Chem Ch 1 (Atomic Structure), Ch 2 (Periodic Table), Ch 4 (Stoichiometry & Reaction Types — includes equivalents, normality, reaction classification), Physics Ch 9 (Atomic/Nuclear)

@@ -40,14 +40,14 @@ phase1 = [
     # Week 1 (Apr 14-19) -- Apr 16 & 17 are REST/FLEX (no events)
     ("2026-04-14", "BB",   "Amino Acids -- All 20 Structures & Properties", 1),
     ("2026-04-15", "CP",   "Atomic Structure & Periodic Trends", 1),
-    ("2026-04-18", "CP",   "Nuclear Chemistry, Stoichiometry & Oxidation Numbers", 1),
+    ("2026-04-18", "CP",   "Stoichiometry, Reactions & Ions (Gen Chem Ch 4)", 1),
     ("2026-04-19", "PS",   "Biological Bases of Behavior & Neuroscience", 1),
     # Week 2 (Apr 20-26)
     ("2026-04-20", "BB",   "Protein Structure & Folding (1-4)", 2),
     ("2026-04-21", "CP",   "Bonding & Intermolecular Forces", 2),
     ("2026-04-22", "CARS", "Foundations -- Main Idea & Passage Mapping", 2),
     ("2026-04-23", "BB",   "Enzyme Kinetics & Regulation", 2),
-    ("2026-04-24", "CP",   "Stoichiometry, Solutions & Concentration", 2),
+    ("2026-04-24", "CP",   "Solutions & Concentration (Gen Chem Ch 9)", 2),
     ("2026-04-25", "PS",   "Sensation, Perception & Attention", 2),
     ("2026-04-26", "BB",   "Non-Enzymatic Protein Function & Lab Techniques", 2),
     # Week 3 (Apr 27-May 3)

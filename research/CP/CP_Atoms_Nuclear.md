@@ -385,7 +385,9 @@ This is the energy you would need to input to completely disassemble the nucleus
 
 ---
 
-## 6. Stoichiometry
+## 6. Stoichiometry (Kaplan Gen Chem Ch 4)
+
+**Chapter pairing:** Stoichiometry and reaction types are both taught in Kaplan Gen Chem Ch 4. Always teach them together — the MCAT routinely gives you a reaction, asks you to classify it, balance it, and then run a stoichiometry calculation on it in the same item set.
 
 ### Molecular Weight and Mole Concept
 
@@ -465,6 +467,160 @@ Example: What is the oxidation state of Mn in KMnO4?
 
 **MCAT relevance:** Oxidation numbers are essential for identifying redox reactions (oxidation = increase in oxidation number, reduction = decrease). You need them for balancing redox equations, electrochemistry, and understanding metabolism (NAD+ being reduced to NADH involves a change in oxidation state of carbon atoms in substrates).
 
+### Equivalents and Normality
+
+Equivalents generalize moles to account for reactive capacity. An **equivalent** is the amount of a species that provides one mole of the reactive unit, where the reactive unit depends on the reaction type:
+
+| Reaction type | Reactive unit (what n counts) |
+|---------------|-------------------------------|
+| Acid-base | Moles of H⁺ donated or accepted |
+| Redox | Moles of electrons transferred |
+| Ionic / precipitation | Moles of charge per ion |
+
+**n** = number of reactive units per molecule.
+
+**Gram equivalent weight (GEW):**
+
+$$GEW = \frac{\text{molar mass}}{n}$$
+
+This is the mass (in grams) of the compound that provides exactly one equivalent.
+
+**Equivalents from mass:**
+
+$$\text{equivalents} = \frac{\text{mass (g)}}{GEW} = \text{moles} \times n$$
+
+**Normality:**
+
+$$N = M \times n$$
+
+Equivalently, M = N / n. Normality is "equivalents per liter" — it bakes n into the concentration so you can compare reactive capacity directly across species with different stoichiometries.
+
+**Equivalence-point relationship (titrations):**
+
+$$N_{acid} \cdot V_{acid} = N_{base} \cdot V_{base}$$
+
+Much cleaner than molarity-based math for polyprotic acids (H₂SO₄, H₃PO₄) or multi-electron redox reactions — you avoid stopping to multiply by n mid-calculation.
+
+**Worked examples:**
+
+- **HCl vs H₂SO₄ acid capacity:** HCl has n = 1, molar mass 36.5 g/mol → GEW = 36.5 g/eq. H₂SO₄ has n = 2, molar mass 98 g/mol → GEW = 49 g/eq. So 36.5 g HCl and 49 g H₂SO₄ both deliver 1 mole of H⁺ — equivalent reactive capacity despite different masses.
+- **Redox (Al → Al³⁺):** n = 3, molar mass = 27 g/mol → GEW = 9 g/eq. Just 9 g of Al provides 1 mole of electrons.
+- **Ionic (CaCl₂):** Ca²⁺ charge = 2 → n = 2, molar mass 111 g/mol → GEW = 55.5 g/eq.
+
+**When to reach for normality instead of molarity:**
+- Polyprotic acid/base titrations
+- Redox titrations with multi-electron transfers
+- Comparing ionic capacity across salts with different charges
+
+For monoprotic / single-electron / single-charge cases, n = 1 and normality collapses back to molarity — no advantage.
+
+---
+
+## 7. Reaction Classification (Kaplan Gen Chem Ch 4)
+
+Chapter 4 covers reaction classification alongside stoichiometry — the MCAT expects you to classify a given equation, decide whether it's a redox reaction, and then run stoichiometric calculations on it. Pattern recognition is the skill being tested.
+
+### 7.1 Combination (Synthesis)
+
+**Pattern:** A + B → AB
+
+Two or more reactants fuse into a single product.
+
+- 2 H₂ + O₂ → 2 H₂O
+- N₂ + 3 H₂ → 2 NH₃ (Haber process)
+- CaO + CO₂ → CaCO₃
+
+Usually exothermic (new bonds form, releasing energy). May or may not be redox — check oxidation state changes case by case. The two hydrogen and oxygen examples above are redox; CaO + CO₂ is not.
+
+### 7.2 Decomposition
+
+**Pattern:** AB → A + B
+
+A single reactant splits into two or more products. Requires energy input — heat (Δ), light (hν), or electricity.
+
+- 2 H₂O → 2 H₂ + O₂ (electrolysis)
+- CaCO₃ → CaO + CO₂ (thermal decomposition; limestone → quicklime, industrially important)
+- 2 KClO₃ → 2 KCl + 3 O₂ (Δ, MnO₂ catalyst)
+- 2 H₂O₂ → 2 H₂O + O₂ (catalyzed by catalase enzyme — biochem connection)
+
+Decomposition is the formal reverse of combination. May or may not be redox.
+
+### 7.3 Single Displacement (Single Replacement)
+
+**Pattern:** A + BC → AC + B
+
+A free element displaces another element from a compound.
+
+- Zn + CuSO₄ → ZnSO₄ + Cu (Zn more reactive than Cu)
+- 2 Na + 2 H₂O → 2 NaOH + H₂
+- Cl₂ + 2 NaBr → 2 NaCl + Br₂ (halogen displacement)
+
+**Always a redox reaction** — an element goes from oxidation state 0 to a non-zero state (or vice versa), so oxidation states MUST change.
+
+**Activity series** determines whether the reaction will actually proceed. A more reactive metal displaces a less reactive one. High-yield order (memorize at least the top half):
+
+K > Na > Ca > Mg > Al > Zn > Fe > Pb > **H** > Cu > Ag > Au
+
+Metals **above H** react with acids to release H₂ gas. Metals **below H** (Cu, Ag, Au) do NOT react with typical acids — this is why gold is "noble."
+
+For halogens, reactivity decreases down the group: F₂ > Cl₂ > Br₂ > I₂. A more reactive halogen displaces a less reactive one from its salt.
+
+### 7.4 Double Displacement (Metathesis)
+
+**Pattern:** AB + CD → AD + CB
+
+Ions swap partners. No oxidation states change — **usually NOT redox**. Two major subtypes:
+
+**Precipitation reactions** — form an insoluble product that drops out of solution:
+- AgNO₃ + NaCl → AgCl↓ + NaNO₃
+- Pb(NO₃)₂ + 2 KI → PbI₂↓ + 2 KNO₃
+- Use solubility rules to predict which pairing is insoluble. AgCl, PbI₂, BaSO₄, CaCO₃ are common MCAT precipitates.
+
+**Neutralization reactions** — acid + base → salt + water:
+- HCl + NaOH → NaCl + H₂O
+- H₂SO₄ + 2 KOH → K₂SO₄ + 2 H₂O
+- Net ionic equation: H⁺ + OH⁻ → H₂O (for strong acid + strong base).
+
+**Driving force** is key: double displacement proceeds only when something removes products from equilibrium — formation of a precipitate, a gas, water, or a weak electrolyte.
+
+### 7.5 Combustion
+
+**Pattern:** Hydrocarbon (or organic fuel) + O₂ → CO₂ + H₂O + heat
+
+- CH₄ + 2 O₂ → CO₂ + 2 H₂O (methane)
+- C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O (propane)
+- C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O (glucose — also the overall equation for cellular respiration)
+
+**Always exothermic, always redox** — carbon and hydrogen are oxidized; oxygen is reduced.
+
+**Incomplete combustion** (insufficient O₂) yields CO (toxic carbon monoxide) or soot (elemental C). Common MCAT trap — don't assume every combustion produces clean CO₂.
+
+### 7.6 Cross-Cutting Classifications
+
+Some reactions fit multiple categories. The MCAT cares more about the chemistry than the label:
+
+- **Redox reactions:** Any reaction with oxidation state changes. Overlaps with combination, decomposition, single displacement, and combustion.
+- **Acid-base reactions:** Proton transfer. Overlaps with neutralization (a subtype of double displacement).
+- **Precipitation:** Subtype of double displacement.
+- **Disproportionation:** A single element is both oxidized AND reduced in the same reaction. Example: 2 H₂O₂ → 2 H₂O + O₂ (oxygen goes from −1 to −2 AND from −1 to 0). Also: 3 ClO⁻ → 2 Cl⁻ + ClO₃⁻.
+
+### 7.7 Recognition Table — MCAT Workflow
+
+| Observed pattern | Classification | Redox? |
+|------------------|---------------|--------|
+| Multiple reactants → one product | Combination | Sometimes |
+| One reactant → multiple products | Decomposition | Sometimes |
+| Free element + compound → new free element + new compound | Single displacement | **Always** |
+| Two compounds swap ions | Double displacement | Rarely |
+| Fuel + O₂ → CO₂ + H₂O | Combustion | **Always** |
+| Acid + base → salt + water | Neutralization (subtype of DD) | No |
+
+**Workflow for any unfamiliar reaction:**
+1. Count reactants and products on each side.
+2. Note whether any free element (oxidation state 0) appears.
+3. Assign oxidation numbers to confirm redox vs non-redox.
+4. For double displacement, identify the driving force (precipitate, gas, water, weak electrolyte).
+
 ---
 
 ## High-Yield Takeaways
@@ -477,3 +633,5 @@ Example: What is the oxidation state of Mn in KMnO4?
 6. **Nuclear decay:** Know what each type does to A and Z. Know penetration vs. ionization tradeoff.
 7. **Limiting reagent:** Convert to moles first. Always. Then divide by coefficient to find the limiting reagent.
 8. **Oxidation numbers:** Assign them quickly. Recognizing oxidation state changes lets you identify redox reactions instantly.
+9. **Reaction classification (Ch 4):** Pattern-recognize combination, decomposition, single/double displacement, and combustion. Single displacement and combustion are ALWAYS redox; double displacement is almost never.
+10. **Equivalents and normality:** Use N = M × n and N_a·V_a = N_b·V_b for polyprotic titrations and multi-electron redox. GEW = molar mass / n gives the grams-per-equivalent for mass ↔ equivalents conversions.

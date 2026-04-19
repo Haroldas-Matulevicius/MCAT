@@ -114,9 +114,15 @@ Day 3 (Nuclear Chem, Stoichiometry & Oxidation Numbers) pushed back another day 
 - Content/CP/CP_Atoms_Nuclear.md — added outline bullets for equivalents/normality and reaction classification; Kaplan reference line updated
 - mnemonics/CP/CP_Atoms_Nuclear.md — added Ch 4 mnemonics section (OIL RIG, MNHO, Per is More/Hypo is Low, activity series sentence)
 
+**Anki status (1 day behind):**
+- JackSparrow Chemistry: completed Ch 1 & 2 only (Atomic Structure + Periodic Table)
+- **Day 3 Anki NOT completed today** — Ch 4 material (stoichiometry, reactions, ions, oxidation numbers) still pending
+- Catch-up plan: work through it slowly across the coming days rather than cramming. No single catch-up day scheduled — absorb into existing 1.5-hr Anki blocks.
+- Running backlog: Day 2 weak spots (F vs Cl EA, Cr/Cu exceptions, Cu²⁺ = [Ar] 3d⁹, Group 2→13 and 15→16 IE dips) + Day 3 (classical cation suffixes, limiting reagent tie edge case, mercurous dimer Hg₂²⁺, reaction classification patterns, oxyanion ladder)
+
 **For tomorrow (Apr 19, Sun) — PS Day 1:**
 - Biological Bases of Behavior & Neuroscience
-- Anki carry-over: Day 2 weak spots (F vs Cl EA, Cr/Cu exceptions, Cu²⁺ = [Ar] 3d⁹, Group 2→13 and 15→16 IE dips) + Day 3 (classical cation suffixes, limiting reagent edge case, mercurous dimer Hg₂²⁺)
+- Keep chipping at the Anki backlog during the 1.5-hr Anki block — no pressure to clear it all at once
 - Sunday is end-of-week 1 — weekly review items deferred to tomorrow's wrap-up
 
 ## Weekly Review (Sunday)

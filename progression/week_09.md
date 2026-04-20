@@ -9,13 +9,13 @@
 
 | Date | Day | Time | Section | Topic | Logged |
 |------|-----|------|---------|-----|--------|
-| Jun 8 | Mon | 7:00 AM – 12:00 PM | CP | Electrostatics & Magnetism | [ ] |
-| Jun 9 | Tue | 1:00 PM – 6:00 PM | CARS | Humanities Passages Deep Dive | [ ] |
-| Jun 10 | Wed | 4:00 PM – 9:00 PM | BB | Lipid & Amino Acid Metabolism + Integration | [ ] |
-| Jun 11 | Thu | 1:00 PM – 6:00 PM | CP | Circuits & Electricity | [ ] |
-| Jun 12 | Fri | 12:30 PM – 5:30 PM | PS | Social Interaction, Attribution & Discrimination | [ ] |
-| Jun 13 | Sat | 7:00 AM – 12:00 PM | BB | Microbiology — Bacteria, Viruses & Prions | [ ] |
-| Jun 14 | Sun | 7:00 AM – 12:00 PM | CP | Waves, Sound & Doppler Effect | [ ] |
+| Jun 8 | Mon | 7:00 AM – 12:00 PM | BB | Gluconeogenesis, Glycogen & Pentose Phosphate Pathway | [ ] |
+| Jun 9 | Tue | 1:00 PM – 6:00 PM | CP | Electrostatics & Magnetism | [ ] |
+| Jun 10 | Wed | 4:00 PM – 9:00 PM | CARS | Humanities Passages Deep Dive | [ ] |
+| Jun 11 | Thu | 1:00 PM – 6:00 PM | BB | Lipid & Amino Acid Metabolism + Integration | [ ] |
+| Jun 12 | Fri | 12:30 PM – 5:30 PM | CP | Circuits & Electricity | [ ] |
+| Jun 13 | Sat | 7:00 AM – 12:00 PM | PS | Social Interaction, Attribution & Discrimination | [ ] |
+| Jun 14 | Sun | 7:00 AM – 12:00 PM | BB | Microbiology — Bacteria, Viruses & Prions | [ ] |
 
 ## Session Logs
 

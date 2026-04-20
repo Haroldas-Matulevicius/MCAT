@@ -21,6 +21,7 @@ CARDIOVASCULAR SYSTEM:
 - Cardiac cycle: systole (contraction) and diastole (relaxation)
 - Cardiac output: CO = HR x SV
 - Blood pressure: systolic/diastolic, regulated by baroreceptors, RAAS, ANP
+- Vasovagal syncope: parasympathetic surge -> bradycardia + vasodilation -> BP drop -> fainting (baroreflex-related clinical)
 - Vessel types: arteries (thick, elastic) -> arterioles (resistance vessels) -> capillaries (exchange) -> venules -> veins (valves, capacitance vessels)
 - Blood: plasma (55%), RBCs (no nucleus, biconcave, 120-day lifespan), WBCs, platelets
 - Coagulation cascade, fibrin clot
@@ -45,6 +46,7 @@ IMMUNE SYSTEM:
 DIGESTIVE SYSTEM:
 - Mouth: salivary amylase (starch->maltose), lingual lipase
 - Esophagus: peristalsis, LES
+- ANS-GI: parasympathetic (vagus) increased motility/secretions; sympathetic (splanchnic) decreased -- blood shunted to muscle/heart
 - Stomach: HCl (parietal cells), pepsinogen->pepsin (chief cells), mucus cells, gastrin (hormone)
 - Small intestine: duodenum (receives bile + pancreatic juice), jejunum (main absorption), ileum (B12, bile salt reabsorption)
 - Pancreas: trypsinogen->trypsin (activated by enterokinase), chymotrypsin, carboxypeptidase, pancreatic lipase, amylase, bicarbonate

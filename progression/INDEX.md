@@ -2,7 +2,7 @@
 
 Date-to-week lookup. Read this file to find the current week file based on today's date.
 
-**Last updated:** 2026-04-17 (Day 3 delayed AGAIN 1 day; Apr 17 now also REST/FLEX. Weeks remain Mon-Sun; topics cascaded +1 more day through queue. Final substantive prep day now Aug 22 (PS/CARS Final Light Review). Buffer weeks 20-22 absorb extra day with one less FREE day.)
+**Last updated:** 2026-04-19 (Day 4 delayed AGAIN 1 day; Apr 19 now also REST/FLEX (third cascade in a row). Weeks remain Mon-Sun; topics cascaded +1 more day through queue. Final substantive prep day now Sep 14 (was Sep 13). Week 22 extended by one day to absorb cascade — now Sep 7-14 instead of Sep 7-13.)
 
 | Week | Dates | File | Phase |
 |------|-------|------|-------|
@@ -28,4 +28,4 @@ Date-to-week lookup. Read this file to find the current week file based on today
 | 19 | Aug 17 - Aug 23 | week_19.md | 3: AAMC Materials |
 | 20 | Aug 24 - Aug 30 | week_20.md | Buffer & Review |
 | 21 | Aug 31 - Sep 06 | week_21.md | Buffer & Review |
-| 22 | Sep 07 - Sep 13 | week_22.md | Buffer & Review |
+| 22 | Sep 07 - Sep 14 | week_22.md | Buffer & Review |

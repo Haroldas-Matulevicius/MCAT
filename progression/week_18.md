@@ -9,13 +9,13 @@
 
 | Date | Day | Time | Section | Session | Logged |
 |------|-----|------|---------|-------|--------|
-| Aug 10 | Mon | 7:00 AM – 12:00 PM | ALL | Targeted Weak Area Review | [ ] |
-| Aug 11 | Tue | 1:00 PM – 6:00 PM | ALL | AAMC FL 2 (Full-Length) | [ ] |
-| Aug 12 | Wed | 4:00 PM – 9:00 PM | ALL | AAMC FL 2 — Full Review | [ ] |
-| Aug 13 | Thu | 1:00 PM – 6:00 PM | ALL | High-Yield Content Blitz + Leech Review | [ ] |
-| Aug 14 | Fri | 12:30 PM – 5:30 PM | CARS/PS | CARS Maintenance + PS Final Vocabulary Drill | [ ] |
-| Aug 15 | Sat | 7:00 AM – 12:00 PM | ALL | AAMC FL 3 (Full-Length) | [ ] |
-| Aug 16 | Sun | 7:00 AM – 12:00 PM | ALL | AAMC FL 3 — Full Review | [ ] |
+| Aug 10 | Mon | 7:00 AM – 12:00 PM | ALL | AAMC FL 1 — Full Review | [ ] |
+| Aug 11 | Tue | 1:00 PM – 6:00 PM | ALL | Targeted Weak Area Review | [ ] |
+| Aug 12 | Wed | 4:00 PM – 9:00 PM | ALL | AAMC FL 2 (Full-Length) | [ ] |
+| Aug 13 | Thu | 1:00 PM – 6:00 PM | ALL | AAMC FL 2 — Full Review | [ ] |
+| Aug 14 | Fri | 12:30 PM – 5:30 PM | ALL | High-Yield Content Blitz + Leech Review | [ ] |
+| Aug 15 | Sat | 7:00 AM – 12:00 PM | CARS/PS | CARS Maintenance + PS Final Vocabulary Drill | [ ] |
+| Aug 16 | Sun | 7:00 AM – 12:00 PM | ALL | AAMC FL 3 (Full-Length) | [ ] |
 
 ## Session Logs
 

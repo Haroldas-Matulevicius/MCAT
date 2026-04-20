@@ -14,6 +14,8 @@ The nervous system divides into two physical compartments and then further by fu
 
 - **Central Nervous System (CNS):** Brain + spinal cord. This is the integration and processing center. Protected by bone (skull, vertebral column), meninges (dura, arachnoid, pia), and cerebrospinal fluid (CSF).
 - **Peripheral Nervous System (PNS):** Everything outside the CNS -- 12 pairs of cranial nerves, 31 pairs of spinal nerves, ganglia, and sensory receptors. The PNS is the communication highway carrying signals to and from the CNS.
+- **Spinal cord gray/white matter (MCAT trap -- opposite of brain):** Gray matter (cell bodies + dendrites, unmyelinated) is on the **INSIDE** of the spinal cord, shaped like an H or butterfly. White matter (myelinated tracts) is on the **OUTSIDE**. The brain has the opposite layout -- gray on the outside (cortex), white on the inside.
+- **CSF flow path:** Cerebrospinal fluid is produced by the **choroid plexus** in the ventricles -> flows from **lateral ventricles** -> **third ventricle** (via interventricular foramen of Monro) -> **fourth ventricle** (via cerebral aqueduct of Sylvius) -> **subarachnoid space** -> reabsorbed by **arachnoid granulations** into venous blood. Blockage anywhere in the path causes hydrocephalus.
 
 **MCAT connection:** The blood-brain barrier (BBB) is a CNS-specific feature formed by tight junctions between capillary endothelial cells, reinforced by astrocyte foot processes. It keeps large molecules, pathogens, and many drugs out of the brain. Lipophilic substances (O2, CO2, ethanol, steroid hormones) cross freely. This is why L-DOPA (a dopamine precursor) is given for Parkinson's instead of dopamine itself -- dopamine cannot cross the BBB, but L-DOPA can.
 
@@ -49,6 +51,8 @@ This is a guaranteed MCAT topic. Know the anatomy, neurotransmitters, and effect
 | **Bladder** | Relaxes (urinary retention) | Contracts (urination) |
 
 **Key rule:** Both divisions use ACh at the preganglionic synapse (nicotinic receptor). They differ at the postganglionic synapse -- sympathetic uses NE (adrenergic), parasympathetic uses ACh (muscarinic).
+
+**Vagus nerve identity (high-yield):** Vagus nerve = **CN X**; carries **~75% of all parasympathetic output** from the brain; innervates **heart, lungs, and most abdominal organs** (esophagus, stomach, small intestine, proximal colon, liver, pancreas, kidneys). When the MCAT mentions "vagal stimulation" of these organs, default interpretation: parasympathetic activation -> slowed heart, bronchoconstriction, increased GI motility/secretion.
 
 **Exception -- the adrenal medulla:** The sympathetic preganglionic neuron synapses directly on chromaffin cells of the adrenal medulla. These cells are essentially modified postganglionic neurons that release **epinephrine (80%) and norepinephrine (20%) directly into the bloodstream**. This is the neuro-endocrine bridge -- the sympathetic nervous system triggers a hormonal response. This is high-yield for integrating nervous and endocrine systems.
 
@@ -87,6 +91,9 @@ This is a guaranteed MCAT topic. Know the anatomy, neurotransmitters, and effect
 - **Interneurons:** Found entirely within the CNS. Integrate signals between sensory and motor neurons. Critical for reflexes and complex processing.
 
 **Reflex arcs:** Sensory neuron -> interneuron (in spinal cord) -> motor neuron. This bypasses the brain, which is why reflexes are fast and involuntary. The MCAT tests this in the context of the patellar reflex (which actually skips the interneuron -- monosynaptic stretch reflex: sensory neuron synapses directly on motor neuron).
+
+- **Polysynaptic reflexes:** Sensory neuron synapses on one or more **interneurons** in the spinal cord, which then synapse on motor neurons. Allows coordination across multiple muscle groups. Classic example: **withdrawal reflex** -- step on a tack -> withdraw the hurt foot AND simultaneously stiffen the opposite leg via the **crossed extensor reflex** (reciprocal innervation).
+- **Bell-Magendie law:** **Dorsal** root carries **sensory** afferents into the spinal cord (cell bodies in the dorsal root ganglion). **Ventral** root carries **motor** efferents out of the spinal cord. They merge into a single mixed spinal nerve as they exit the vertebral column. MCAT tip: dorsal = data IN, ventral = action OUT.
 
 ### Glial Cells (Supporting Cast)
 

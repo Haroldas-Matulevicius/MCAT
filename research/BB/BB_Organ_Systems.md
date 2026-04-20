@@ -190,6 +190,8 @@ MCAT connection: Pacemaker cells have **funny channels** (HCN channels) that all
 - High BP: baroreceptors fire more --> brainstem increases parasympathetic output and decreases sympathetic --> HR and TPR decrease --> BP drops.
 - Low BP: baroreceptors fire less --> opposite response --> BP increases.
 
+- **Vasovagal syncope (clinical):** Sudden parasympathetic surge (triggered by emotional shock, sight of blood, prolonged standing) -> vagally mediated bradycardia + vasodilation -> BP drop -> fainting. Classic baroreflex-related clinical scenario; often used as MCAT passage hook.
+
 **Long-term regulation: RAAS (Renin-Angiotensin-Aldosterone System)**
 1. Low blood pressure/volume detected by **juxtaglomerular (JG) cells** in the kidney.
 2. JG cells release **renin** into the blood.
@@ -405,6 +407,10 @@ Key: Types I-III are antibody-mediated. Type IV is cell-mediated. Type IV is the
 **Esophagus:**
 - Conducts food via **peristalsis** (coordinated smooth muscle contractions). No significant digestion occurs here.
 - **Lower esophageal sphincter (LES)** prevents reflux. Dysfunction --> GERD.
+
+**Autonomic regulation of GI motility:**
+- **Parasympathetic** (mainly via the **vagus nerve**) -> increased peristalsis, increased glandular secretions, increased overall digestive activity. "Rest and digest."
+- **Sympathetic** (via **splanchnic nerves** from thoracolumbar spinal cord) -> decreased peristalsis, decreased secretions, blood shunted away from gut to skeletal muscle and heart. "Fight or flight" -- digestion is a low priority during stress.
 
 **Stomach:**
 - Mechanical: **Churning** by muscular walls (three muscle layers: oblique, circular, longitudinal) mixes food with gastric juices, producing **chyme**.

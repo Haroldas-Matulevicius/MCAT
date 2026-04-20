@@ -8,6 +8,9 @@ NERVOUS SYSTEM ORGANIZATION:
 - CNS: brain + spinal cord
 - PNS: somatic (voluntary) + autonomic (involuntary)
 - Autonomic: sympathetic (fight-or-flight) vs parasympathetic (rest-and-digest)
+- Vagus nerve = CN X; ~75% of all parasympathetic output; innervates heart, lungs, abdominal organs
+- Spinal cord: gray INSIDE (butterfly/H), white OUTSIDE -- opposite of brain
+- CSF flow: choroid plexus -> lateral -> 3rd (foramen of Monro) -> 4th (aqueduct of Sylvius) -> subarachnoid -> arachnoid granulations
 
 NEURONS:
 - Structure: cell body (soma), dendrites (receive), axon (transmit), myelin sheath (Schwann cells in PNS, oligodendrocytes in CNS), nodes of Ranvier, synaptic terminal
@@ -38,6 +41,8 @@ BRAIN ANATOMY:
 - Brainstem: medulla (vital functions -- breathing, HR, BP), pons, midbrain
 - Basal ganglia: motor control (Parkinson's -- dopamine loss here)
 - Spinal cord: reflex arcs, ascending/descending tracts
+- Polysynaptic reflexes -- interneuron(s) between sensory and motor; example: withdrawal reflex + crossed extensor
+- Bell-Magendie law: dorsal root = sensory IN, ventral root = motor OUT
 
 ENDOCRINE SYSTEM:
 - Hormone types: peptide (hydrophilic, cell surface receptors, fast) vs steroid (lipophilic, intracellular receptors, slow, gene expression)

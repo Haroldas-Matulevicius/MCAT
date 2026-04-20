@@ -1,5 +1,5 @@
 # Week 22 — Buffer & Review
-**Sep 7 - Sep 13, 2026**
+**Sep 7 - Sep 14, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]
@@ -16,6 +16,7 @@
 | Sep 11 | Fri | 12:30 PM – 5:30 PM | -- | FREE — Review / Rest / Weak Areas | [ ] |
 | Sep 12 | Sat | 7:00 AM – 12:00 PM | -- | FREE — Review / Rest / Weak Areas | [ ] |
 | Sep 13 | Sun | 7:00 AM – 12:00 PM | -- | FREE — Review / Rest / Weak Areas | [ ] |
+| Sep 14 | Mon | 7:00 AM – 12:00 PM | -- | FREE — Review / Rest / Weak Areas (cascade overflow day) | [ ] |
 
 ## Session Logs
 

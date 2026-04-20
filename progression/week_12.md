@@ -9,13 +9,13 @@
 
 | Date | Day | Time | Section | Session | Logged |
 |------|-----|------|---------|-------|--------|
-| Jun 29 | Mon | 7:00 AM – 12:00 PM | CP/CARS | FL #1 Review — CP & CARS | [ ] |
-| Jun 30 | Tue | 1:00 PM – 6:00 PM | BB/PS | FL #1 Review — BB & PS | [ ] |
-| Jul 1 | Wed | 4:00 PM – 9:00 PM | BB | BB Passage-Based Practice (59 Qs timed) | [ ] |
-| Jul 2 | Thu | 1:00 PM – 6:00 PM | CP | CP Passage-Based Practice (59 Qs timed) | [ ] |
-| Jul 3 | Fri | 12:30 PM – 5:30 PM | CARS/PS | CARS Full Section + PS Practice | [ ] |
-| Jul 4 | Sat | 7:00 AM – 12:00 PM | VARIES | Weak Area Deep Dive #1 — Highest Priority | [ ] |
-| Jul 5 | Sun | 7:00 AM – 12:00 PM | VARIES | Weak Area Deep Dive #2 | [ ] |
+| Jun 29 | Mon | 7:00 AM – 12:00 PM | ALL | Third-Party FL #1 (Full-Length) | [ ] |
+| Jun 30 | Tue | 1:00 PM – 6:00 PM | CP/CARS | FL #1 Review — CP & CARS | [ ] |
+| Jul 1 | Wed | 4:00 PM – 9:00 PM | BB/PS | FL #1 Review — BB & PS | [ ] |
+| Jul 2 | Thu | 1:00 PM – 6:00 PM | BB | BB Passage-Based Practice (59 Qs timed) | [ ] |
+| Jul 3 | Fri | 12:30 PM – 5:30 PM | CP | CP Passage-Based Practice (59 Qs timed) | [ ] |
+| Jul 4 | Sat | 7:00 AM – 12:00 PM | CARS/PS | CARS Full Section + PS Practice | [ ] |
+| Jul 5 | Sun | 7:00 AM – 12:00 PM | VARIES | Weak Area Deep Dive #1 — Highest Priority | [ ] |
 
 ## Session Logs
 

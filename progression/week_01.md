@@ -14,7 +14,7 @@
 | Apr 16 | Thu | 1:00 PM – 6:00 PM | -- | REST / FLEX — catch-up Anki, light review, or off | [ ] |
 | Apr 17 | Fri | 12:30 PM – 5:30 PM | -- | REST / FLEX — no study today (cascade +1 day) | [ ] |
 | Apr 18 | Sat | 7:00 AM – 12:00 PM | CP | Stoichiometry, Reactions & Ions (Gen Chem Ch 4) | [x] |
-| Apr 19 | Sun | 7:00 AM – 12:00 PM | PS | Biological Bases of Behavior & Neuroscience | [ ] |
+| Apr 19 | Sun | 7:00 AM – 12:00 PM | -- | REST / FLEX — third cascade, PS Day 1 pushed to Apr 20 (Mon) | [ ] |
 
 ## Session Logs
 
@@ -124,6 +124,17 @@ Day 3 (Nuclear Chem, Stoichiometry & Oxidation Numbers) pushed back another day 
 - Biological Bases of Behavior & Neuroscience
 - Keep chipping at the Anki backlog during the 1.5-hr Anki block — no pressure to clear it all at once
 - Sunday is end-of-week 1 — weekly review items deferred to tomorrow's wrap-up
+
+### Apr 19 — REST / FLEX DAY (third cascade)
+PS Day 1 (Biological Bases of Behavior & Neuroscience) pushed back another day to Apr 20 (Mon, Week 2 Day 1). Today became a no-study day. All downstream content cascaded +1 day; end date pushes from Sep 14 → Sep 15 (absorbed by Week 22 buffer — one fewer FREE day in Week 22).
+
+**File maintenance work completed today (not formal study):**
+- Restructured both PS Content + Research files from AAMC FC order to Kaplan chapter order (Ch 1-12) for cleaner per-session loading. research/PS_Psych_Soc.md grew 1147→1779 lines, Content/PS_Psych_Soc.md grew 346→996 lines.
+- Closed Ch 1 Biology of Behavior gap (was missing from research file entirely — now full neuroanatomy, neurons, APs, endocrine, development, brain imaging methods)
+- Closed Ch 7 Treatment gap (psychotherapy + biomedical + ECT) and Ch 12 Health Disparities gap (incidence/prevalence, weathering, second sickness)
+- Added Wilhelm Wundt to Ch 1 brief history of neuropsychology
+- Audited BB nervous/cardiovascular files for vagus/ANS clinical content; patched 6 identified gaps (vagus = CN X, polysynaptic reflexes + Bell-Magendie law, spinal cord gray/white inversion, CSF flow path, vasovagal syncope, ANS-GI motility mechanism)
+- Updated Content/Kaplan_Map_and_Gaps.md to reflect closed gaps
 
 ## Weekly Review (Sunday)
 - [ ] All session logs complete

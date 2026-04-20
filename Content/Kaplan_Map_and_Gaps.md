@@ -32,34 +32,39 @@ Scoring: Each section 118-132, total 472-528, median ~500.
 
 These topics appear in the AAMC content outline but receive insufficient Kaplan coverage. Prioritize supplementation.
 
+**Note (2026-04-19):** PS files (`research/PS_Psych_Soc.md` and `Content/PS_Psych_Soc.md`) have been restructured to Kaplan chapter order (Ch 1 → Ch 12) instead of AAMC FC order. This matches the daily study schedule. AAMC FC mappings are now inline at the top of each chapter.
+
 ### Critical Gaps (high-yield AND undertreated)
 
-| Topic | Section | Supplement With |
-|-------|---------|-----------------|
-| Sociology vocabulary breadth | PS | Khan Academy P/S, 300-page doc |
-| Social determinants of health | PS | Khan Academy, UWorld |
-| Medicalization and sick role | PS | Khan Academy |
-| Research methods and biostatistics | PS/ALL | Khan Academy statistics, AAMC materials |
-| Sensitivity, specificity, PPV, NPV | PS | Khan Academy, practice problems |
-| Epidemiological measures (RR, OR, NNT) | PS | Khan Academy |
-| Eukaryotic gene regulation (epigenetics, miRNA) | BB | Khan Academy biology |
-| DNA repair mechanisms | BB | Khan Academy |
-| Thin-film interference | CP | Khan Academy physics |
+| Topic | Section | Status | Supplement With |
+|-------|---------|--------|-----------------|
+| Biology of Behavior (Ch 1) — neuroanatomy, NS divisions, endocrine, neurons, glia, AP, brain development, methods | PS | CLOSED 2026-04-19 (built into restructured Ch 1) | — |
+| Sociology vocabulary breadth | PS | Open | Khan Academy P/S, 300-page doc |
+| Social determinants of health | PS | CLOSED 2026-04-19 (built into restructured Ch 12) | Khan Academy, UWorld for breadth |
+| Medicalization and sick role | PS | Covered in Ch 11 | Khan Academy for additional cases |
+| Treatment of psychological disorders (Ch 7) — psychotherapy + biomedical | PS | CLOSED 2026-04-19 (built into restructured Ch 7) | — |
+| Health disparities + epidemiology measures (incidence, prevalence, second sickness) | PS | CLOSED 2026-04-19 (built into restructured Ch 12) | — |
+| Research methods and biostatistics | PS/ALL | Open | Khan Academy statistics, AAMC materials |
+| Sensitivity, specificity, PPV, NPV | PS | Open | Khan Academy, practice problems |
+| Epidemiological measures (RR, OR, NNT) | PS | Open | Khan Academy |
+| Eukaryotic gene regulation (epigenetics, miRNA) | BB | Open | Khan Academy biology |
+| DNA repair mechanisms | BB | Open | Khan Academy |
+| Thin-film interference | CP | Open | Khan Academy physics |
 
 ### Moderate Gaps (tested but thin Kaplan coverage)
 
-| Topic | Section | Supplement With |
-|-------|---------|-----------------|
-| Sleep stages and circadian rhythms | PS | Khan Academy |
-| Dramaturgical analysis (Goffman) | PS | 300-page doc |
-| Cultural capital (Bourdieu) | PS | 300-page doc |
-| Labeling theory, strain theory | PS | 300-page doc |
-| Demographic transition model | PS | Khan Academy |
-| Fungi and prions | BB | Brief review online |
-| FISH, ChIP techniques | BB | Khan Academy |
-| Diffraction calculations | CP | Khan Academy physics |
-| Starling forces | CP | Khan Academy |
-| Connective tissue details | BB | Khan Academy |
+| Topic | Section | Status | Supplement With |
+|-------|---------|--------|-----------------|
+| Sleep stages and circadian rhythms | PS | Covered in Ch 4 | Khan Academy for depth |
+| Dramaturgical analysis (Goffman) | PS | Covered in Ch 9 | 300-page doc for depth |
+| Cultural capital (Bourdieu) | PS | Covered in Ch 12 | 300-page doc for depth |
+| Labeling theory, strain theory | PS | Covered in Ch 8 | 300-page doc for depth |
+| Demographic transition model | PS | Covered in Ch 11 | Khan Academy for depth |
+| Fungi and prions | BB | Open | Brief review online |
+| FISH, ChIP techniques | BB | Open | Khan Academy |
+| Diffraction calculations | CP | Open | Khan Academy physics |
+| Starling forces | CP | Open | Khan Academy |
+| Connective tissue details | BB | Open | Khan Academy |
 
 ### Recommended Supplement Resources
 

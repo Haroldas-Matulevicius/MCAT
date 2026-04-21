@@ -34,6 +34,8 @@ These topics appear in the AAMC content outline but receive insufficient Kaplan 
 
 **Note (2026-04-19):** PS files (`research/PS_Psych_Soc.md` and `Content/PS_Psych_Soc.md`) have been restructured to Kaplan chapter order (Ch 1 → Ch 12) instead of AAMC FC order. This matches the daily study schedule. AAMC FC mappings are now inline at the top of each chapter.
 
+**Note (2026-04-21):** PS Ch 1 scope corrected — neurons, glia, action potentials, and synaptic transmission removed from PS Ch 1 files (they are covered in `research/BB/BB_Nervous_Endocrine.md` §2–3 and were not in Kaplan Behavioral Sciences Ch 1). NT table retained (was in Kaplan BS Ch 1 and is dual-home with BB §4). Prenatal development expanded in PS Ch 1: added notochord induction mechanism, neural plate → groove → folds → tube sequence with closure timing, alar plate / basal plate / sulcus limitans (new — was a gap), neural crest derivatives, placenta (dual origin, hCG handoff, fetal shunts). Same alar/basal plate content added to `research/BB/BB_Organ_Systems.md` §7.4.
+
 ### Critical Gaps (high-yield AND undertreated)
 
 | Topic | Section | Status | Supplement With |

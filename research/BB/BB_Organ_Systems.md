@@ -792,9 +792,19 @@ MCAT connection: Neural crest cells (derived from ectoderm, specifically the jun
 
 **Neurulation:**
 - The **notochord** (from mesoderm) induces the overlying ectoderm to form the **neural plate**.
-- The neural plate folds inward to form the **neural groove**, which closes to become the **neural tube** (future brain and spinal cord).
-- **Neural crest cells** pinch off at the junction and migrate away.
-- Failure of neural tube closure: anencephaly (cranial end) or spina bifida (caudal end).
+- Edges of the neural plate rise as **neural folds**, flanking a central depression — the **neural groove**.
+- Neural folds meet at the midline and fuse to form the **neural tube** (future brain and spinal cord). Rostral end closes first; caudal end last (~day 28).
+- **Neural crest cells** pinch off at the junction and migrate away, becoming PNS ganglia, Schwann cells, melanocytes, adrenal medulla, facial bone/cartilage, and odontoblasts.
+- Failure of neural tube closure: anencephaly (rostral end, lethal) or spina bifida (caudal end). Folate prevents both.
+
+**Alar plate vs basal plate (neural tube differentiation):**
+- Along the inner wall of the neural tube, a longitudinal groove called the **sulcus limitans** divides each half into two plates.
+- **Alar plate (dorsal):** becomes **sensory** neurons of the spinal cord dorsal horn. "Alar = Afferent = Above."
+- **Basal plate (ventral):** becomes **motor** neurons of the ventral horn. "Basal = Below = motor."
+- This pattern extends up into the brainstem — cranial nerve nuclei follow the same dorsal-sensory / ventral-motor arrangement.
+- Provides the structural basis for the **Bell-Magendie law** (dorsal roots sensory, ventral roots motor).
+
+**MCAT pattern — notochord germ-layer trap:** The notochord is **mesoderm**, but it *induces* overlying *ectoderm* to form neural tissue. A common question asks what germ layer the notochord comes from — the answer is **mesoderm**, not ectoderm. Do not confuse the inducer (mesodermal notochord) with the induced (ectodermal neural plate → CNS).
 
 **Organogenesis:** Following gastrulation and neurulation, the three germ layers differentiate into specific organs and structures. This occurs during weeks 3-8 (most critical period for teratogen exposure).
 

@@ -1,5 +1,5 @@
-# Week 22 — Buffer & Review
-**Sep 7 - Sep 14, 2026**
+# Week 22 — Phase 3: AAMC Materials
+**Sep 7 - Sep 13, 2026**
 
 ## Pre-flight
 - **Previous week:** [pending check]
@@ -7,23 +7,23 @@
 
 ## Schedule
 
-| Date | Day | Time | Section | Session | Logged |
+| Date | Day | Time | Section | Topic | Logged |
 |------|-----|------|---------|-------|--------|
-| Sep 7 | Mon | 7:00 AM – 12:00 PM | -- | FREE — Review / Rest / Weak Areas | [ ] |
-| Sep 8 | Tue | 1:00 PM – 6:00 PM | -- | FREE — Review / Rest / Weak Areas | [ ] |
-| Sep 9 | Wed | 4:00 PM – 9:00 PM | -- | FREE — Review / Rest / Weak Areas | [ ] |
-| Sep 10 | Thu | 1:00 PM – 6:00 PM | -- | FREE — Review / Rest / Weak Areas | [ ] |
-| Sep 11 | Fri | 12:30 PM – 5:30 PM | -- | FREE — Review / Rest / Weak Areas | [ ] |
-| Sep 12 | Sat | 7:00 AM – 12:00 PM | -- | FREE — Review / Rest / Weak Areas | [ ] |
-| Sep 13 | Sun | 7:00 AM – 12:00 PM | -- | FREE — Review / Rest / Weak Areas | [ ] |
-| Sep 14 | Mon | 7:00 AM – 12:00 PM | -- | FREE — Review / Rest / Weak Areas (cascade overflow day) | [ ] |
+| Sep 7 | Mon | 7:00 AM – 12:00 PM | ALL | AAMC FL 4 (Full-Length) | [ ] |
+| Sep 8 | Tue | 1:00 PM – 6:00 PM | ALL | AAMC FL 4 -- Full Review | [ ] |
+| Sep 9 | Wed | 4:00 PM – 9:00 PM | ALL | Light Review + Confidence Building | [ ] |
+| Sep 10 | Thu | 1:00 PM – 6:00 PM | ALL | Test Day Logistics + Gentle Review | [ ] |
+| Sep 11 | Fri | 12:30 PM – 5:30 PM | BB/CP | Final Light Review -- BB & CP Highlights | [ ] |
+| Sep 12 | Sat | 7:00 AM – 12:00 PM | PS/CARS | Final Light Review -- PS & CARS Highlights | [ ] |
+| Sep 13 | Sun | 7:00 AM – 12:00 PM | ANKI | Anki Consolidation -- backlog, weak-spot drilling, weekly review + mixed quiz -- final pre-buffer | [ ] |
 
 ## Session Logs
 
 <!-- Paste session log entries below after each study day -->
 
-## Final Review
+## Weekly Review (Sunday Anki Day)
 - [ ] All session logs complete
 - [ ] Confidence map updated
 - [ ] Section confidence tracker updated
 - [ ] Top 3 weak topics reviewed
+- [ ] Anki backlog cleared (or logged for next week)

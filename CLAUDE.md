@@ -16,15 +16,17 @@ You are an MCAT coach and tutor built specifically for Haroldas (Limitz). You ar
 ## Current Phase
 
 **Phase 1 -- Content Review**
-- Dates: April 9, 2026 -- Late July 2026
+- Dates: April 14, 2026 -- July 9, 2026 (Week 13 Thu, under Option B)
 - Focus: Systematic content learning across BB, CP, PS with weekly CARS practice
-- Daily structure: 3 hrs content | 1.5 hrs Anki | 30 min practice Qs
+- **Weekly structure (Option B, since 2026-04-21):** Mon–Sat = content days (6/week), Sun = dedicated Anki consolidation day (no new content)
+- Daily content-day structure: 3 hrs content | 1.5 hrs Anki | 30 min practice Qs
+- Sunday Anki-day structure: 3 hrs Anki | 1 hr weak-spot drill | 30 min quick-fire quiz | 30 min weekly review
 
-Phases:
-1. Content Review (Apr 14 -- Jun 25, Weeks 1-10 + first half of Week 11)
-2. Practice & Integration (Jun 26 -- Jul 26, second half of Week 11 through Week 15)
-3. AAMC Materials (Jul 26 -- Aug 20, Weeks 15-19)
-4. Buffer & Review (Aug 21 -- Sep 12, Weeks 20-22, all free days)
+Phases (post Option B restructure — no content days lost; 21 former "free buffer" days redistributed as weekly Anki Sundays):
+1. Content Review (Apr 14 -- Jul 9, Weeks 1-13 partial) — 69 content topics
+2. Practice & Integration (Jul 10 -- Aug 11, Week 13 Fri through Week 18 Tue) — 28 topics
+3. AAMC Materials (Aug 12 -- Sep 12, Week 18 Wed through Week 22 Sat) — 28 topics
+4. Pre-exam Buffer (Sep 13 final Anki → exam mid-October) — ~4 weeks
 
 Update this section when transitioning between phases.
 
@@ -61,19 +63,19 @@ All schedule, logs, and tracking live here. Split by week for lean context loadi
 - `progression/mcat_schedule.ics` -- Google Calendar import file. Regenerate after any schedule shift.
 - `progression/gen_ics.py` -- Script to regenerate the ICS file.
 
-**Week file date ranges:**
-- Kickoff: Apr 13 | Week 1: Apr 14-19 (Tue-Sun)
-- Weeks 2-10: Apr 20 - Jun 21 (Phase 1: Content Review)
-- Week 11: Jun 22-28 (Phase 1/2 Transition)
-- Weeks 12-14: Jun 29 - Jul 19 (Phase 2: Practice & Integration)
-- Week 15: Jul 20-26 (Phase 2/3 Transition)
-- Weeks 16-19: Jul 27 - Aug 23 (Phase 3: AAMC Materials)
-- Weeks 20-22: Aug 24 - Sep 12 (Buffer & Review — all free days)
+**Week file date ranges (Option B, since 2026-04-21):**
+- Kickoff: Apr 13 | Week 1: Apr 14-19 (Tue-Sun, pre-Option B — Sun Apr 19 was a cascade rest day)
+- Weeks 2-12: Apr 20 - Jul 5 (Phase 1: Content Review)
+- Week 13: Jul 6-12 (Phase 1/2 Transition — P1 Mon–Thu, P2 Fri–Sat, Anki Sun)
+- Weeks 14-17: Jul 13 - Aug 9 (Phase 2: Practice & Integration)
+- Week 18: Aug 10-16 (Phase 2/3 Transition — P2 Mon–Tue, P3 Wed–Sat, Anki Sun)
+- Weeks 19-22: Aug 17 - Sep 13 (Phase 3: AAMC Materials; Sep 12 last content, Sep 13 final Anki)
+- Sep 14 → exam mid-October: Pre-exam Buffer (~4 weeks)
 
 **Weekly time blocks (constant, 7 days/week):**
-Mon 7AM-12PM | Tue 1-6PM | Wed 4-9PM | Thu 1-6PM | Fri 12:30-5:30PM | Sat 7AM-12PM | Sun 7AM-12PM
+Mon 7AM-12PM | Tue 1-6PM | Wed 4-9PM | Thu 1-6PM | Fri 12:30-5:30PM | Sat 7AM-12PM | Sun 7AM-12PM (Anki consolidation)
 
-Note: Subjects rotate through days based on content sequence — no fixed day-subject mapping.
+Note: Subjects rotate through days based on content sequence — no fixed day-subject mapping. Sundays are dedicated Anki consolidation days (no new content).
 
 ### Content Reference Files (topic outlines)
 

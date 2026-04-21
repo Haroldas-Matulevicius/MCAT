@@ -66,10 +66,24 @@ INFLUENCES ON BEHAVIOR:
 - Gonads: testosterone (testes), estrogen/progesterone (ovaries)
 - Pineal: melatonin (circadian)
 
-DEVELOPMENT:
+DEVELOPMENT — PRENATAL (NEURULATION):
+- Notochord induces overlying ectoderm → neural plate
+- Neural plate edges rise as neural folds flanking the neural groove
+- Folds meet at midline → neural tube (rostral closes first, caudal last)
 - Neural tube → 3 primary vesicles → 5 secondary vesicles → adult brain
-- Neural tube defects: spina bifida, anencephaly (folic acid prevents)
-- Infant reflexes: rooting, sucking, Moro, Babinski, grasp (palmar)
+- Neural tube defects: anencephaly (rostral failure, lethal), spina bifida (caudal); folic acid prevents
+- Alar plate (dorsal, sensory → dorsal horn; "Alar = Afferent = Above")
+- Basal plate (ventral, motor → ventral horn; "Basal = Below")
+- Sulcus limitans divides them; pattern extends into brainstem cranial nerve nuclei
+- Neural crest cells pinch off at fold crest and migrate away (derivative list in BB/BB_Organ_Systems.md §7.4)
+
+PLACENTA (brief — detail in BB):
+- Fetal trophoblast + maternal endometrium
+- Key roles: gas exchange, hCG hormone production, immune barrier (IgG crosses)
+- Detailed shunts + hormone handoff timing + notochord germ-layer trap: BB/BB_Organ_Systems.md §3, §7
+
+DEVELOPMENT — POSTNATAL:
+- Infant reflexes: rooting, sucking, Moro, Babinski (normal in infants, abnormal in adults), grasp (palmar)
 - Fixed action patterns — innate stereotyped behavior triggered by sign stimulus
 - Critical period (narrow, must occur) vs sensitive period (broader, optimal)
 - Imprinting (Lorenz) — geese to first moving object (critical period)
@@ -83,29 +97,9 @@ METHODS TO STUDY BRAIN:
 - Lesion studies — behavior after damage
 - Tradeoff: high temporal sacrifices spatial and vice versa
 
-NEURONS AND GLIA:
-- Neuron: dendrites → soma → axon hillock → axon (myelinated) → terminal
-- Glia:
-  - Astrocytes (most common; BBB, K+ buffering)
-  - Oligodendrocytes (CNS myelination, multiple axons)
-  - Schwann cells (PNS myelination, one segment)
-  - Microglia (immune, phagocytosis)
-  - Ependymal (line ventricles, produce CSF)
+[Neuron anatomy, glial cells, action potentials, and synaptic transmission are covered in BB/BB_Nervous_Endocrine.md §2-3 — not repeated here.]
 
-ACTION POTENTIALS:
-- Resting ~-70 mV; Na+/K+ pump (3 Na+ out / 2 K+ in per ATP)
-- Depolarization: Na+ in (voltage-gated channels)
-- Repolarization: K+ out
-- Hyperpolarization briefly
-- Refractory periods: absolute (Na+ inactivated) vs relative
-
-SYNAPTIC TRANSMISSION:
-- AP at terminal → Ca2+ influx → vesicle fusion → NT release
-- EPSP (depolarizing) vs IPSP (hyperpolarizing)
-- Summation at axon hillock (temporal vs spatial)
-- NT cleared by reuptake, enzymatic degradation, or diffusion
-
-NEUROTRANSMITTERS (high yield):
+NEUROTRANSMITTERS (high yield — dual-home with BB_Nervous_Endocrine §4):
 - ACh — memory, muscle, parasympathetic; Alzheimer's (low)
 - Dopamine — reward, movement; schizophrenia (high mesolimbic), Parkinson's (low nigrostriatal)
 - NE — alertness, arousal, fight/flight; depression (low), anxiety (high)

@@ -2,7 +2,7 @@
 
 Date-to-week lookup. Read this file to find the current week file based on today's date.
 
-**Last updated:** 2026-04-19 (Day 4 delayed AGAIN 1 day; Apr 19 now also REST/FLEX (third cascade in a row). Weeks remain Mon-Sun; topics cascaded +1 more day through queue. Final substantive prep day now Sep 14 (was Sep 13). Week 22 extended by one day to absorb cascade — now Sep 7-14 instead of Sep 7-13.)
+**Last updated:** 2026-04-21 — **Option B restructure applied.** Sundays are now dedicated Anki consolidation days (no new content). Content queue cascaded forward: Mon–Sat = content (6/week), Sun = Anki. All 125 remaining content topics preserved — none dropped. Original Weeks 20–22 "free buffer" (21 days) redistributed as 21 weekly Anki Sundays across Weeks 2–22. Last content day: Sat Sep 12 (was Aug 23). Final Anki: Sun Sep 13. Exam buffer (Sep 14 → mid-October) = ~4 weeks.
 
 | Week | Dates | File | Phase |
 |------|-------|------|-------|
@@ -17,15 +17,22 @@ Date-to-week lookup. Read this file to find the current week file based on today
 | 8 | Jun 01 - Jun 07 | week_08.md | 1: Content Review |
 | 9 | Jun 08 - Jun 14 | week_09.md | 1: Content Review |
 | 10 | Jun 15 - Jun 21 | week_10.md | 1: Content Review |
-| 11 | Jun 22 - Jun 28 | week_11.md | 1/2: Transition |
-| 12 | Jun 29 - Jul 05 | week_12.md | 2: Practice & Integration |
-| 13 | Jul 06 - Jul 12 | week_13.md | 2: Practice & Integration |
+| 11 | Jun 22 - Jun 28 | week_11.md | 1: Content Review |
+| 12 | Jun 29 - Jul 05 | week_12.md | 1: Content Review |
+| 13 | Jul 06 - Jul 12 | week_13.md | 1/2: Transition (P1 Mon–Thu, P2 Fri–Sat) |
 | 14 | Jul 13 - Jul 19 | week_14.md | 2: Practice & Integration |
-| 15 | Jul 20 - Jul 26 | week_15.md | 2/3: Transition |
-| 16 | Jul 27 - Aug 02 | week_16.md | 3: AAMC Materials |
-| 17 | Aug 03 - Aug 09 | week_17.md | 3: AAMC Materials |
-| 18 | Aug 10 - Aug 16 | week_18.md | 3: AAMC Materials |
+| 15 | Jul 20 - Jul 26 | week_15.md | 2: Practice & Integration |
+| 16 | Jul 27 - Aug 02 | week_16.md | 2: Practice & Integration |
+| 17 | Aug 03 - Aug 09 | week_17.md | 2: Practice & Integration |
+| 18 | Aug 10 - Aug 16 | week_18.md | 2/3: Transition (P2 Mon–Tue, P3 Wed–Sat) |
 | 19 | Aug 17 - Aug 23 | week_19.md | 3: AAMC Materials |
-| 20 | Aug 24 - Aug 30 | week_20.md | Buffer & Review |
-| 21 | Aug 31 - Sep 06 | week_21.md | Buffer & Review |
-| 22 | Sep 07 - Sep 14 | week_22.md | Buffer & Review |
+| 20 | Aug 24 - Aug 30 | week_20.md | 3: AAMC Materials |
+| 21 | Aug 31 - Sep 06 | week_21.md | 3: AAMC Materials |
+| 22 | Sep 07 - Sep 13 | week_22.md | 3: AAMC Materials (final content + Anki) |
+| Buffer | Sep 14 - exam | — | 4: Pre-exam Buffer (~4 weeks) |
+
+**Sunday Anki Day template (5 hrs, 7 AM - 12 PM):**
+- 3 hrs Anki (new cards + backlog)
+- 1 hr weak-spot drill (top 3 weak topics from this week's session logs)
+- 30 min mixed-topic quick-fire quiz (recent content)
+- 30 min weekly review checklist (update confidence map, section tracker, top-3 weak topics)

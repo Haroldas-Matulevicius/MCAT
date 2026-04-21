@@ -137,12 +137,28 @@ The hypothalamus controls the pituitary, which controls most other endocrine gla
 
 ### Development of the Nervous System
 
-**Neurulation:** The neural tube forms from ectoderm in week 3-4 of embryogenesis.
-- Neural tube → **3 primary brain vesicles** (prosencephalon, mesencephalon, rhombencephalon) → **5 secondary vesicles** (telencephalon + diencephalon, mesencephalon, metencephalon + myelencephalon) → adult brain structures.
+**Neurulation (weeks 3-4 of embryogenesis):**
+- The **notochord** signals the overlying **ectoderm** to thicken into the **neural plate**.
+- Edges of the neural plate rise as **neural folds**, flanking a central depression called the **neural groove**.
+- Neural folds meet at the midline and fuse → **neural tube** (future CNS). The rostral end closes first; the caudal end last.
+- **Neural crest cells** pinch off at the crest of the folds and migrate throughout the body. (Full derivative list — PNS ganglia, Schwann cells, melanocytes, adrenal medulla, facial bone/cartilage, odontoblasts — lives in `BB/BB_Organ_Systems.md` §7.4.)
+- Neural tube → **3 primary brain vesicles** → **5 secondary vesicles** → adult brain structures.
 - **Neural tube defects:**
-  - **Spina bifida:** Failure of caudal neural tube to close → exposed spinal cord.
-  - **Anencephaly:** Failure of rostral neural tube to close → absent forebrain. Lethal.
-  - Folic acid supplementation reduces risk.
+  - **Anencephaly:** failure of the **rostral** neural tube to close → absent forebrain. Lethal.
+  - **Spina bifida:** failure of the **caudal** neural tube to close → exposed spinal cord.
+  - Folic acid supplementation prevents both.
+
+**Alar plate vs basal plate (spinal cord and brainstem differentiation):**
+- Along the inner wall of the neural tube, a longitudinal groove called the **sulcus limitans** divides each half into two plates.
+- **Alar plate (dorsal):** becomes the **sensory** neurons of the spinal cord dorsal horn. Mnemonic: "**A**lar = **A**fferent = **A**bove."
+- **Basal plate (ventral):** becomes the **motor** neurons of the spinal cord ventral horn. Mnemonic: "**B**asal = **B**elow = motor."
+- This dorsal-sensory / ventral-motor pattern extends up into the brainstem — cranial nerve nuclei follow the same arrangement.
+- Connects directly to the **Bell-Magendie law** (dorsal roots carry sensory info, ventral roots carry motor) — the structural basis is alar vs basal plate origin.
+
+**Placenta (brief — full treatment in BB):**
+- Fetal origin (**trophoblast** of the blastocyst) + maternal **endometrium** (decidua).
+- Key functions: gas exchange for the fetus, hormone production (notably **hCG**), immune barrier (only **IgG** crosses).
+- Detailed content — hCG handoff timing, three fetal shunts (ductus venosus, foramen ovale, ductus arteriosus), notochord germ-layer trap — lives in `BB/BB_Organ_Systems.md` §3 (Circulatory) and §7 (Reproductive).
 
 **Infant reflexes** (primitive, present at birth, disappear with CNS maturation):
 - **Rooting reflex:** Infant turns head toward stimulus on cheek (feeding).
@@ -172,44 +188,9 @@ The hypothalamus controls the pituitary, which controls most other endocrine gla
 
 **Trade-off:** Methods with high temporal resolution (EEG) sacrifice spatial detail. Methods with high spatial resolution (MRI/fMRI) sacrifice timing.
 
-### Neurons and Glia
+### Neural Signaling (covered in BB)
 
-**Neuron anatomy:**
-- **Dendrites:** Receive signals from other neurons.
-- **Cell body (soma):** Contains nucleus, integrates inputs.
-- **Axon hillock:** Where action potentials are initiated.
-- **Axon:** Carries action potential away from cell body.
-- **Myelin sheath:** Insulates axon, speeds conduction (saltatory conduction at nodes of Ranvier).
-- **Axon terminals (synaptic boutons):** Release neurotransmitters into synaptic cleft.
-
-**Glial cell types:**
-- **Astrocytes:** Most abundant glia. Support, blood-brain barrier, K+ buffering, nutrient transport.
-- **Oligodendrocytes (CNS):** Myelinate multiple axons in CNS.
-- **Schwann cells (PNS):** Myelinate one segment of one axon in PNS.
-- **Microglia:** Immune cells of CNS. Remove debris, phagocytose pathogens.
-- **Ependymal cells:** Line ventricles, produce cerebrospinal fluid.
-
-### Action Potentials
-
-- **Resting potential:** ~ -70 mV. Maintained by **Na+/K+ ATPase pump** (3 Na+ out, 2 K+ in per ATP) and K+ leak channels.
-- **Depolarization:** Stimulus opens voltage-gated Na+ channels → Na+ rushes in → membrane depolarizes. If threshold (~-55 mV) is reached → all-or-none action potential.
-- **Repolarization:** Voltage-gated K+ channels open → K+ flows out → membrane returns to negative.
-- **Hyperpolarization:** K+ channels stay open briefly → membrane briefly more negative than resting.
-- **Refractory periods:** Absolute (no AP possible — Na+ channels inactivated) and relative (AP possible but harder).
-
-### Synaptic Transmission
-
-1. AP arrives at axon terminal.
-2. Voltage-gated **Ca²⁺ channels** open → Ca²⁺ influx.
-3. Ca²⁺ triggers vesicles to fuse with membrane → **neurotransmitter release** into synaptic cleft.
-4. NT binds to receptors on postsynaptic membrane.
-5. Postsynaptic effect:
-   - **EPSP (excitatory postsynaptic potential):** Depolarization, makes AP more likely.
-   - **IPSP (inhibitory postsynaptic potential):** Hyperpolarization, makes AP less likely.
-6. **Summation** at axon hillock determines whether postsynaptic neuron fires:
-   - **Temporal summation:** Multiple signals from same source over time.
-   - **Spatial summation:** Multiple signals from different sources at the same time.
-7. NT removed from cleft by: **reuptake** (transporters), **enzymatic degradation**, or **diffusion**.
+> Neuron anatomy, glial cells, resting potential, action potentials, and synaptic transmission are covered in depth in `research/BB/BB_Nervous_Endocrine.md` §2–3 (Neuron Structure, Neural Signaling). Kaplan Behavioral Sciences Ch 1 does not cover these topics — they belong to the Biology book (Ch 4, Nervous System). The neurotransmitter table below is kept in this file because Kaplan BS Ch 1 *does* cover it, and PS questions hit NT-disease pairings directly.
 
 ### Neurotransmitters Table (high-yield)
 

@@ -1,12 +1,15 @@
 """Generate MCAT study schedule — ICS file + week_XX.md files.
 
-Restructured 2026-04-21 per Option B:
++1 day cascade applied 2026-04-22:
+- Apr 21 was a missed day (content dump only, no quiz/log).
+- All content originally scheduled Apr 21+ shifted forward by one calendar day.
+- Sundays remain dedicated Anki days (content crossing a Sunday skips to next Mon).
+- Final PS/CARS Light Review (originally Sep 12 Sat) now lands Mon Sep 14 — eats
+  into the first day of the Pre-exam Buffer. Buffer shrinks by 1 day.
+
+Prior Option B restructure (2026-04-21):
 - Sundays became dedicated Anki-only consolidation days.
-- Content queue (125 topics from Apr 21 onward) cascades linearly:
-  Mon-Sat = content, Sun = Anki. Apr 20 (Week 2 Day 1) already logged, preserved as-is.
-- No content days lost — original 21 "free buffer" days (Aug 24 - Sep 13)
-  redistributed as 21 weekly Anki days throughout Weeks 2-22.
-- Last content day: Sat Sep 12. Final Anki: Sun Sep 13. Exam: mid-October.
+- Original 21 free-buffer days redistributed as 21 weekly Anki days across W2-W22.
 
 Mon-Sun weekly structure. Times per CLAUDE.md weekly time blocks.
 
@@ -14,6 +17,8 @@ Outputs:
 - mcat_schedule.ics (Google Calendar import)
 - week_03.md through week_22.md (regenerated schedule tables + empty log sections)
 - week_02.md is NOT touched here (has live session log; updated manually)
+- Sep 14 spillover content day is NOT written to a week file (out of Week 22);
+  noted in week_22.md as cascade spillover into Pre-exam Buffer.
 """
 import datetime
 import os
@@ -74,8 +79,9 @@ add_event(datetime.date(2026, 4, 14), "BB", "Amino Acids -- All 20 Structures & 
 add_event(datetime.date(2026, 4, 15), "CP", "Atomic Structure & Periodic Trends", 1, 1)
 add_event(datetime.date(2026, 4, 18), "CP", "Stoichiometry, Reactions & Ions (Gen Chem Ch 4)", 1, 1)
 add_event(datetime.date(2026, 4, 20), "PS", "Biological Bases of Behavior & Neuroscience", 2, 1)
+add_event(datetime.date(2026, 4, 21), "MISSED", "Delay day — content dump only, no quiz/log. Cascaded forward (+1)", 2, 1)
 
-# === Content queue from Apr 21 onward (125 topics) ===
+# === Content queue from Apr 22 onward (125 topics, +1 day cascade) ===
 # (section, topic, phase)
 content_queue = [
     # Phase 1 (69 topics) — Content Review
@@ -210,8 +216,8 @@ content_queue = [
 
 assert len(content_queue) == 125, f"Queue length mismatch: {len(content_queue)}"
 
-# === Walk day-by-day from Apr 21, assigning content (Mon-Sat) + Anki (Sun) ===
-cursor = datetime.date(2026, 4, 21)
+# === Walk day-by-day from Apr 22 (+1 cascade), assigning content (Mon-Sat) + Anki (Sun) ===
+cursor = datetime.date(2026, 4, 22)
 queue_idx = 0
 ANKI_TOPIC = "Anki Consolidation -- backlog, weak-spot drilling, weekly review + mixed quiz"
 
@@ -326,6 +332,8 @@ def format_week_md(wk):
 weeks_written = []
 for wk in sorted(schedule_by_week.keys()):
     if wk < 3:  # Week 0/1/2 not regenerated (1 = logged past; 2 = live session log preserved)
+        continue
+    if wk >= 22:  # Week 22 has manual cascade spillover note; Week 23+ is buffer
         continue
     md = format_week_md(wk)
     if md is None:

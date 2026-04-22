@@ -9,12 +9,12 @@
 
 | Date | Day | Time | Section | Topic | Logged |
 |------|-----|------|---------|-------|--------|
-| Jul 27 | Mon | 7:00 AM – 12:00 PM | BB/CP | Data Interpretation & Experimental Design | [ ] |
-| Jul 28 | Tue | 1:00 PM – 6:00 PM | PS | PS Deep Dive -- Research Methods & Epidemiology | [ ] |
-| Jul 29 | Wed | 4:00 PM – 9:00 PM | CP | CP Calculation Drill + Physics Problem Workshop | [ ] |
-| Jul 30 | Thu | 1:00 PM – 6:00 PM | CARS | CARS Full Section + Weekly Review | [ ] |
-| Jul 31 | Fri | 12:30 PM – 5:30 PM | ALL | Third-Party FL #4 (Full-Length) | [ ] |
-| Aug 1 | Sat | 7:00 AM – 12:00 PM | ALL | FL #4 Full Review + Error Log Analysis | [ ] |
+| Jul 27 | Mon | 7:00 AM – 12:00 PM | ALL | FL #3 Full Review + Error Pattern Analysis | [ ] |
+| Jul 28 | Tue | 1:00 PM – 6:00 PM | BB/CP | Data Interpretation & Experimental Design | [ ] |
+| Jul 29 | Wed | 4:00 PM – 9:00 PM | PS | PS Deep Dive -- Research Methods & Epidemiology | [ ] |
+| Jul 30 | Thu | 1:00 PM – 6:00 PM | CP | CP Calculation Drill + Physics Problem Workshop | [ ] |
+| Jul 31 | Fri | 12:30 PM – 5:30 PM | CARS | CARS Full Section + Weekly Review | [ ] |
+| Aug 1 | Sat | 7:00 AM – 12:00 PM | ALL | Third-Party FL #4 (Full-Length) | [ ] |
 | Aug 2 | Sun | 7:00 AM – 12:00 PM | ANKI | Anki Consolidation -- backlog, weak-spot drilling, weekly review + mixed quiz | [ ] |
 
 ## Session Logs

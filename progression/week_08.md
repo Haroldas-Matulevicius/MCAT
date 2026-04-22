@@ -9,12 +9,12 @@
 
 | Date | Day | Time | Section | Topic | Logged |
 |------|-----|------|---------|-------|--------|
-| Jun 1 | Mon | 7:00 AM – 12:00 PM | PS | Development, Identity & Personality | [ ] |
-| Jun 2 | Tue | 1:00 PM – 6:00 PM | BB | Non-Mendelian Genetics, Mutations & Evolution | [ ] |
-| Jun 3 | Wed | 4:00 PM – 9:00 PM | CP | Separations, Purification & Analytical Techniques | [ ] |
-| Jun 4 | Thu | 1:00 PM – 6:00 PM | CARS | Full Section Practice #1 + Midpoint Review | [ ] |
-| Jun 5 | Fri | 12:30 PM – 5:30 PM | BB | Glycolysis & Fermentation | [ ] |
-| Jun 6 | Sat | 7:00 AM – 12:00 PM | CP | Kinematics & Newton's Laws | [ ] |
+| Jun 1 | Mon | 7:00 AM – 12:00 PM | CP | Spectroscopy -- IR, NMR & Mass Spec | [ ] |
+| Jun 2 | Tue | 1:00 PM – 6:00 PM | PS | Development, Identity & Personality | [ ] |
+| Jun 3 | Wed | 4:00 PM – 9:00 PM | BB | Non-Mendelian Genetics, Mutations & Evolution | [ ] |
+| Jun 4 | Thu | 1:00 PM – 6:00 PM | CP | Separations, Purification & Analytical Techniques | [ ] |
+| Jun 5 | Fri | 12:30 PM – 5:30 PM | CARS | Full Section Practice #1 + Midpoint Review | [ ] |
+| Jun 6 | Sat | 7:00 AM – 12:00 PM | BB | Glycolysis & Fermentation | [ ] |
 | Jun 7 | Sun | 7:00 AM – 12:00 PM | ANKI | Anki Consolidation -- backlog, weak-spot drilling, weekly review + mixed quiz | [ ] |
 
 ## Session Logs

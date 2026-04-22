@@ -2,7 +2,9 @@
 
 Date-to-week lookup. Read this file to find the current week file based on today's date.
 
-**Last updated:** 2026-04-21 — **Option B restructure applied.** Sundays are now dedicated Anki consolidation days (no new content). Content queue cascaded forward: Mon–Sat = content (6/week), Sun = Anki. All 125 remaining content topics preserved — none dropped. Original Weeks 20–22 "free buffer" (21 days) redistributed as 21 weekly Anki Sundays across Weeks 2–22. Last content day: Sat Sep 12 (was Aug 23). Final Anki: Sun Sep 13. Exam buffer (Sep 14 → mid-October) = ~4 weeks.
+**Last updated:** 2026-04-22 — **+1 day delay cascade applied.** Apr 21 was a missed day (content dump only, no quiz/log); Apr 22 was also lost. All content from Apr 21 onward shifted +1 day; Sundays preserved as dedicated Anki days (content landing on Sun skips to next Mon). Apr 21 Tue = MISSED/FLEX. Sat content each week rolls to next Mon. Spillover: Final PS/CARS Light Review (originally Sep 12 Sat) now lands Mon Sep 14 — first day of Pre-exam Buffer. Buffer shrinks from ~4 weeks to ~4 weeks minus 1 day. All 125 content topics still preserved.
+
+**Prior:** 2026-04-21 — **Option B restructure applied.** Sundays are now dedicated Anki consolidation days (no new content). Content queue cascaded forward: Mon–Sat = content (6/week), Sun = Anki. All 125 remaining content topics preserved — none dropped. Original Weeks 20–22 "free buffer" (21 days) redistributed as 21 weekly Anki Sundays across Weeks 2–22. Last content day: Sat Sep 12 (was Aug 23). Final Anki: Sun Sep 13. Exam buffer (Sep 14 → mid-October) = ~4 weeks.
 
 | Week | Dates | File | Phase |
 |------|-------|------|-------|

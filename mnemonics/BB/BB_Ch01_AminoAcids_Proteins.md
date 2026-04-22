@@ -1,4 +1,11 @@
-# Protein Structure & Function Mnemonics
+# BB Chapter 1 — Amino Acids, Peptides, Proteins — Mnemonics
+
+Scope: AA classifications, single-letter codes, protein structure levels, force ranking.
+
+AAMC FC mapping: FC1A
+Kaplan: Biochem Ch 1
+
+---
 
 ## Amino Acid Classifications (Kaplan System)
 
@@ -43,31 +50,4 @@
 
 Force ranking for tertiary structure: **Hydrophobic interactions** (dominant driving force, entropic) > Disulfide bonds (strongest individual bond, covalent) > Salt bridges > H-bonds > Van der Waals
 
----
-
-## Signal Transduction
-
-### G-Protein Pathways: "Gs Stimulates, Gi Inhibits, Gq Squirts Calcium"
-- **Gs** = stimulatory -> adenylyl cyclase UP -> cAMP UP -> PKA
-- **Gi** = inhibitory -> adenylyl cyclase DOWN -> cAMP DOWN
-- **Gq** = "Q-alcium" -> PLC -> IP3 + DAG -> Ca2+ release from ER + PKC
-
-### Cholera vs. Pertussis Toxin
-- **Cholera** = Gs permanently ON (can't hydrolyze GTP) -> cAMP stays HIGH
-- **Pertussis** = Gi permanently OFF (locked in GDP state) -> cAMP stays HIGH
-- Both increase cAMP but by different mechanisms
-
----
-
-## Motor Proteins: "Kinesin Kicks Out, Dynein Drags In"
-- **Kinesin** = toward (+) end (anterograde, away from nucleus)
-- **Dynein** = toward (-) end (retrograde, toward nucleus)
-- Also: "Kin-away" -- kinesin walks away from the nucleus
-
----
-
-## Collagen: "Gly-X-Y, Vitamin C or You Die (Scurvy)"
-- Triple helix, every 3rd residue = Gly (smallest, fits inside)
-- X = often Pro, Y = often Hydroxyproline
-- Hydroxyproline requires vitamin C (prolyl hydroxylase cofactor)
-- No vitamin C = weak collagen = scurvy
+→ Signal transduction, motor proteins, collagen mnemonics: see Ch 3

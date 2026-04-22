@@ -1,6 +1,10 @@
-# BB — FC1B: Gene Expression (Bio, Biochem)
+# BB Chapter 6 — DNA & Biotechnology
 
-Parent section: Foundational Concept 1 — Biomolecules have unique properties
+Scope: DNA structure, eukaryotic chromosome organization, DNA replication, DNA repair, recombinant DNA / biotech techniques.
+
+AAMC FC mapping: FC1B (Gene Expression)
+
+Kaplan: Biochem Ch 6
 
 ---
 
@@ -17,24 +21,6 @@ REPLICATION:
 - Telomeres/telomerase
 - DNA repair: mismatch, nucleotide excision, base excision (Kaplan gap)
 
-TRANSCRIPTION:
-- RNA polymerase (no primer needed)
-- Promoters (TATA box), terminators
-- mRNA processing: 5' cap (7-methylguanosine), 3' poly-A tail, splicing (introns removed, exons joined -- spliceosome, snRNPs)
-- Types: mRNA, tRNA (cloverleaf), rRNA
-
-TRANSLATION:
-- Ribosome: 40S+60S=80S (eukaryotic), 30S+50S=70S (prokaryotic)
-- tRNA charging: aminoacyl-tRNA synthetases
-- Codons/anticodons, wobble base pairing
-- Start codon (AUG, methionine), stop codons (UAA, UAG, UGA)
-- Initiation -> elongation -> termination
-- Post-translational modifications: phosphorylation, glycosylation, ubiquitination, proteolytic cleavage
-
-GENE REGULATION:
-- Prokaryotic: lac operon (inducible, lactose present -> repressor off, low glucose -> cAMP+CAP activates), trp operon (repressible)
-- Eukaryotic: transcription factors, enhancers/silencers, epigenetics (DNA methylation = silencing, histone acetylation = activation, deacetylation = silencing), miRNA, siRNA, RNA interference, alternative splicing (Kaplan gap)
-
 BIOTECHNOLOGY:
 - PCR: denaturation (95C), annealing (55-65C), extension (72C), Taq polymerase, exponential amplification
 - RT-PCR: mRNA -> cDNA via reverse transcriptase, then PCR
@@ -48,7 +34,7 @@ BIOTECHNOLOGY:
 - Microarrays: genome-wide expression profiling
 - CRISPR-Cas9: guide RNA-directed gene editing
 - RFLP analysis
-- ELISA (direct, indirect, sandwich)
+- ELISA (direct, indirect, sandwich) → see Ch 3
 - FISH (fluorescence in situ hybridization) (Kaplan gap)
 
-Kaplan: Biochem Ch 6-7, Bio Ch 1
+→ Transcription, translation, gene regulation: see Ch 7

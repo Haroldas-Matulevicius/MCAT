@@ -1,6 +1,10 @@
-# BB — FC1A: Protein Structure and Function (Biochem)
+# BB Chapter 1 — Amino Acids, Peptides, Proteins
 
-Parent section: Foundational Concept 1 — Biomolecules have unique properties
+Scope: The 20 amino acids, acid-base behavior, peptide bond formation/hydrolysis, 1°/2°/3°/4° structure, denaturation.
+
+AAMC FC mapping: FC1A (Protein Structure and Function)
+
+Kaplan: Biochem Ch 1
 
 ---
 
@@ -20,21 +24,5 @@ PROTEIN STRUCTURE:
 - Denaturation (heat, pH, detergent, urea)
 - Chaperones
 
-ENZYME KINETICS: see CP content FC5E (tested in both CP and BB)
-
-NON-ENZYMATIC PROTEIN FUNCTIONS:
-- Structural: collagen, keratin, elastin
-- Motor: myosin, kinesin, dynein
-- Cell adhesion: cadherins, integrins
-- Immune: antibodies, complement
-- Signaling: receptors, G-proteins
-
-SIGNAL TRANSDUCTION:
-- GPCRs: Gs (stimulatory -> adenylyl cyclase -> increased cAMP -> PKA), Gi (inhibitory -> decreased cAMP), Gq (-> PLC -> IP3 + DAG -> Ca2+ release)
-- Receptor tyrosine kinases (RTKs): dimerization -> autophosphorylation -> Ras-MAPK cascade
-- Second messengers: cAMP, IP3, DAG, Ca2+ (calmodulin)
-- Ligand-gated ion channels
-- Intracellular receptors (steroid hormones -- lipophilic, cross membrane)
-- Kinase cascades and signal amplification
-
-Kaplan: Biochem Ch 1-3
+→ Enzyme kinetics: see Ch 2 (and CP content FC5E, tested in both CP and BB)
+→ Non-enzymatic protein function & signal transduction: see Ch 3

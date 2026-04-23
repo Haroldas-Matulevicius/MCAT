@@ -5,7 +5,7 @@ You are an MCAT coach and tutor built specifically for Haroldas (Limitz). You ar
 ## Student Profile
 
 - **Name:** Haroldas (Limitz)
-- **Target exam:** Mid-October 2026
+- **Target exam:** Thursday, October 15, 2026
 - **Baseline:** Content review phase, starting from scratch on most topics
 - **Goal:** Competitive MCAT score (518+)
 - **Schedule:** 7 days/week, ~5 hrs/day
@@ -16,17 +16,17 @@ You are an MCAT coach and tutor built specifically for Haroldas (Limitz). You ar
 ## Current Phase
 
 **Phase 1 -- Content Review**
-- Dates: April 14, 2026 -- July 9, 2026 (Week 13 Thu, under Option B)
+- Dates: April 14, 2026 -- July 16, 2026 (Week 14 Thu, post Kaplan-chapter restructure)
 - Focus: Systematic content learning across BB, CP, PS with weekly CARS practice
 - **Weekly structure (Option B, since 2026-04-21):** Mon–Sat = content days (6/week), Sun = dedicated Anki consolidation day (no new content)
 - Daily content-day structure: 3 hrs content | 1.5 hrs Anki | 30 min practice Qs
 - Sunday Anki-day structure: 3 hrs Anki | 1 hr weak-spot drill | 30 min quick-fire quiz | 30 min weekly review
 
-Phases (post Option B restructure — no content days lost; 21 former "free buffer" days redistributed as weekly Anki Sundays):
-1. Content Review (Apr 14 -- Jul 9, Weeks 1-13 partial) — 69 content topics
-2. Practice & Integration (Jul 10 -- Aug 11, Week 13 Fri through Week 18 Tue) — 28 topics
-3. AAMC Materials (Aug 12 -- Sep 12, Week 18 Wed through Week 22 Sat) — 28 topics
-4. Pre-exam Buffer (Sep 13 final Anki → exam mid-October) — ~4 weeks
+Phases (post 2026-04-22 Kaplan-chapter restructure — Phase 1 extended +7 days to accommodate 12 Kaplan biochem chapters @ 1/day with heavy-chapter half-splits; buffer reduced 4→3 weeks against locked exam date Oct 15, 2026):
+1. Content Review (Apr 14 -- Jul 16, Weeks 1-14 partial) — 69+ content topics (biochem expanded to 12-chapter granularity)
+2. Practice & Integration (Jul 17 -- Aug 18, Week 14 Fri through Week 19 Tue) — 28 topics
+3. AAMC Materials (Aug 19 -- Sep 19, Week 19 Wed through Week 23 Sat) — 28 topics
+4. Pre-exam Buffer (Sep 20 final Anki → Thu Oct 15 exam) — ~3 weeks (25 days)
 
 Update this section when transitioning between phases.
 
@@ -63,14 +63,16 @@ All schedule, logs, and tracking live here. Split by week for lean context loadi
 - `progression/mcat_schedule.ics` -- Google Calendar import file. Regenerate after any schedule shift.
 - `progression/gen_ics.py` -- Script to regenerate the ICS file.
 
-**Week file date ranges (Option B, since 2026-04-21):**
+**Week file date ranges (post 2026-04-22 Kaplan-chapter restructure):**
 - Kickoff: Apr 13 | Week 1: Apr 14-19 (Tue-Sun, pre-Option B — Sun Apr 19 was a cascade rest day)
-- Weeks 2-12: Apr 20 - Jul 5 (Phase 1: Content Review)
-- Week 13: Jul 6-12 (Phase 1/2 Transition — P1 Mon–Thu, P2 Fri–Sat, Anki Sun)
-- Weeks 14-17: Jul 13 - Aug 9 (Phase 2: Practice & Integration)
-- Week 18: Aug 10-16 (Phase 2/3 Transition — P2 Mon–Tue, P3 Wed–Sat, Anki Sun)
-- Weeks 19-22: Aug 17 - Sep 13 (Phase 3: AAMC Materials; Sep 12 last content, Sep 13 final Anki)
-- Sep 14 → exam mid-October: Pre-exam Buffer (~4 weeks)
+- Weeks 2-13: Apr 20 - Jul 12 (Phase 1: Content Review)
+- Week 14: Jul 13-19 (Phase 1/2 Transition — P1 Mon–Thu, P2 Fri–Sat, Anki Sun)
+- Weeks 15-18: Jul 20 - Aug 16 (Phase 2: Practice & Integration)
+- Week 19: Aug 17-23 (Phase 2/3 Transition — P2 Mon–Tue, P3 Wed–Sat, Anki Sun)
+- Weeks 20-23: Aug 24 - Sep 20 (Phase 3: AAMC Materials; Sep 19 last content, Sep 20 final Anki)
+- Sep 21 → Thu Oct 15 (exam): Pre-exam Buffer (~3 weeks / 25 days)
+
+**Note:** Week files (week_13.md through week_22.md) have NOT yet been cascaded to new dates. Rebuild deferred to post-Kaplan-Bio-restructure pass (tomorrow) when biochem + bio chapter slots get reassigned in one clean sweep.
 
 **Weekly time blocks (constant, 7 days/week):**
 Mon 7AM-12PM | Tue 1-6PM | Wed 4-9PM | Thu 1-6PM | Fri 12:30-5:30PM | Sat 7AM-12PM | Sun 7AM-12PM (Anki consolidation)

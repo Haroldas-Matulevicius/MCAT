@@ -2,13 +2,9 @@
 
 Date-to-week lookup. Read this file to find the current week file based on today's date.
 
-**PENDING CASCADE (apply during tomorrow's rebuild):** Apr 22 Wed was MISSED (no study). All content from Apr 22 onward must shift +1 day; Sundays preserved as Anki. Apr 23 Thu = Protein Structure & Folding (was Apr 22). Sat content rolls to next Mon per cascade rules.
+**PENDING CASCADE (apply during next schedule rebuild):** Apr 22 Wed was MISSED (no study). All content from Apr 22 onward must shift +1 day; Sundays preserved as Anki. Apr 23 Thu = Protein Structure & Folding (was Apr 22). Sat content rolls to next Mon per cascade rules.
 
-**Last updated:** 2026-04-22 — **Kaplan-chapter restructure + Phase 1 extension.** BB biochem restructured to 12 Kaplan chapter files (Content/Research/Mnemonics, commit 21becf1). Exam date locked: **Thu Oct 15, 2026**. Phase 1 extended by 1 week (+7 content days) to accommodate 1-chapter-per-day pace with half-splits for heavy chapters (Ch 6, 7, 9, 11, 12). Pre-exam buffer trimmed from ~4 weeks to ~3 weeks (25 days, Sep 21 → Oct 15). All downstream phases shift +7 days. Week 13 becomes fully Phase 1; Week 14 becomes new P1/P2 transition; Week 19 becomes new P2/P3 transition; Weeks 20-23 = Phase 3. **Week files (13-22) NOT yet cascaded** — rebuild deferred to post-Kaplan-Bio-restructure pass (tomorrow) to reassign all slots in one clean sweep. Table below still reflects OLD dates pending that rebuild.
-
-**Prior:** 2026-04-22 — **+1 day delay cascade applied.** Apr 21 was a missed day (content dump only, no quiz/log); Apr 22 was also lost. All content from Apr 21 onward shifted +1 day; Sundays preserved as dedicated Anki days (content landing on Sun skips to next Mon). Apr 21 Tue = MISSED/FLEX. Sat content each week rolls to next Mon.
-
-**Prior:** 2026-04-21 — **Option B restructure applied.** Sundays are now dedicated Anki consolidation days (no new content). Content queue cascaded forward: Mon–Sat = content (6/week), Sun = Anki. All 125 remaining content topics preserved — none dropped. Original Weeks 20–22 "free buffer" (21 days) redistributed as 21 weekly Anki Sundays across Weeks 2–22. Last content day: Sat Sep 12 (was Aug 23). Final Anki: Sun Sep 13. Exam buffer (Sep 14 → mid-October) = ~4 weeks.
+**Last change:** 2026-04-22 — **Kaplan-chapter restructure + Phase 1 extension.** BB biochem restructured to 12 Kaplan chapter files (Content/Research/Mnemonics, commit 21becf1). Exam date locked: **Thu Oct 15, 2026**. Phase 1 extended by 1 week (+7 content days) for 1-chapter-per-day pace with half-splits for heavy chapters (Ch 6, 7, 9, 11, 12). Buffer trimmed 4 → 3 weeks (25 days, Sep 21 → Oct 15). All downstream phases shift +7 days. Week 13 becomes fully Phase 1; Week 14 = new P1/P2 transition; Week 19 = new P2/P3 transition; Weeks 20-23 = Phase 3. **Week files (13-22) NOT yet cascaded** — rebuild deferred to post-Kaplan-Bio-restructure pass so all slots get reassigned in one clean sweep. Table below still reflects OLD dates pending that rebuild.
 
 | Week | Dates | File | Phase |
 |------|-------|------|-------|
@@ -35,7 +31,7 @@ Date-to-week lookup. Read this file to find the current week file based on today
 | 20 | Aug 24 - Aug 30 | week_20.md | 3: AAMC Materials |
 | 21 | Aug 31 - Sep 06 | week_21.md | 3: AAMC Materials |
 | 22 | Sep 07 - Sep 13 | week_22.md | 3: AAMC Materials (final content + Anki) |
-| Buffer | Sep 14 - exam | — | 4: Pre-exam Buffer (~4 weeks) |
+| Buffer | Sep 14 - exam | — | 4: Pre-exam Buffer (stale — reflects pre-extension layout) |
 
 **Sunday Anki Day template (5 hrs, 7 AM - 12 PM):**
 - 3 hrs Anki (new cards + backlog)

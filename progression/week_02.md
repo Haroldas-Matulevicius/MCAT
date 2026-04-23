@@ -11,7 +11,7 @@
 |------|-----|------|---------|-----|--------|
 | Apr 20 | Mon | 7:00 AM – 12:00 PM | PS | Biological Bases of Behavior & Neuroscience | [x] |
 | Apr 21 | Tue | 1:00 PM – 6:00 PM | MISSED | Delay day — content dump only, no quiz/log. Cascaded forward (+1) | [ ] |
-| Apr 22 | Wed | 4:00 PM – 9:00 PM | BB | Protein Structure & Folding (1-4) | [ ] |
+| Apr 22 | Wed | 4:00 PM – 9:00 PM | MISSED | Delay day — no study. Cascaded forward (+1). Protein Structure moves to Apr 23 (Thu) | [ ] |
 | Apr 23 | Thu | 1:00 PM – 6:00 PM | CP | Bonding & Intermolecular Forces | [ ] |
 | Apr 24 | Fri | 12:30 PM – 5:30 PM | CARS | Foundations — Main Idea & Passage Mapping | [ ] |
 | Apr 25 | Sat | 7:00 AM – 12:00 PM | BB | Enzyme Kinetics & Regulation | [ ] |

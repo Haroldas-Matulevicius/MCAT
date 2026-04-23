@@ -113,9 +113,6 @@ Each subject folder has an `INDEX.md` with trigger keywords for file routing:
 
 **Context budget:** A typical study session should load ≤5 files beyond the week file and INDEX lookups.
 
-**Never load (redundant legacy):**
-- `Content/MCAT_CONTENT_REFERENCE (1).md` — 1453-line legacy monolith, fully superseded by split files.
-
 **Monolith exception:** `Content/BB_Bio_Biochem.md` (444 lines) and `Content/CP_Chemical_Physical.md` (344 lines) — only load for full-section overviews; default to sub-files for topic-specific work.
 
 ## Topic switch mid-session

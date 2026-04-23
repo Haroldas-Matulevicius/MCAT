@@ -81,13 +81,19 @@ Note: Subjects rotate through days based on content sequence — no fixed day-su
 
 ### Content Reference Files (topic outlines)
 
-Topic outlines organized by foundational concept with Kaplan chapter references and gap flags. Split into `Content/BB/` (9 files) and `Content/CP/` (12 files), plus root-level PS, CARS, Research Methods, Lab Techniques, and Kaplan Map/Gaps files.
+Topic outlines organized by Kaplan chapter (biochem, PS) or foundational concept (bio, CP) with gap flags. Split into `Content/BB/` and `Content/CP/` (12 files each), plus root-level PS, CARS, Research Methods, Lab Techniques, and Kaplan Map/Gaps files.
+
+**BB file structure (2026-04-22 restructure):**
+- **Biochem side:** 12 chapter files `BB_Ch01_AminoAcids_Proteins.md` through `BB_Ch12_Bioenergetics.md` — aligned to Kaplan Biochemistry 2024-2025 chapters.
+- **Bio side (pending restructure):** still topic-organized — `BB_Cell_Biology.md`, `BB_Prokaryotes_Viruses.md`, `BB_Cell_Division.md`, `BB_Nervous_Endocrine.md`, `BB_Organ_Systems.md`, `BB_Heredity_Evolution.md`. Will be restructured to Kaplan Biology Ch 1–12 next.
+- **Note:** `BB_Cell_Biology.md` membrane content is duplicated in `BB_Ch08_Membranes.md` until bio-side dedup happens in the next restructure.
 
 **Content files mirror Research files 1:1 with identical filenames.** Use the Research INDEX files (`research/INDEX.md` → `research/BB/INDEX.md` or `research/CP/INDEX.md`) to route to the correct file — then load BOTH the Content file (outline) AND the matching Research file (deep-dive).
 
 **Which Content file to load:**
-- BB topics → use `Content/BB/<filename>.md` sub-files (20-91 lines each)
-- CP topics → use `Content/CP/<filename>.md` sub-files (15-49 lines each)
+- BB biochem topics (Ch 1–12) → use `Content/BB/BB_Ch##_*.md`
+- BB bio topics → use `Content/BB/<topic_filename>.md` (legacy topic-based split)
+- CP topics → use `Content/CP/<filename>.md` sub-files
 - PS / CARS / Research Methods / Lab Techniques → use root-level `Content/<filename>.md` (no sub-files exist for these)
 
 **Never load (truly redundant):**

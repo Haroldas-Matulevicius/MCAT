@@ -1,12 +1,248 @@
-# FC2B: Prokaryotes and Viruses -- Deep Dive
+# BB Bio Chapter 1 — The Cell
+
+Scope: Cell theory; eukaryotic cell structure (organelles, cytoskeleton, endomembrane system); classification & structure of prokaryotic cells; genetics & growth of prokaryotic cells; viruses, prions, fungi.
 
 **Section:** Bio/Biochem (BB)
-**Yield:** HIGH -- Expect 3-5 discrete questions plus integration into passage-based Qs
-**Connections:** Antibiotics (CP/BB), immune response (BB), genetics/central dogma (BB), experimental design (passages using phage or bacteria)
+**AAMC FC mapping:** FC2A (Cell structure -- organelles, cytoskeleton portion); FC2B (Prokaryotes & viruses)
+**Kaplan Reference:** Biology Chapter 1
+**Yield:** Very high. Organelle function, prokaryote/eukaryote contrasts, and viral lifecycles are nearly guaranteed exam content.
+
+> Note: Membrane structure and transport (formerly part of FC2A) now lives in `BB_Ch08_Membranes.md` (biochem chapter). Cross-load both for cell-membrane topics.
 
 ---
 
-## 1. Prokaryotic Cell Structure
+## 1. Organelles
+
+### Nucleus
+
+The nucleus is the cell's command center -- it houses DNA and coordinates gene expression.
+
+**Nuclear envelope**: A **double membrane** (inner + outer) continuous with the rough ER. The outer membrane often has ribosomes studding its cytoplasmic face. Between the two membranes is the **perinuclear space**, which is continuous with the ER lumen. This matters because it means the nuclear envelope is part of the endomembrane system.
+
+**Nuclear pore complex (NPC)**: Large protein assemblies (~30+ nucleoporins) that span both membranes. They are **selective gates**:
+- Small molecules and ions diffuse freely through the pore.
+- Large molecules (proteins, ribosomal subunits, mRNA) require **active transport** using **importins/exportins** and a **Ran-GTP gradient**. Ran-GTP is concentrated in the nucleus; Ran-GDP in the cytoplasm. This gradient drives directionality of transport.
+- **Nuclear localization signals (NLS)** on proteins tag them for import. **Nuclear export signals (NES)** tag molecules for export.
+
+**Nucleolus**: A dense, non-membrane-bound region inside the nucleus. Its job is **rRNA synthesis and ribosomal subunit assembly**. rRNA genes are transcribed here, rRNA is processed and combined with ribosomal proteins (imported from the cytoplasm), and the assembled subunits are exported through nuclear pores. The nucleolus disappears during mitosis (chromatin condenses, transcription halts) and reforms in telophase.
+
+> **MCAT connection**: Questions love testing what goes through nuclear pores and in which direction. mRNA goes OUT. Ribosomal proteins go IN, then assembled subunits come back OUT. DNA polymerase and transcription factors go IN.
+
+---
+
+### Mitochondria
+
+Mitochondria are the **powerhouse** -- but more importantly for the MCAT, you need to know *where* each metabolic process occurs within them.
+
+**Double membrane**:
+- **Outer membrane**: Fairly permeable (has **porins**). Allows most small molecules through.
+- **Inner membrane**: Highly **impermeable** -- this is critical. The impermeability is what allows the **proton gradient** (electrochemical gradient) to be maintained. The inner membrane is folded into **cristae** to increase surface area for the electron transport chain (ETC) and ATP synthase.
+- **Intermembrane space (IMS)**: The space between outer and inner membranes. Protons are pumped here by Complexes I, III, and IV, making it **acidic** relative to the matrix (~pH 7.0 in IMS vs ~pH 7.8 in matrix).
+- **Matrix**: The innermost compartment.
+
+**Where things happen**:
+| Process | Location |
+|---------|----------|
+| TCA cycle (Krebs) | Matrix |
+| Pyruvate dehydrogenase | Matrix |
+| Fatty acid beta-oxidation | Matrix |
+| ETC (Complexes I-IV) | Inner membrane |
+| ATP synthase (Complex V) | Inner membrane |
+| Proton accumulation | IMS |
+
+**Mitochondrial DNA**: Mitochondria have their own **circular DNA** (like bacteria -- supports endosymbiotic theory). Key facts:
+- **Maternal inheritance** -- sperm mitochondria are tagged with ubiquitin and degraded after fertilization.
+- Encodes 13 ETC proteins, 22 tRNAs, and 2 rRNAs. Most mitochondrial proteins are still nuclear-encoded and imported.
+- Mitochondrial DNA has a **higher mutation rate** than nuclear DNA (no histones, limited repair mechanisms, proximity to ROS from the ETC).
+
+> **MCAT connection**: Diseases with maternal inheritance patterns = think mitochondrial. Example: **Leber hereditary optic neuropathy (LHON)**. Also, cyanide and carbon monoxide poison the ETC at Complex IV -- they work because the inner membrane must maintain its proton gradient to make ATP.
+
+---
+
+### Endoplasmic Reticulum (ER)
+
+**Rough ER (RER)**:
+- Studded with **ribosomes** on the cytoplasmic face.
+- Function: Synthesis of **secretory proteins**, **membrane proteins**, and **lysosomal enzymes**.
+- The **signal recognition particle (SRP)** binds the signal sequence on a nascent polypeptide, pauses translation, and docks the ribosome-mRNA complex to the **SRP receptor** on the RER. Translation resumes, and the protein is threaded into the ER lumen through a **translocon**.
+- Inside the ER lumen: **N-linked glycosylation** begins (oligosaccharide added to asparagine residues), **disulfide bond formation** (oxidizing environment in the lumen), and **protein folding** with chaperones (e.g., BiP).
+- Misfolded proteins are targeted for **ER-associated degradation (ERAD)** -- sent back to the cytoplasm and degraded by proteasomes.
+
+**Smooth ER (SER)**:
+- No ribosomes.
+- **Lipid synthesis**: phospholipids, steroids (important in steroid-producing cells like adrenal cortex and gonads).
+- **Detoxification**: cytochrome P450 enzymes oxidize drugs and toxins (abundant in hepatocytes -- this is why the liver detoxifies).
+- **Calcium storage**: The SER sequesters Ca2+ via **SERCA pumps** (Ca2+-ATPases). Release of Ca2+ from the SER is a key signaling event (e.g., IP3 triggers Ca2+ release). In muscle cells, the SER is called the **sarcoplasmic reticulum (SR)**, and Ca2+ release triggers contraction.
+
+> **MCAT connection**: Signal sequence, SRP pathway, and the distinction between N-linked (ER, asparagine) vs O-linked (Golgi, serine/threonine) glycosylation are high-yield.
+
+---
+
+### Golgi Apparatus
+
+Think of the Golgi as the **post office** -- it receives, modifies, sorts, and ships proteins.
+
+**Structure**: Stacked, flattened membrane sacs (**cisternae**). Has polarity:
+- **Cis face** (receiving): faces the ER. Receives transport vesicles from the ER.
+- **Medial cisternae**: middle processing layers.
+- **Trans face** (shipping): faces the plasma membrane. Sends vesicles to their final destinations.
+
+**Modifications in the Golgi**:
+- **O-linked glycosylation**: Addition of sugars to serine or threonine residues (happens ONLY in the Golgi, unlike N-linked which starts in the ER).
+- **Trimming and modification of N-linked glycans**: The oligosaccharide chains added in the ER are further processed.
+- **Phosphorylation of mannose residues**: Adding **mannose-6-phosphate (M6P)** tags to lysosomal enzymes. M6P receptors in the trans-Golgi network recognize these tags and direct the enzymes into vesicles bound for lysosomes. This is a critical sorting mechanism.
+- **Proteolytic processing**: Some proteins are cleaved to their active forms.
+
+**Sorting at the trans-Golgi network**:
+- Constitutive secretory pathway: default, continuous secretion (e.g., ECM proteins, antibodies).
+- Regulated secretory pathway: stored in secretory granules, released on signal (e.g., insulin from beta cells, neurotransmitters).
+- Lysosomal pathway: M6P-tagged enzymes sent to lysosomes.
+
+> **MCAT connection**: **I-cell disease** (mucolipidosis II) -- failure to add M6P tags. Lysosomal enzymes are secreted outside the cell instead of being delivered to lysosomes. Lysosomes fill with undigested material ("inclusion bodies"). This is a classic example they can test.
+
+---
+
+### Lysosomes
+
+**Lysosomes** are membrane-bound organelles filled with **acid hydrolases** (~50 different enzymes) that break down macromolecules: proteins, lipids, carbohydrates, nucleic acids.
+
+**Optimal pH ~5** (acidic). The cytoplasm is ~pH 7.2. How is this gradient maintained?
+- **V-type H+ ATPases** (vacuolar proton pumps) in the lysosomal membrane actively pump H+ into the lysosome using ATP. This keeps the interior acidic.
+- The acidic pH serves as a **safety mechanism**: if a lysosome ruptures, its enzymes are mostly inactive at cytoplasmic pH 7.2, limiting damage. (Though massive lysosome rupture can trigger apoptosis.)
+
+**Functions**:
+- **Autophagy**: Digestion of the cell's own damaged organelles. An **autophagosome** (double-membrane vesicle) engulfs the organelle and fuses with a lysosome.
+- **Phagocytic digestion**: Macrophages engulf pathogens into a **phagosome**, which fuses with a lysosome to form a **phagolysosome** where the pathogen is destroyed.
+- **Receptor recycling**: After receptor-mediated endocytosis, the endosome acidifies, causing ligand release. Receptors can be recycled back to the membrane; ligands are sent to lysosomes for degradation (e.g., LDL receptor pathway).
+
+**Lysosomal storage diseases**: When a specific lysosomal enzyme is deficient or absent, its substrate accumulates. Examples:
+| Disease | Missing Enzyme | Accumulated Substrate |
+|---------|---------------|----------------------|
+| **Tay-Sachs** | Hexosaminidase A | GM2 ganglioside |
+| **Gaucher** | Glucocerebrosidase | Glucocerebroside |
+| **Niemann-Pick** | Sphingomyelinase | Sphingomyelin |
+| **Hurler syndrome** | alpha-L-iduronidase | Heparan/dermatan sulfate |
+| **Pompe** | Acid maltase (acid alpha-glucosidase) | Glycogen |
+
+> **MCAT connection**: Tay-Sachs is the most commonly tested. Cherry-red macula, neurodegeneration, autosomal recessive, more common in Ashkenazi Jewish populations. Know the general principle: enzyme deficiency leads to substrate accumulation.
+
+---
+
+### Peroxisomes
+
+**Peroxisomes** are single-membrane organelles involved in **oxidative reactions** that produce **hydrogen peroxide (H2O2)** as a byproduct.
+
+- **Catalase** is the key enzyme: it breaks down H2O2 into water and oxygen (2H2O2 -> 2H2O + O2). This protects the cell from oxidative damage.
+- **Very long chain fatty acid (VLCFA) beta-oxidation**: Peroxisomes shorten VLCFAs that are too long for mitochondrial beta-oxidation. The shortened chains are then transferred to mitochondria for complete oxidation.
+- **Plasmalogen synthesis**: Important membrane lipids, especially in the brain and heart.
+- Peroxisomes are NOT part of the endomembrane system -- they self-replicate by division and import their proteins from the cytoplasm using **peroxisomal targeting signals (PTS)**.
+
+> **MCAT connection**: **Zellweger syndrome** -- failure to import peroxisomal enzymes due to defective PEX genes. VLCFAs accumulate. Severe neurological defects, usually fatal in infancy. Also know that peroxisomes and mitochondria both do beta-oxidation but on different substrates.
+
+---
+
+### The Endomembrane System: Protein Trafficking
+
+The endomembrane system connects the ER, Golgi, lysosomes, endosomes, and plasma membrane through **vesicular transport**.
+
+**The secretory pathway** (for a newly synthesized secretory protein):
+1. Protein synthesized on **RER** ribosomes, enters ER lumen via SRP pathway.
+2. Protein folds, gets N-linked glycosylation in the ER.
+3. **COPII-coated vesicles** bud from the ER and carry the protein to the **cis-Golgi**.
+4. Protein moves through Golgi cisternae (cis -> medial -> trans), receiving further modifications.
+5. At the **trans-Golgi network**, the protein is sorted:
+   - **Clathrin-coated vesicles** carry lysosomal enzymes (M6P-tagged) to late endosomes/lysosomes.
+   - Secretory vesicles carry proteins to the plasma membrane for secretion or membrane insertion.
+
+**Retrograde transport**: **COPI-coated vesicles** carry proteins backwards (Golgi -> ER) to retrieve escaped ER-resident proteins. ER-resident proteins have a **KDEL sequence** (Lys-Asp-Glu-Leu) that acts as an ER retrieval signal.
+
+**Coat proteins summary**:
+| Coat | Direction | Function |
+|------|-----------|----------|
+| **COPII** | ER -> Golgi | Anterograde transport |
+| **COPI** | Golgi -> ER | Retrograde retrieval |
+| **Clathrin** | Trans-Golgi -> lysosomes; plasma membrane -> endosomes | Sorting to lysosomes; receptor-mediated endocytosis |
+
+> **MCAT connection**: COPII = forward (think: II looks like arrows pointing forward). COPI = backward. Clathrin is used at two places: Golgi sorting and receptor-mediated endocytosis at the cell surface.
+
+---
+
+## 2. Cytoskeleton
+
+The cytoskeleton provides **structure, movement, and intracellular transport**. Three types of filaments, each with distinct properties.
+
+### Microfilaments (Actin Filaments)
+
+- **Composition**: Polymerized **G-actin** (globular) monomers form **F-actin** (filamentous) strands. Two strands twist into a helix.
+- **Diameter**: ~7 nm (thinnest).
+- **Polarity**: Yes -- has a **plus end** (fast-growing, barbed end) and **minus end** (slow-growing, pointed end).
+- **Functions**:
+  - **Muscle contraction**: Actin thin filaments interact with myosin thick filaments (sliding filament model).
+  - **Cytokinesis**: The **contractile ring** (actin + myosin II) pinches the cell in two during cell division.
+  - **Cell motility**: Actin polymerization at the leading edge pushes the membrane forward (lamellipodia, filopodia).
+  - **Cell shape and microvilli**: Actin cores stiffen microvilli in intestinal epithelial cells (increases absorptive surface area).
+  - **Cell cortex**: A meshwork of actin just beneath the plasma membrane, giving mechanical support.
+
+**Drug target**: **Cytochalasin B/D** -- caps the plus end of actin filaments, preventing polymerization. Disrupts cytokinesis, cell motility, and phagocytosis. **Phalloidin** -- stabilizes actin filaments, preventing depolymerization (used in research, not tested as heavily).
+
+---
+
+### Intermediate Filaments (IFs)
+
+- **Diameter**: ~10 nm (intermediate between actin and microtubules).
+- **Composition**: Varies by cell type -- this is the defining feature. They are tissue-specific:
+  - **Keratins**: Epithelial cells (also hair, nails).
+  - **Vimentin**: Mesenchymal cells (fibroblasts, endothelial cells, white blood cells).
+  - **Desmin**: Muscle cells.
+  - **Neurofilaments**: Neurons (caliber of axon).
+  - **Lamins**: Nuclear lamina (lines the inner nuclear membrane, provides structural support).
+  - **GFAP**: Glial cells (astrocytes).
+- **NO polarity**: Unlike actin and microtubules, IFs are **non-polar**. This means no motor proteins walk along them.
+- **Purely structural**: They resist **tensile (stretching) forces**. They don't participate in cell motility or intracellular transport.
+- **Most stable** of the three filament types -- they don't undergo the dynamic treadmilling or dynamic instability that actin and microtubules do.
+
+**Anchoring**: IFs attach to **desmosomes** and **hemidesmosomes** (cell junctions that resist shearing forces).
+
+> **MCAT connection**: **Epidermolysis bullosa simplex** -- mutation in keratin genes. Skin blisters easily because epithelial IFs can't resist mechanical stress. Also, lamins disassemble during mitosis (phosphorylation by CDKs causes nuclear envelope breakdown).
+
+---
+
+### Microtubules
+
+- **Composition**: Heterodimers of **alpha-tubulin** and **beta-tubulin** polymerize into a hollow tube of 13 protofilaments.
+- **Diameter**: ~25 nm (largest).
+- **Polarity**: Yes -- **plus end** (beta-tubulin exposed, fast-growing) and **minus end** (alpha-tubulin exposed, anchored at the **centrosome/MTOC**).
+- **Dynamic instability**: Microtubules rapidly switch between growing and shrinking phases. This is powered by **GTP hydrolysis** -- tubulin dimers bind GTP, and after incorporation, GTP is hydrolyzed to GDP. GDP-tubulin is less stable, so if the GTP cap is lost, the microtubule rapidly depolymerizes (**catastrophe**). Regrowth = **rescue**.
+
+**Functions**:
+- **Mitotic spindle**: Separates chromosomes during cell division. Kinetochore microtubules attach to chromosomes; astral microtubules position the spindle; polar microtubules push the poles apart.
+- **Intracellular transport**: Motor proteins carry cargo along microtubules.
+- **Cilia and flagella**: **9+2 arrangement** of microtubule doublets (9 outer pairs + 2 central singlets). Powered by **axonemal dynein**. The base is the **basal body** (modified centriole, 9+0 triplet arrangement).
+
+### Motor Proteins on Microtubules
+
+| Motor Protein | Direction | Mnemonic | Function |
+|---------------|-----------|----------|----------|
+| **Kinesin** | Toward **+ end** (away from nucleus, toward periphery) | "Kinesin Kicks things out" | Anterograde transport: moves vesicles, organelles toward the cell periphery |
+| **Dynein** (cytoplasmic) | Toward **- end** (toward nucleus/MTOC) | "Dynein Drags things in" | Retrograde transport: moves cargo toward the cell center; also moves chromosomes during mitosis |
+| **Dynein** (axonemal) | -- | -- | Powers ciliary/flagellar beating by sliding microtubule doublets |
+
+> **MCAT connection**: **Kartagener syndrome (primary ciliary dyskinesia)** -- defect in **dynein arms** of cilia. Results in immotile cilia: chronic respiratory infections (can't clear mucus), male infertility (immotile sperm), and **situs inversus** (reversed organ placement, because cilia determine left-right asymmetry during embryogenesis).
+
+### Cytoskeletal Drug Targets
+
+| Drug | Target | Effect |
+|------|--------|--------|
+| **Colchicine** | Tubulin dimers (prevents polymerization) | Blocks mitotic spindle formation -- arrests cells in metaphase. Used to treat gout. |
+| **Taxol (paclitaxel)** | Microtubules (prevents depolymerization) | Stabilizes microtubules -- spindle can't disassemble, so cells can't complete mitosis. Chemotherapy drug. |
+| **Vincristine/Vinblastine** | Tubulin (prevents polymerization) | Similar to colchicine -- blocks mitosis. Chemotherapy. |
+| **Cytochalasin B** | Actin (caps + end, prevents polymerization) | Blocks cytokinesis, phagocytosis, cell movement. |
+
+> Both colchicine and taxol block mitosis, but by **opposite mechanisms** (preventing assembly vs preventing disassembly). The MCAT loves this distinction.
+
+---
+
+## 3. Prokaryotic Cell Structure
 
 ### Cell Wall and Gram Staining
 
@@ -98,7 +334,7 @@ Key features:
 
 ---
 
-## 2. Prokaryotic Reproduction and Genetic Transfer
+## 4. Prokaryotic Reproduction and Genetic Transfer
 
 ### Binary Fission
 
@@ -170,7 +406,7 @@ Prokaryotes do not undergo meiosis or sexual reproduction, but they have three m
 
 ---
 
-## 3. Viruses
+## 5. Viruses
 
 ### Structure and Classification
 
@@ -257,13 +493,13 @@ The MCAT does not expect a definitive "alive or not alive" answer -- it expects 
 
 Bacteriophages are viruses that specifically infect bacteria. They are the workhorses of molecular biology:
 - **Phage display** -- library screening technique
-- **Transduction** -- natural mechanism of horizontal gene transfer (see Section 2)
+- **Transduction** -- natural mechanism of horizontal gene transfer (see Section 4)
 - T-even phages (T2, T4) are classic lytic phages (Hershey-Chase experiment used T2 phage with radiolabeled protein [35S] and DNA [32P] to prove DNA is the genetic material)
 - **Lambda phage** is the classic temperate phage (can do lytic or lysogenic)
 
 ---
 
-## 4. Prions
+## 6. Prions
 
 **Prions** are infectious agents that are pure protein -- they contain **no nucleic acid** whatsoever. This is what makes them conceptually radical: they challenge the central dogma's assumption that information flows from nucleic acid to protein.
 
@@ -287,7 +523,7 @@ Bacteriophages are viruses that specifically infect bacteria. They are the workh
 
 ---
 
-## 5. Fungi Basics
+## 7. Fungi Basics
 
 Fungi are **eukaryotic** organisms (not prokaryotes, not plants, not animals). They are heterotrophs that obtain nutrients by **absorption** (secreting enzymes externally and absorbing digested products). The MCAT tests fungi primarily as a point of comparison.
 
@@ -324,7 +560,7 @@ Fungi reproduce both asexually (spores produced by mitosis -- conidia) and sexua
 
 ---
 
-## High-Yield Summary Table
+## High-Yield Summary Table -- Cell Types
 
 | Feature | Prokaryotes | Viruses | Prions | Fungi |
 |---------|------------|---------|--------|-------|
@@ -346,3 +582,15 @@ Fungi reproduce both asexually (spores produced by mitosis -- conidia) and sexua
 - **HIV and immunology:** Retroviral lifecycle is a bridge between virology, molecular biology, and immune system content
 - **Central dogma exceptions:** Reverse transcriptase (RNA to DNA) and prions (protein to protein "information" transfer) are the two big exceptions you must know
 - **Biofilms and quorum sensing:** Testable as passage-based experimental design questions about bacterial communication
+
+## High-Yield Takeaways for MCAT (Eukaryotic Cell)
+
+1. **Know what happens where in the mitochondrion** -- TCA/beta-ox in matrix, ETC on inner membrane, protons in IMS.
+2. **Signal sequence + SRP pathway** for targeting proteins to the ER.
+3. **N-linked glycosylation starts in the ER; O-linked happens in the Golgi.**
+4. **M6P tags** direct enzymes to lysosomes. Failure = I-cell disease.
+5. **COPII goes forward (ER->Golgi), COPI goes backward (Golgi->ER), clathrin sorts at the Golgi and internalizes at the plasma membrane.**
+6. **Kinesin = + end (out), Dynein = - end (in).** Kartagener syndrome = dynein defect.
+
+→ Membrane structure & transport / cell junctions: see `BB_Ch08_Membranes.md`
+→ Cell cycle, mitosis, apoptosis, cancer: see `BB_Bio_Ch02_Reproduction.md`

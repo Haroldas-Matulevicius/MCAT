@@ -1,12 +1,17 @@
-# FC1C: Heredity and Genetic Diversity -- Deep Dive
+# BB Bio Chapter 12 — Genetics and Evolution
 
-> BB section | Kaplan Biology Ch. 12 (Genetics & Evolution) | High-yield for MCAT
+Scope: Mendelian genetics (segregation, independent assortment, Punnett squares, dihybrid crosses); non-Mendelian patterns (incomplete dominance, codominance, multiple alleles, sex-linked, X-inactivation, epistasis, pleiotropy, polygenic, penetrance/expressivity, linkage); meiosis recap & nondisjunction; mutations; population genetics (Hardy-Weinberg); natural selection; genetic drift; gene flow; speciation; fitness; convergent vs divergent evolution.
+
+**Section:** Bio/Biochem (BB)
+**AAMC FC mapping:** FC1C (Heredity and Genetic Diversity)
+**Kaplan Reference:** Biology Chapter 12
+**Yield:** Very High. Hardy-Weinberg calculations, ABO/X-linked Punnett problems, and sources of genetic variation are repeatedly tested.
 
 ---
 
 ## 1. Mendelian Genetics
 
-### Law of Segregation
+### 1.1 Law of Segregation
 
 Every diploid organism carries **two alleles** for each gene -- one from mom, one from dad. During **meiosis I**, homologous chromosomes separate so that each gamete receives only **one allele** per gene.
 
@@ -14,7 +19,7 @@ Every diploid organism carries **two alleles** for each gene -- one from mom, on
 
 **MCAT takeaway:** Segregation explains why a heterozygote (Aa) produces gametes that are 50% A and 50% a -- not some blended intermediate.
 
-### Law of Independent Assortment
+### 1.2 Law of Independent Assortment
 
 Genes on **different chromosomes** sort independently during meiosis I. The orientation of one homologous pair on the metaphase plate has no effect on the orientation of another pair.
 
@@ -22,7 +27,7 @@ Genes on **different chromosomes** sort independently during meiosis I. The orie
 
 **Critical caveat:** Independent assortment applies only to genes on **different chromosomes** (or genes far apart on the same chromosome). Linked genes violate this law -- covered below under genetic linkage.
 
-### Punnett Squares and Test Crosses
+### 1.3 Punnett Squares and Test Crosses
 
 A **Punnett square** is a grid that predicts offspring genotype and phenotype ratios by crossing the gametes of two parents.
 
@@ -46,7 +51,7 @@ Cross: Aa x Aa
 
 **Test cross:** Cross the organism of unknown genotype with a **homozygous recessive** (aa). If any offspring show the recessive phenotype, the unknown parent must be heterozygous (Aa). If all offspring are dominant, the parent is likely homozygous dominant (AA) -- though you need a large sample size to be confident.
 
-### Dihybrid Cross (9:3:3:1)
+### 1.4 Dihybrid Cross (9:3:3:1)
 
 **Worked example:** AaBb x AaBb
 
@@ -64,7 +69,7 @@ The resulting 4x4 Punnett square gives:
 - **Lethal alleles** -- certain genotypes are inviable (e.g., 2:1 instead of 3:1 in a monohybrid)
 - **Non-Mendelian inheritance** patterns (incomplete dominance, codominance)
 
-### Dominant vs Recessive -- Molecular Basis
+### 1.5 Dominant vs Recessive -- Molecular Basis
 
 **Dominant allele:** Usually encodes a functional protein. One working copy is often enough to produce the wild-type phenotype (the cell makes sufficient protein from one allele).
 
@@ -78,7 +83,7 @@ The resulting 4x4 Punnett square gives:
 
 ## 2. Non-Mendelian Genetics
 
-### Incomplete Dominance
+### 2.1 Incomplete Dominance
 
 The heterozygote has a **blended, intermediate** phenotype between the two homozygotes.
 
@@ -91,7 +96,7 @@ The heterozygote has a **blended, intermediate** phenotype between the two homoz
 
 **Cross ratios:** RR' x RR' gives **1 red : 2 pink : 1 white** -- the phenotype ratio matches the genotype ratio (1:2:1), unlike complete dominance.
 
-### Codominance
+### 2.2 Codominance
 
 Both alleles are **fully expressed simultaneously** in the heterozygote. This is NOT blending -- both phenotypes are visible at the same time.
 
@@ -100,7 +105,7 @@ Both alleles are **fully expressed simultaneously** in the heterozygote. This is
 
 **How to distinguish from incomplete dominance:** In codominance, you can detect both gene products independently. In incomplete dominance, there's a single intermediate phenotype.
 
-### Multiple Alleles -- ABO Blood Type System
+### 2.3 Multiple Alleles -- ABO Blood Type System
 
 The ABO gene has **three alleles** in the population: **I^A, I^B, and i**.
 
@@ -123,7 +128,7 @@ The ABO gene has **three alleles** in the population: **I^A, I^B, and i**.
 
 The child is type O = ii. The child must have received one i from each parent. Therefore mom is **I^A i** and dad is **I^B i**.
 
-### Sex-Linked Traits (X-Linked Recessive)
+### 2.4 Sex-Linked Traits (X-Linked Recessive)
 
 Genes on the **X chromosome** follow a distinct inheritance pattern because males (XY) have only **one X**.
 
@@ -144,7 +149,7 @@ Genes on the **X chromosome** follow a distinct inheritance pattern because male
 
 **1/2 of sons** (X^h Y) will be hemophiliacs. 1/2 of daughters will be carriers.
 
-### X-Inactivation and Barr Bodies
+### 2.5 X-Inactivation and Barr Bodies
 
 In every female cell, **one X chromosome is randomly inactivated** early in embryonic development. The inactivated X condenses into a dense structure called a **Barr body**.
 
@@ -156,7 +161,7 @@ In every female cell, **one X chromosome is randomly inactivated** early in embr
 
 **MCAT connection:** X-inactivation is why female carriers of X-linked diseases are usually unaffected -- they have enough cells expressing the normal allele. However, skewed inactivation can occasionally cause carrier females to show mild symptoms.
 
-### Epistasis
+### 2.6 Epistasis
 
 **Epistasis** occurs when one gene **masks or modifies** the expression of another gene at a different locus.
 
@@ -173,7 +178,7 @@ An ee dog is **yellow** regardless of its B-locus genotype because no pigment is
 
 **MCAT tip:** If a genetics problem gives you a weird ratio that doesn't match 9:3:3:1, think epistasis. Add up the categories to see if they total 16 (which confirms a dihybrid cross with modification).
 
-### Pleiotropy
+### 2.7 Pleiotropy
 
 A **single gene** affects **multiple, seemingly unrelated** phenotypic traits.
 
@@ -181,7 +186,7 @@ A **single gene** affects **multiple, seemingly unrelated** phenotypic traits.
 
 **Other example:** PKU (phenylketonuria) -- defective phenylalanine hydroxylase leads to intellectual disability, light skin/hair, musty odor, and eczema.
 
-### Polygenic Inheritance
+### 2.8 Polygenic Inheritance
 
 A **single trait** is controlled by **multiple genes**, producing a continuous distribution of phenotypes (bell curve).
 
@@ -194,7 +199,7 @@ A **single trait** is controlled by **multiple genes**, producing a continuous d
 
 **Contrast with pleiotropy:** Polygenic = many genes, one trait. Pleiotropy = one gene, many traits.
 
-### Penetrance vs Expressivity
+### 2.9 Penetrance vs Expressivity
 
 **Penetrance:** The **percentage of individuals** with a given genotype who actually show the phenotype.
 - **Complete penetrance** = 100% of people with the genotype show the phenotype
@@ -207,7 +212,7 @@ A **single trait** is controlled by **multiple genes**, producing a continuous d
 
 **Memory trick:** **Penetrance** = "does it **penetrate** at all?" (yes/no, all-or-nothing). **Expressivity** = "how much is **expressed**?" (spectrum of severity).
 
-### Genetic Linkage and Recombination Frequency
+### 2.10 Genetic Linkage and Recombination Frequency
 
 Genes on the **same chromosome** tend to be inherited together -- they are **linked**.
 
@@ -229,35 +234,9 @@ Recombination frequency = (11 + 9) / (42 + 38 + 11 + 9) = 20/100 = **20%** = **2
 
 ---
 
-## 3. Meiosis
+## 3. Meiosis & Sources of Genetic Variation (Recap)
 
-### Overview: Why Meiosis Matters
-
-Meiosis produces **haploid gametes** (n) from **diploid cells** (2n). It consists of two sequential divisions:
-- **Meiosis I** -- the reduction division (separates homologs; goes from 2n to n)
-- **Meiosis II** -- similar to mitosis (separates sister chromatids)
-
-### Meiosis I -- The Key Division
-
-| Phase | What Happens |
-|-------|-------------|
-| **Prophase I** | Chromosomes condense. Homologs pair up (**synapsis**) forming **tetrads** (bivalents). **Crossing over** occurs at **chiasmata**. Nuclear envelope breaks down. |
-| **Metaphase I** | Tetrads line up at the metaphase plate. Orientation is random (**independent assortment**). |
-| **Anaphase I** | **Homologous chromosomes** separate (NOT sister chromatids). Each pole gets one chromosome from each homologous pair. |
-| **Telophase I** | Two haploid cells form. Each chromosome still consists of two sister chromatids joined at the centromere. |
-
-**Critical distinction:** In anaphase I, **homologs** separate. In anaphase II, **sister chromatids** separate. This is the single most tested distinction about meiosis.
-
-### Meiosis II -- Looks Like Mitosis
-
-| Phase | What Happens |
-|-------|-------------|
-| **Prophase II** | Chromosomes condense (if decondensed). No new DNA synthesis. |
-| **Metaphase II** | Individual chromosomes line up at the metaphase plate. |
-| **Anaphase II** | **Sister chromatids** separate at the centromere. |
-| **Telophase II** | Four haploid daughter cells form (gametes). |
-
-**End result:** One diploid cell (2n) produces **four** genetically unique haploid cells (n).
+> Full meiosis mechanics are taught in `BB_Bio_Ch02_Reproduction.md`. The summary here is for genetics integration.
 
 ### Sources of Genetic Variation
 
@@ -268,19 +247,6 @@ Meiosis produces **haploid gametes** (n) from **diploid cells** (2n). It consist
 | **Random fertilization** | Fertilization | Any sperm can fuse with any egg; (2^23)^2 = ~70 trillion combinations |
 
 **MCAT favorite:** "Which process generates the MOST genetic diversity?" -- The answer is usually **random fertilization** (highest number of combinations), but crossing over is unique in that it creates **new allele combinations that didn't exist on either parental chromosome**.
-
-### Meiosis vs Mitosis -- Comparison Table
-
-| Feature | Mitosis | Meiosis |
-|---------|---------|---------|
-| **Divisions** | 1 | 2 |
-| **Daughter cells** | 2 | 4 |
-| **Ploidy of products** | 2n (diploid) | n (haploid) |
-| **Genetic identity** | Identical to parent | Genetically unique |
-| **Crossing over** | No (extremely rare) | Yes, in prophase I |
-| **Synapsis/tetrads** | No | Yes, in prophase I |
-| **What separates** | Sister chromatids | Homologs (MI), then sister chromatids (MII) |
-| **Purpose** | Growth, repair | Gamete production |
 
 ### Nondisjunction
 
@@ -304,7 +270,7 @@ Meiosis produces **haploid gametes** (n) from **diploid cells** (2n). It consist
 
 ## 4. Mutations
 
-### Point Mutations (Single Nucleotide Changes)
+### 4.1 Point Mutations (Single Nucleotide Changes)
 
 | Type | What Happens | Effect on Protein | Example |
 |------|-------------|-------------------|---------|
@@ -319,7 +285,7 @@ Meiosis produces **haploid gametes** (n) from **diploid cells** (2n). It consist
 
 **Why silent mutations exist:** The genetic code is **degenerate** (redundant). Most amino acids are coded by multiple codons, especially at the **third (wobble) position**. Changes at the wobble position are often silent.
 
-### Chromosomal Mutations
+### 4.2 Chromosomal Mutations
 
 | Type | Description | Consequence |
 |------|-------------|-------------|
@@ -330,7 +296,7 @@ Meiosis produces **haploid gametes** (n) from **diploid cells** (2n). It consist
 
 **Robertsonian translocation:** Two acrocentric chromosomes fuse at their centromeres, reducing chromosome number. A carrier (45 chromosomes) is usually phenotypically normal but has increased risk of producing offspring with trisomy. This is the mechanism behind familial Down syndrome (translocation between chromosomes 14 and 21).
 
-### Connections to Disease
+### 4.3 Connections to Disease
 
 | Mutation Type | Disease | Details |
 |---------------|---------|---------|
@@ -345,9 +311,7 @@ Meiosis produces **haploid gametes** (n) from **diploid cells** (2n). It consist
 
 ---
 
-## 5. Population Genetics and Evolution
-
-### Hardy-Weinberg Equilibrium
+## 5. Population Genetics — Hardy-Weinberg Equilibrium
 
 The **Hardy-Weinberg principle** states that allele and genotype frequencies in a population remain **constant** from generation to generation in the **absence of evolutionary forces**.
 
@@ -388,7 +352,11 @@ The **Hardy-Weinberg principle** states that allele and genotype frequencies in 
 - Frequency of affected males = **q** (not q^2, since males have only one X)
 - Frequency of affected females = **q^2**
 
-### Natural Selection Types
+---
+
+## 6. Changes in the Gene Pool — Evolutionary Forces
+
+### 6.1 Natural Selection Types
 
 | Type | Effect on Distribution | Example |
 |------|----------------------|---------|
@@ -401,7 +369,7 @@ The **Hardy-Weinberg principle** states that allele and genotype frequencies in 
 - **Heterozygote advantage:** Heterozygotes have higher fitness than either homozygote. Classic example: sickle cell trait (HbAS) confers malaria resistance, maintaining the HbS allele in malaria-endemic regions even though HbSS is harmful.
 - **Frequency-dependent selection:** Rare phenotypes have a fitness advantage (e.g., rare prey coloration that predators don't recognize).
 
-### Genetic Drift
+### 6.2 Genetic Drift
 
 **Genetic drift** is the **random** change in allele frequencies due to **chance events** in a small population. It is non-adaptive (does not lead to "better" organisms) and has the greatest effect in **small populations**.
 
@@ -413,7 +381,7 @@ The **Hardy-Weinberg principle** states that allele and genotype frequencies in 
 
 **Key distinction:** Both bottleneck and founder effects involve small population size, but the mechanism differs -- bottleneck **reduces** an existing population, while founder effect **establishes** a new one.
 
-### Gene Flow
+### 6.3 Gene Flow
 
 **Gene flow** (migration) is the transfer of alleles between populations. It has two key effects:
 1. **Increases genetic diversity** within a population (new alleles arrive)
@@ -421,7 +389,11 @@ The **Hardy-Weinberg principle** states that allele and genotype frequencies in 
 
 Gene flow is the main force that **prevents speciation** -- as long as populations exchange genes, they won't diverge enough to become separate species.
 
-### Speciation
+---
+
+## 7. Speciation and Evolution
+
+### 7.1 Speciation
 
 **Speciation** is the formation of new species. Two main types:
 
@@ -438,7 +410,7 @@ Gene flow is the main force that **prevents speciation** -- as long as populatio
 - **Postzygotic:** Hybrid offspring have reduced fitness (hybrid inviability, hybrid sterility, hybrid breakdown)
 - Example of postzygotic: Mule (horse x donkey) is sterile
 
-### Fitness and Adaptive Radiation
+### 7.2 Fitness and Adaptive Radiation
 
 **Fitness** in evolutionary biology means **reproductive success** -- the ability to survive and produce viable, fertile offspring. It does NOT mean physical strength.
 - Fitness is always **relative** to the environment
@@ -481,3 +453,6 @@ Gene flow is the main force that **prevents speciation** -- as long as populatio
 5. **Nondisjunction in MI vs MII.** MI = all 4 gametes abnormal. MII = 2 normal, 2 abnormal.
 6. **Penetrance vs expressivity.** Penetrance = does the phenotype appear at all? Expressivity = how severe is it?
 7. **Fitness does not mean strength.** Fitness = reproductive success relative to the environment.
+
+→ Meiosis mechanics: see `BB_Bio_Ch02_Reproduction.md`
+→ DNA mutation mechanisms / genetic code: see `BB_Ch06_DNA_Biotech.md` and `BB_Ch07_RNA_GeneticCode.md`

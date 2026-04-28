@@ -1,6 +1,15 @@
-# FC2C: Cell Division and Differentiation -- Deep Dive
+# BB Bio Chapter 2 — Reproduction (Cell Cycle, Meiosis, Reproductive System)
 
-This guide covers the full scope of cell division, cell death, cancer biology, and stem cells as tested on the MCAT Bio/Biochem section. Every mechanism here is fair game. Master the logic, not just the labels.
+Scope: Cell cycle & mitosis (incl. checkpoints, cyclins/CDKs, p53); apoptosis; cancer biology; stem cells & differentiation; meiosis (including nondisjunction); the reproductive system (male and female anatomy, gametogenesis, menstrual cycle).
+
+**Section:** Bio/Biochem (BB)
+**AAMC FC mapping:** FC2C (Cell division & differentiation) -- primary; FC3B (reproductive system portion); FC1C (meiosis crosses to genetics)
+**Kaplan Reference:** Biology Chapter 2
+**Yield:** Very high. Cell cycle controls and mitosis are heavily tested both standalone and as cancer scaffolding.
+
+---
+
+This guide covers the full scope of cell division, cell death, cancer biology, stem cells, meiosis, and the reproductive system as tested on the MCAT Bio/Biochem section. Every mechanism here is fair game. Master the logic, not just the labels.
 
 ---
 
@@ -413,6 +422,141 @@ A few additional concepts the MCAT may test:
 
 ---
 
+## 6. Meiosis
+
+### Overview: Why Meiosis Matters
+
+Meiosis produces **haploid gametes** (n) from **diploid cells** (2n). It consists of two sequential divisions:
+- **Meiosis I** -- the reduction division (separates homologs; goes from 2n to n)
+- **Meiosis II** -- similar to mitosis (separates sister chromatids)
+
+### Meiosis I -- The Key Division
+
+| Phase | What Happens |
+|-------|-------------|
+| **Prophase I** | Chromosomes condense. Homologs pair up (**synapsis**) forming **tetrads** (bivalents). **Crossing over** occurs at **chiasmata**. Nuclear envelope breaks down. |
+| **Metaphase I** | Tetrads line up at the metaphase plate. Orientation is random (**independent assortment**). |
+| **Anaphase I** | **Homologous chromosomes** separate (NOT sister chromatids). Each pole gets one chromosome from each homologous pair. |
+| **Telophase I** | Two haploid cells form. Each chromosome still consists of two sister chromatids joined at the centromere. |
+
+**Critical distinction:** In anaphase I, **homologs** separate. In anaphase II, **sister chromatids** separate. This is the single most tested distinction about meiosis.
+
+### Meiosis II -- Looks Like Mitosis
+
+| Phase | What Happens |
+|-------|-------------|
+| **Prophase II** | Chromosomes condense (if decondensed). No new DNA synthesis. |
+| **Metaphase II** | Individual chromosomes line up at the metaphase plate. |
+| **Anaphase II** | **Sister chromatids** separate at the centromere. |
+| **Telophase II** | Four haploid daughter cells form (gametes). |
+
+**End result:** One diploid cell (2n) produces **four** genetically unique haploid cells (n).
+
+### Sources of Genetic Variation
+
+| Source | When It Occurs | Mechanism |
+|--------|---------------|-----------|
+| **Crossing over** | Prophase I | Homologous chromosomes exchange segments, creating new allele combinations on a single chromatid |
+| **Independent assortment** | Metaphase I | Random orientation of homologous pairs; 2^23 possible combinations in humans |
+| **Random fertilization** | Fertilization | Any sperm can fuse with any egg; (2^23)^2 = ~70 trillion combinations |
+
+**MCAT favorite:** "Which process generates the MOST genetic diversity?" -- The answer is usually **random fertilization** (highest number of combinations), but crossing over is unique in that it creates **new allele combinations that didn't exist on either parental chromosome**.
+
+### Meiosis vs Mitosis -- Comparison Table
+
+| Feature | Mitosis | Meiosis |
+|---------|---------|---------|
+| **Divisions** | 1 | 2 |
+| **Daughter cells** | 2 | 4 |
+| **Ploidy of products** | 2n (diploid) | n (haploid) |
+| **Genetic identity** | Identical to parent | Genetically unique |
+| **Crossing over** | No (extremely rare) | Yes, in prophase I |
+| **Synapsis/tetrads** | No | Yes, in prophase I |
+| **What separates** | Sister chromatids | Homologs (MI), then sister chromatids (MII) |
+| **Purpose** | Growth, repair | Gamete production |
+
+### Nondisjunction
+
+**Nondisjunction** is the failure of chromosomes to separate properly during cell division.
+
+**In Meiosis I:** Homologous chromosomes fail to separate. All four gametes are abnormal -- two have an extra chromosome (n+1) and two are missing one (n-1).
+
+**In Meiosis II:** Sister chromatids fail to separate. Two gametes are normal (n), one has an extra chromosome (n+1), and one is missing one (n-1).
+
+**MCAT test:** "How do you distinguish meiosis I from meiosis II nondisjunction?"
+- **Meiosis I nondisjunction:** All gametes are abnormal (none are normal)
+- **Meiosis II nondisjunction:** Two gametes are normal, two are abnormal
+
+**Consequences of nondisjunction:**
+- **Trisomy** (2n + 1): Three copies of a chromosome. Example: Down syndrome (trisomy 21)
+- **Monosomy** (2n - 1): One copy of a chromosome. Example: Turner syndrome (45, X)
+- Most autosomal monosomies are **lethal**
+- Trisomy 13 (Patau), trisomy 18 (Edwards), and trisomy 21 (Down) are the viable autosomal trisomies
+
+---
+
+## 7. Male Reproductive System
+
+**Spermatogenesis** occurs in the **seminiferous tubules** of the testes, beginning at puberty and continuing throughout life.
+
+**Process:**
+1. **Spermatogonia** (2n, diploid) undergo mitosis to self-renew and produce primary spermatocytes.
+2. **Primary spermatocytes** (2n) undergo **meiosis I** --> 2 **secondary spermatocytes** (n, haploid).
+3. **Secondary spermatocytes** (n) undergo **meiosis II** --> 4 **spermatids** (n).
+4. **Spermiogenesis** -- Spermatids mature into **spermatozoa** (no further division, just morphological changes: develop acrosome, flagellum; shed cytoplasm).
+
+Total: 1 spermatogonium --> 4 functional sperm. The entire process takes ~64-72 days.
+
+**Supporting cells:**
+- **Sertoli cells** -- Located in the seminiferous tubules. Nurse cells that support developing sperm. Functions: nourishment, phagocytosis of defective sperm, form the **blood-testis barrier** (tight junctions), secrete **inhibin** (negative feedback on FSH), secrete **androgen-binding protein (ABP)** to maintain local testosterone concentration, respond to FSH.
+- **Leydig cells (interstitial cells)** -- Located between the seminiferous tubules. Produce **testosterone** in response to **LH**.
+
+**Hormonal control:**
+- **GnRH** (hypothalamus) --> **FSH + LH** (anterior pituitary).
+- **LH** --> Leydig cells --> **testosterone** (drives spermatogenesis, secondary sex characteristics). Testosterone provides negative feedback on GnRH and LH.
+- **FSH** --> Sertoli cells --> supports spermatogenesis. **Inhibin** from Sertoli cells provides negative feedback on FSH.
+
+**Sperm pathway:** Seminiferous tubules --> epididymis (storage and maturation) --> vas deferens --> ejaculatory duct (joins seminal vesicle duct) --> urethra.
+
+**Accessory glands:** Seminal vesicles (fructose for energy, ~60% of semen volume), prostate (alkaline fluid to neutralize vaginal acidity), bulbourethral (Cowper's) glands (pre-ejaculate, lubricating mucus).
+
+---
+
+## 8. Female Reproductive System
+
+**Oogenesis** begins during fetal development, pauses, and resumes at puberty.
+
+**Process:**
+1. **Oogonia** (2n) undergo mitosis during fetal development to produce **primary oocytes** (2n).
+2. Primary oocytes begin **meiosis I** but **arrest in prophase I** before birth. They remain arrested in primordial follicles until puberty (or until that follicle is recruited -- could be decades).
+3. At puberty, each month, one primary oocyte resumes meiosis I --> produces 1 **secondary oocyte** (n, large, gets most of the cytoplasm) + 1 **first polar body** (small, degenerates). The division is unequal.
+4. The secondary oocyte begins **meiosis II** but **arrests in metaphase II**. This is what is ovulated.
+5. Meiosis II is completed ONLY if **fertilization** occurs --> 1 **ovum** + 1 **second polar body**.
+
+Total: 1 oogonium --> 1 functional ovum (+ 2-3 polar bodies that degenerate).
+
+### The Menstrual Cycle
+
+The menstrual cycle (~28 days) has two concurrent cycles:
+
+**Ovarian cycle:**
+1. **Follicular phase** (days 1-14): FSH stimulates follicle development. The developing follicle secretes **estrogen**. One dominant follicle matures (Graafian follicle). Rising estrogen initially provides **negative feedback** on FSH and LH (keeping them low).
+2. **Ovulation** (day ~14): When estrogen reaches a critical high threshold, it switches to **positive feedback**, triggering an **LH surge** (and smaller FSH surge). The LH surge triggers ovulation (release of the secondary oocyte from the follicle).
+3. **Luteal phase** (days 15-28): The ruptured follicle becomes the **corpus luteum**, which secretes **progesterone** (and some estrogen). Progesterone maintains the uterine lining and provides **negative feedback** on GnRH, FSH, and LH. If no fertilization, the corpus luteum degenerates (~day 26) --> progesterone drops --> menstruation begins. If fertilization occurs, **hCG** from the embryo maintains the corpus luteum until the placenta takes over (~weeks 8-12).
+
+**Uterine cycle:**
+1. **Menstrual phase** (days 1-5): Shedding of the endometrial lining due to progesterone and estrogen withdrawal.
+2. **Proliferative phase** (days 6-14): Estrogen from developing follicles stimulates endometrial thickening and vascularization.
+3. **Secretory phase** (days 15-28): Progesterone from the corpus luteum stimulates the endometrium to secrete glycogen and nutrients, preparing for implantation.
+
+Key MCAT points:
+- Estrogen = dominant hormone of the follicular phase (proliferative phase of uterus).
+- Progesterone = dominant hormone of the luteal phase (secretory phase of uterus).
+- Positive feedback of estrogen on LH is unique and commonly tested.
+- Birth control pills contain synthetic estrogen and progesterone -- they provide constant negative feedback, suppressing FSH/LH, preventing follicle development and ovulation.
+
+---
+
 ## High-Yield Summary Table
 
 | Concept | Key Detail | MCAT Trap/Connection |
@@ -429,7 +573,12 @@ A few additional concepts the MCAT may test:
 | Telomerase | Maintains telomeres in cancer | Normal somatic cells lack it |
 | Totipotent vs pluripotent | Totipotent = any cell + placenta; pluripotent = any body cell | Zygote vs ICM |
 | iPSCs | Yamanaka factors: Oct4, Sox2, Klf4, c-Myc | Differentiation is reversible (epigenetic) |
+| Meiosis I | Homologs separate; reduction division | All 4 gametes abnormal in MI nondisjunction |
+| Meiosis II | Sister chromatids separate; mitosis-like | 2 normal + 2 abnormal in MII nondisjunction |
 
 ---
+
+→ Embryonic development (post-fertilization, gastrulation, neurulation, fetal circulation): see `BB_Bio_Ch03_Embryogenesis.md`
+→ Genetics (Mendelian/non-Mendelian, mutations, evolution): see `BB_Bio_Ch12_Genetics_Evolution.md`
 
 *Study tip: When you see a cell division question on the MCAT, first identify what phase or checkpoint is involved, then think about which regulatory proteins are relevant. The exam rarely asks you to just name the phases -- it tests whether you understand the molecular logic of why a cell divides, stops, or dies.*

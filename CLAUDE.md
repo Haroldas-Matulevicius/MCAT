@@ -79,11 +79,18 @@ Update this section when transitioning between phases.
 
 See **`architecture.md`** for full file layout, mirror rules, and loading rules.
 
-**Quick reference:**
-- Topic routing: week file → `research/INDEX.md` → subject INDEX → load Content + Research pair.
+**Quick reference (post-2026-04-28 Kaplan-book reorg):**
+- Folders mirror Kaplan books: `Biology/`, `Biochemistry/`, `GenChem/`, `OrgChem/`, `PhysicsMath/`, `Psychology/`, `CARS/`, `LabTechniques/`, `ResearchMethods/` — both inside `research/` and `Content/`.
+- Topic routing: week file → `research/INDEX.md` → subject folder INDEX → load Content + Research pair.
 - Load the SMALLEST set of files needed — never all at once.
 - Context budget: ≤5 files per session beyond week file + INDEX lookups.
 - Mnemonics: do NOT load unless the student explicitly asks.
+
+**Pending restructures (do not rebuild schedule until both resolved):**
+- **Physics chapters** — `PhysicsMath/` files (Mechanics, Fluids, Circuits, Light_Sound, Nuclear, Math_Skills) still topic-organized. Awaiting Kaplan Physics chapter list. Three of these (Fluids, Circuits, Nuclear) still contain duplicated GenChem content that will be pruned during the Physics split.
+- **Psychology split** — `Psychology/PS_Psych_Soc.md` is in Kaplan Ch 1–12 order but still one monolithic file. Needs split into 12 chapter files for parity with Bio/Biochem/GChem/OChem.
+
+**Schedule rebuild plan (deferred):** Once Physics chapters arrive and PS is split, reglance at the current schedule + new chapter inventory and rebuild Phase 1 from the bottom up. Already-completed days (logs in week files prior to 2026-04-28) preserve their old-path references — that's a historical record, not an active load instruction.
 
 ## State files (update in place)
 

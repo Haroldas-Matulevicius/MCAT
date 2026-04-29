@@ -24,46 +24,36 @@ MCAT/
 | research | Full teaching material, mechanisms, MCAT tips | 100–800 lines |
 | mnemonics | Verified memory aids | 60–130 lines |
 
-## BB (Bio/Biochem) file layout
+## Folder layout (post-2026-04-28 Kaplan-book reorg)
 
-**Biochem side — Kaplan Biochem Ch 1-12 (since 2026-04-22):**
-
-```
-BB_Ch01_AminoAcids_Proteins.md
-BB_Ch02_Enzymes.md
-BB_Ch03_NonEnzymatic_Protein.md
-BB_Ch04_Carbohydrates.md
-BB_Ch05_Lipids.md
-BB_Ch06_DNA_Biotech.md
-BB_Ch07_RNA_GeneticCode.md
-BB_Ch08_Membranes.md
-BB_Ch09_CarbMetab1.md
-BB_Ch10_CarbMetab2.md
-BB_Ch11_Lipid_AA_Metab.md
-BB_Ch12_Bioenergetics.md
-```
-
-**Bio side — legacy topic-based (pending Kaplan Biology restructure):**
+Both `Content/` and `research/` mirror this exact folder structure. Each subject folder has an `INDEX.md` with chapter-level routing.
 
 ```
-BB_Cell_Biology.md            (membrane content dup'd in BB_Ch08 until bio restructure)
-BB_Prokaryotes_Viruses.md
-BB_Cell_Division.md
-BB_Nervous_Endocrine.md
-BB_Organ_Systems.md
-BB_Heredity_Evolution.md
+Biology/         Ch01..Ch12 + INDEX.md   (Kaplan Biology 2024)
+Biochemistry/    Ch01..Ch12 + INDEX.md   (Kaplan Biochem 2024)
+GenChem/         Ch01..Ch12 + INDEX.md   (Kaplan General Chem 2024)
+OrgChem/         Ch01..Ch12 + INDEX.md   (Kaplan Organic Chem 2024)
+PhysicsMath/     Mechanics / Fluids / Circuits / Light_Sound / Nuclear / Math_Skills + INDEX.md   (PENDING Kaplan Physics chapter restructure)
+Psychology/      PS_Psych_Soc.md + INDEX.md   (PENDING split — single file in Kaplan Ch 1–12 order)
+CARS/            CARS.md
+LabTechniques/   Lab_Techniques.md
+ResearchMethods/ Research_Methods.md
+KaplanMap/       Kaplan_Map_and_Gaps.md   (Content/ side only)
 ```
 
-## CP (Chem/Phys) file layout
+**Inside each chapter folder:** files are named `ChNN_Topic.md` with no book prefix (the folder name is the namespace). Example: `research/Biology/Ch04_Nervous_System.md`.
 
-12 files under `Content/CP/` and `research/CP/`, organized by foundational concept. See `research/CP/INDEX.md` for routing keywords.
+**Top-level Content/ overview files (kept):**
 
-## Root-level files (no sub-splits)
+- `Content/BB_Bio_Biochem.md` — AAMC BB section overview (FC mix, blueprint)
+- `Content/CP_Chemical_Physical.md` — AAMC CP section overview
 
-`PS_Psych_Soc.md` — organized by Kaplan Behavioral Sciences Ch 1-12 (since 2026-04-19)
-`CARS.md`
-`Research_Methods.md`
-`Lab_Techniques.md`
+These are not Kaplan-book content; they document the AAMC section as a whole.
+
+**Pending restructures:**
+
+- Physics chapters — split `PhysicsMath/` into Ch01..ChNN once Kaplan list is provided. Will also prune duplicated GenChem content from `Fluids.md`, `Circuits.md`, `Nuclear.md`.
+- Psychology split — break `Psychology/PS_Psych_Soc.md` into 12 chapter files.
 
 ## Progression tier
 
@@ -84,10 +74,14 @@ progression/
 
 Each subject folder has an `INDEX.md` with trigger keywords for file routing:
 
-- `research/INDEX.md` — top-level: subject → subfolder
-- `research/BB/INDEX.md` — 12 biochem chapters + 6 bio topic files (pending restructure)
-- `research/CP/INDEX.md` — 12 CP files
-- `mnemonics/BB/INDEX.md`, `mnemonics/CP/INDEX.md` — same routing pattern
+- `research/INDEX.md` — top-level: subject folder routing
+- `research/Biology/INDEX.md` — 12 Kaplan Biology chapters
+- `research/Biochemistry/INDEX.md` — 12 Kaplan Biochem chapters
+- `research/GenChem/INDEX.md` — 12 Kaplan GChem chapters
+- `research/OrgChem/INDEX.md` — 12 Kaplan OChem chapters
+- `research/PhysicsMath/INDEX.md` — topic files (pending Physics chapter restructure)
+- `research/Psychology/INDEX.md` — single file pending split
+- `mnemonics/` — same folder pattern when populated (load only on explicit request)
 
 ## Loading Rules
 
@@ -113,7 +107,9 @@ Each subject folder has an `INDEX.md` with trigger keywords for file routing:
 
 **Context budget:** A typical study session should load ≤5 files beyond the week file and INDEX lookups.
 
-**Monolith exception:** `Content/BB_Bio_Biochem.md` (444 lines) and `Content/CP_Chemical_Physical.md` (344 lines) — only load for full-section overviews; default to sub-files for topic-specific work.
+**AAMC section overview files (load rarely):** `Content/BB_Bio_Biochem.md` (444 lines) and `Content/CP_Chemical_Physical.md` (344 lines) — AAMC FC blueprints, not Kaplan content. Only load for full-section overviews; default to chapter sub-files for topic-specific work.
+
+**Pre-2026-04-28 path references in completed week files:** Old logs reference paths like `research/BB/BB_Ch01_*.md` that no longer resolve (files now at `research/Biochemistry/Ch01_*.md`). These are historical records — do not auto-update. If a completed day needs to be re-loaded, navigate to the new path manually via the relevant subject INDEX.
 
 ## Topic switch mid-session
 

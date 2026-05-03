@@ -26,33 +26,32 @@ User says "done", "wrap up", "end session", "push back", "shift schedule" → re
 ## Student Profile
 
 - **Name:** Haroldas (Limitz)
-- **Target exam:** Thursday, October 15, 2026
+- **Target exam:** Thursday, September 11, 2026
 - **Goal:** 518+
+- **Target content-done:** September 1, 2026 (buffer: Sep 1–10)
 - **Baseline:** Content review phase, from scratch on most topics
-- **Schedule:** 7 days/week, ~5 hrs/day
+- **Schedule:** 8 AM – 4 PM daily (8 hrs). Known days off: May 6, May 9.
 - **Tools:** Kaplan 2024 books, JackSparrow Anki deck, Anki (Windows 24.x)
 - **Strengths / Weaknesses:** see `progression/TRACKER.md`
 
 ## Current Phase
 
-**Phase 1 — Content Review** (Apr 14 – Jul 16, 2026)
+**SCHEDULE RESET — 2026-05-03.** All prior week logs cleared. Full rebuild pending in new session.
 
-- **Weekly structure:** Mon–Sat = content days (6/week); Sun = dedicated Anki consolidation (no new content).
-- **Content day:** 3h content | 1.5h Anki | 30min practice Qs.
-- **Anki day (Sun):** 3h Anki | 1h weak-spot drill | 30min quick-fire quiz | 30min weekly review.
-- **Time blocks:** Mon 7AM-12PM | Tue 1-6PM | Wed 4-9PM | Thu 1-6PM | Fri 12:30-5:30PM | Sat 7AM-12PM | Sun 7AM-12PM.
-- Subjects rotate through days by content sequence — no fixed day-subject mapping.
+**Start date:** May 4, 2026. **Exam:** Sep 11, 2026. **Content target:** Sep 1, 2026.
+**Study block:** 8 AM – 4 PM daily. **Known days off:** May 6, May 9 (others TBD).
+**CARS:** woven into daily content sessions (not a separate day).
 
-**All phases (post 2026-04-22 Kaplan-chapter restructure, locked against exam Oct 15):**
+**Phase structure (to be rebuilt — placeholder):**
 
-| Phase | Dates | Weeks | Focus |
-|-------|-------|-------|-------|
-| 1. Content Review | Apr 14 – Jul 16 | 1–14 (partial) | BB + CP + PS + weekly CARS |
-| 2. Practice & Integration | Jul 17 – Aug 18 | 14 Fri – 19 Tue | Third-party Qs, mixed review |
-| 3. AAMC Materials | Aug 19 – Sep 19 | 19 Wed – 23 Sat | Official AAMC practice |
-| 4. Pre-exam Buffer | Sep 20 – Oct 15 | — | Final Anki + rest (~3 weeks) |
+| Phase | Dates | Focus |
+|-------|-------|-------|
+| 1. Content Review | May 4 – ~Jul 20 | All 6 books, 1 chapter/day, CARS woven in |
+| 2. Practice & Integration | ~Jul 21 – ~Aug 10 | Third-party Qs, mixed review |
+| 3. AAMC Materials | ~Aug 11 – Sep 1 | Official AAMC practice |
+| 4. Buffer | Sep 1 – Sep 10 | Final Anki + rest |
 
-Update this section when transitioning between phases.
+Update this section when schedule rebuild is complete.
 
 ## How to Respond
 

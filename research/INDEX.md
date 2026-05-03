@@ -11,11 +11,10 @@ research/
   Biochemistry/             Kaplan Biochem 2024 — Ch01..Ch12 + INDEX.md
   GenChem/                  Kaplan GChem 2024 — Ch01..Ch12 + INDEX.md
   OrgChem/                  Kaplan OChem 2024 — Ch01..Ch12 + INDEX.md
-  PhysicsMath/              Kaplan Physics & Math — topic files (PENDING chapter restructure) + INDEX.md
+  PhysicsMath/              Kaplan Physics & Math 2024 — Ch01..Ch12 + INDEX.md (restructured 2026-05-03)
   Psychology/               Kaplan Behavioral Sci — single file in Kaplan order (PENDING split) + INDEX.md
   CARS/                     CARS strategy + passage analysis
   LabTechniques/            Cross-cutting lab methods
-  ResearchMethods/          Study design + statistics + ethics
 ```
 
 ## How to Route
@@ -32,20 +31,26 @@ research/
 | `Biochemistry/` | amino acid, enzyme, metabolism, DNA, RNA, membrane, signaling, biochem chemistry | `Biochemistry/INDEX.md` |
 | `GenChem/` | atomic structure, periodic, bonding, stoichiometry, kinetics, equilibrium, thermo, gas, solution, acid-base, redox, electrochem | `GenChem/INDEX.md` |
 | `OrgChem/` | nomenclature, isomer, functional group, reaction mechanism, alcohol, aldehyde/ketone, carboxylic acid, spectroscopy, separation | `OrgChem/INDEX.md` |
-| `PhysicsMath/` | mechanics, fluid, electricity, optics, sound, nuclear, math/units | `PhysicsMath/INDEX.md` |
+| `PhysicsMath/` | mechanics, fluid, electricity, optics, sound, nuclear, math/units, research design, statistics, study design, bias, ethics, validity, p-value, IRB | `PhysicsMath/INDEX.md` |
 | `Psychology/` | psychology, sociology, behavior, cognition, learning, identity, social structure | `Psychology/INDEX.md` |
 | `CARS/` | CARS strategy, passage analysis, reasoning beyond text | `CARS/CARS.md` (no sub-INDEX yet) |
 | `LabTechniques/` | PCR, gel, blotting, centrifugation, chromatography (applied) — cross-load with subject file | `LabTechniques/Lab_Techniques.md` |
-| `ResearchMethods/` | study design, stats, bias, ethics, validity, p-value, IRB | `ResearchMethods/Research_Methods.md` |
 
 ## Cross-loading Rules
 
 - **Lab techniques** → co-load whenever a subject topic involves specific experimental methods.
-- **Research methods** → co-load whenever the topic involves study design, data interpretation, or statistical reasoning.
+- **Research methods / statistics** → now in `PhysicsMath/Ch11_Research_Design.md` and `Ch12_Statistics.md`; co-load whenever the topic involves study design, data interpretation, or statistical reasoning.
 - **Always load Content + Research as a pair** — outline + deep-dive together.
 - **At most 1 cross-loaded file** per session beyond the primary Content + Research pair (≤5 total).
 
 ## Pending Restructures
 
-- **Physics chapters** — `PhysicsMath/` files retain topic-organization. Need Kaplan Physics chapter list to split.
 - **Psychology split** — `Psychology/PS_Psych_Soc.md` is one monolithic file in Kaplan Ch 1–12 order. Needs split into 12 separate chapter files for parity.
+
+## Completed Restructures
+
+- **Biology** — Ch01–Ch12 (2026-04-28)
+- **Biochemistry** — Ch01–Ch12 (2026-04-28)
+- **GenChem** — Ch01–Ch12 (2026-04-28)
+- **OrgChem** — Ch01–Ch12 (2026-04-28)
+- **PhysicsMath** — Ch01–Ch12 (2026-05-03); includes Research Methods (formerly `ResearchMethods/`) merged into Ch11–12

@@ -22,6 +22,6 @@ Deep-dive teaching files mirrored 1:1 with `Content/Biology/`. Restructured 2026
 - Cell membranes (Ch01) → also load `research/Biochemistry/Ch08_Membranes.md` for biochem-side detail
 - Reproductive hormones (Ch02) → also load `Ch05_Endocrine.md`
 - Fetal circulation (Ch03) → cross-ref `Ch07_Cardiovascular.md`
-- Action potentials (Ch04) → biophysics in `research/PhysicsMath/Circuits.md`
+- Action potentials (Ch04) → biophysics in `research/PhysicsMath/Ch06_Circuits.md`
 - Hormones (Ch05) → cross-ref `research/Biochemistry/Ch03_NonEnzymatic_Protein.md` for signaling cascades
 - Genetics (Ch12) → cross-ref `research/Biochemistry/Ch06_DNA_Biotech.md` and `Ch07_RNA_GeneticCode.md`

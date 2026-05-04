@@ -1,358 +1,323 @@
-"""Generate MCAT study schedule — ICS file + week_XX.md files.
+"""Generate MCAT study schedule ICS file.
 
-+1 day cascade applied 2026-04-22:
-- Apr 21 was a missed day (content dump only, no quiz/log).
-- All content originally scheduled Apr 21+ shifted forward by one calendar day.
-- Sundays remain dedicated Anki days (content crossing a Sunday skips to next Mon).
-- Final PS/CARS Light Review (originally Sep 12 Sat) now lands Mon Sep 14 — eats
-  into the first day of the Pre-exam Buffer. Buffer shrinks by 1 day.
-
-Prior Option B restructure (2026-04-21):
-- Sundays became dedicated Anki-only consolidation days.
-- Original 21 free-buffer days redistributed as 21 weekly Anki days across W2-W22.
-
-Mon-Sun weekly structure. Times per CLAUDE.md weekly time blocks.
+Schedule rebuilt 2026-05-03 for Sep 11, 2026 exam.
+- Single-book progression: Bio -> Biochem -> GChem -> OChem -> PhysicsMath -> Psych
+- Mon-Sat: 8 AM - 3 PM (lunch 11 AM - 12 PM implicit, 6 hr work)
+- Sun: 8 AM - 12 PM half-day (Anki / CARS / scheduled half-length)
+- Phases: Content (W1-13) -> Practice (W13-15) -> AAMC (W16-17) -> Buffer (W18-19) -> EXAM Sep 11
 
 Outputs:
-- mcat_schedule.ics (Google Calendar import)
-- week_03.md through week_22.md (regenerated schedule tables + empty log sections)
-- week_02.md is NOT touched here (has live session log; updated manually)
-- Sep 14 spillover content day is NOT written to a week file (out of Week 22);
-  noted in week_22.md as cascade spillover into Pre-exam Buffer.
+- mcat_schedule.ics
+
+Does NOT regenerate week_NN.md files — those are maintained directly per the new format.
+UIDs are deterministic (date + section hash) so reimporting the ICS updates events
+in place rather than creating duplicates (in calendar apps that respect UIDs).
 """
 import datetime
+import hashlib
 import os
-import uuid
 
-# Time blocks by weekday (Mon=0 ... Sun=6)
+
+# Time blocks (start, end) in HH:MM
 TIMES = {
-    0: ("07:00", "12:00"),  # Mon
-    1: ("13:00", "18:00"),  # Tue
-    2: ("16:00", "21:00"),  # Wed
-    3: ("13:00", "18:00"),  # Thu
-    4: ("12:30", "17:30"),  # Fri
-    5: ("07:00", "12:00"),  # Sat
-    6: ("07:00", "12:00"),  # Sun (Anki consolidation)
-}
-
-TIME_LABELS = {
-    0: "7:00 AM – 12:00 PM",
-    1: "1:00 PM – 6:00 PM",
-    2: "4:00 PM – 9:00 PM",
-    3: "1:00 PM – 6:00 PM",
-    4: "12:30 PM – 5:30 PM",
-    5: "7:00 AM – 12:00 PM",
-    6: "7:00 AM – 12:00 PM",
+    "STUDY":  ("08:00", "15:00"),  # Mon-Sat content day; lunch 11-12 implicit
+    "SUNDAY": ("08:00", "12:00"),  # Sunday half-day
+    "FL":     ("08:00", "16:00"),  # Full-length practice exam (~7.5 hrs incl. breaks)
+    "EXAM":   ("07:30", "17:00"),  # Real MCAT exam day
+    # OFF and REST events are written as all-day with empty time, see ICS section
 }
 
 DAY_LABELS = {0: "Mon", 1: "Tue", 2: "Wed", 3: "Thu", 4: "Fri", 5: "Sat", 6: "Sun"}
 
-events = []
-schedule_by_week = {}  # week_num -> list of (date, section, topic, phase)
+
+def D(month, day):
+    return datetime.date(2026, month, day)
 
 
-def add_event(d, section, topic, week, phase):
-    start_time, end_time = TIMES[d.weekday()]
-    sh, sm = map(int, start_time.split(":"))
-    eh, em = map(int, end_time.split(":"))
-    dtstart = datetime.datetime(d.year, d.month, d.day, sh, sm)
-    dtend = datetime.datetime(d.year, d.month, d.day, eh, em)
-    events.append((dtstart, dtend, section, topic, week, phase))
-    schedule_by_week.setdefault(week, []).append((d, section, topic, phase))
-
-
-def week_number(d):
-    """Week 1 = Apr 14-19 (Tue-Sun, 6 days). Week N (N>=2) = Mon-Sun from Apr 20."""
-    w1_start = datetime.date(2026, 4, 14)
-    w2_start = datetime.date(2026, 4, 20)
-    if d < w1_start:
-        return 0
-    if d < w2_start:
+# Phase boundaries
+def phase_for(d):
+    if d <= D(7, 28):
         return 1
-    days_since_w2 = (d - w2_start).days
-    return 2 + days_since_w2 // 7
+    if d <= D(8, 16):
+        return 2
+    if d <= D(8, 30):
+        return 3
+    return 4
 
 
-# === Already-logged fixed events (preserve as-is) ===
-add_event(datetime.date(2026, 4, 13), "ALL", "MCAT: Kickoff -- Amino Acid Foundations", 0, 1)
-add_event(datetime.date(2026, 4, 14), "BB", "Amino Acids -- All 20 Structures & Properties", 1, 1)
-add_event(datetime.date(2026, 4, 15), "CP", "Atomic Structure & Periodic Trends", 1, 1)
-add_event(datetime.date(2026, 4, 18), "CP", "Stoichiometry, Reactions & Ions (Gen Chem Ch 4)", 1, 1)
-add_event(datetime.date(2026, 4, 20), "PS", "Biological Bases of Behavior & Neuroscience", 2, 1)
-add_event(datetime.date(2026, 4, 21), "MISSED", "Delay day — content dump only, no quiz/log. Cascaded forward (+1)", 2, 1)
+PHASE_NAMES = {
+    1: "Content Review",
+    2: "Practice & Integration",
+    3: "AAMC Materials",
+    4: "Buffer + Final FLs",
+}
 
-# === Content queue from Apr 22 onward (125 topics, +1 day cascade) ===
-# (section, topic, phase)
-content_queue = [
-    # Phase 1 (69 topics) — Content Review
-    ("BB", "Protein Structure & Folding (1-4)", 1),
-    ("CP", "Bonding & Intermolecular Forces", 1),
-    ("CARS", "Foundations -- Main Idea & Passage Mapping", 1),
-    ("BB", "Enzyme Kinetics & Regulation", 1),
-    ("CP", "Solutions & Concentration (Gen Chem Ch 9)", 1),
-    ("PS", "Sensation, Perception & Attention", 1),
-    ("BB", "Non-Enzymatic Protein Function & Lab Techniques", 1),
-    ("CP", "Thermodynamics & Thermochemistry", 1),
-    ("CARS", "Author Tone & Rhetorical Strategy", 1),
-    ("BB", "DNA Structure, Replication & Repair", 1),
-    ("CP", "Chemical Kinetics", 1),
-    ("PS", "Learning -- Classical & Operant Conditioning", 1),
-    ("BB", "Transcription & RNA Processing", 1),
-    ("CP", "Chemical Equilibrium", 1),
-    ("CARS", "Evidence vs Opinion & Argument Structure", 1),
-    ("BB", "Translation & Gene Regulation", 1),
-    ("CP", "Acids, Bases & Buffers", 1),
-    ("PS", "Memory, Cognition & Language", 1),
-    ("BB", "Biotechnology & Molecular Techniques", 1),
-    ("CP", "Electrochemistry & Redox Reactions", 1),
-    ("CARS", "Inference & Implication Questions", 1),
-    ("BB", "Cell Structure, Organelles & Cytoskeleton", 1),
-    ("CP", "Organic Chemistry -- Functional Groups & Nomenclature", 1),
-    ("PS", "Consciousness, Sleep & Drugs", 1),
-    ("BB", "Membrane Structure & Transport", 1),
-    ("CP", "Stereochemistry & Isomers", 1),
-    ("CARS", "Strengthen / Weaken Questions", 1),
-    ("BB", "Cell Signaling & Signal Transduction", 1),
-    ("CP", "SN1/SN2/E1/E2 Reactions", 1),
-    ("PS", "Motivation, Emotion & Stress", 1),
-    ("BB", "Cell Cycle, Mitosis & Cancer Biology", 1),
-    ("CP", "Carbonyl Chemistry & Carboxylic Acid Derivatives", 1),
-    ("CARS", "Reasoning Beyond the Text", 1),
-    ("BB", "Meiosis & Mendelian Genetics", 1),
-    ("CP", "Spectroscopy -- IR, NMR & Mass Spec", 1),
-    ("PS", "Development, Identity & Personality", 1),
-    ("BB", "Non-Mendelian Genetics, Mutations & Evolution", 1),
-    ("CP", "Separations, Purification & Analytical Techniques", 1),
-    ("CARS", "Full Section Practice #1 + Midpoint Review", 1),
-    ("BB", "Glycolysis & Fermentation", 1),
-    ("CP", "Kinematics & Newton's Laws", 1),
-    ("PS", "Psychological Disorders & Treatment", 1),
-    ("BB", "Pyruvate Dehydrogenase & TCA Cycle", 1),
-    ("CP", "Work, Energy & Momentum", 1),
-    ("CARS", "Pacing & Process of Elimination", 1),
-    ("BB", "Electron Transport Chain & Oxidative Phosphorylation", 1),
-    ("CP", "Fluids & Solids", 1),
-    ("PS", "Social Psychology -- Attitudes, Groups & Behavior", 1),
-    ("BB", "Gluconeogenesis, Glycogen & Pentose Phosphate Pathway", 1),
-    ("CP", "Electrostatics & Magnetism", 1),
-    ("CARS", "Humanities Passages Deep Dive", 1),
-    ("BB", "Lipid & Amino Acid Metabolism + Integration", 1),
-    ("CP", "Circuits & Electricity", 1),
-    ("PS", "Social Interaction, Attribution & Discrimination", 1),
-    ("BB", "Microbiology -- Bacteria, Viruses & Prions", 1),
-    ("CP", "Waves, Sound & Doppler Effect", 1),
-    ("CARS", "Social Sciences Passages Deep Dive", 1),
-    ("BB", "Immunology -- Innate & Adaptive Immunity", 1),
-    ("CP", "Light, Optics & Diffraction", 1),
-    ("PS", "Sociological Theories & Social Institutions", 1),
-    ("BB", "Cardiovascular System & Blood", 1),
-    ("CP", "Nuclear Chemistry & Radioactive Decay", 1),
-    ("CARS", "Full Section Practice #2 + Comprehensive Review", 1),
-    ("BB", "Respiratory System & Gas Exchange", 1),
-    ("CP", "Math Skills, Units & Dimensional Analysis", 1),
-    ("PS", "Demographics, Stratification & Health Disparities", 1),
-    ("BB", "Digestive System & Nutrient Absorption", 1),
-    ("CP", "Research Design & Data Interpretation", 1),
-    ("CARS", "Timed Practice + Phase 1 Final Assessment", 1),
-    # Phase 2 (28 topics) — Practice & Integration
-    ("ALL", "Third-Party FL #1 (Full-Length)", 2),
-    ("CP/CARS", "FL #1 Review -- CP & CARS", 2),
-    ("BB/PS", "FL #1 Review -- BB & PS", 2),
-    ("BB", "BB Passage-Based Practice (59 Qs timed)", 2),
-    ("CP", "CP Passage-Based Practice (59 Qs timed)", 2),
-    ("CARS/PS", "CARS Full Section + PS Practice", 2),
-    ("VARIES", "Weak Area Deep Dive #1 -- Highest Priority", 2),
-    ("VARIES", "Weak Area Deep Dive #2", 2),
-    ("CARS", "CARS Intensive -- 6 Passages Timed", 2),
-    ("ALL", "Third-Party FL #2 (Full-Length)", 2),
-    ("ALL", "FL #2 Full Review", 2),
-    ("ALL", "Mixed Section Practice + Anki Marathon", 2),
-    ("ALL", "Third-Party FL #3 (Full-Length)", 2),
-    ("ALL", "FL #3 Full Review + Error Pattern Analysis", 2),
-    ("BB/CP", "Data Interpretation & Experimental Design", 2),
-    ("PS", "PS Deep Dive -- Research Methods & Epidemiology", 2),
-    ("CP", "CP Calculation Drill + Physics Problem Workshop", 2),
-    ("CARS", "CARS Full Section + Weekly Review", 2),
-    ("ALL", "Third-Party FL #4 (Full-Length)", 2),
-    ("ALL", "FL #4 Full Review + Error Log Analysis", 2),
-    ("BB", "Biochemistry Integration Review", 2),
-    ("CP", "Physics + Gen Chem Problem-Solving", 2),
-    ("PS", "PS Comprehensive Section Practice", 2),
-    ("CARS", "CARS Strategy Refinement + Phase 3 Planning", 2),
-    ("ALL", "Third-Party FL #5 (Full-Length)", 2),
-    ("ALL", "FL #5 Full Review + Score Trend Analysis", 2),
-    ("BB/CP", "Content Gap Remediation -- BB & CP", 2),
-    ("PS/CARS", "Content Gap Remediation -- PS & CARS Maintenance", 2),
-    # Phase 3 (28 topics) — AAMC Materials
-    ("ALL", "Mixed Timed Practice + Strategy Review", 3),
-    ("ALL", "Phase 2 Assessment + Phase 3 Planning", 3),
-    ("BB", "AAMC QPack -- Biology Vol 1", 3),
-    ("CP", "AAMC QPack -- Chemistry Vol 1", 3),
-    ("CP", "AAMC QPack -- Physics", 3),
-    ("BB", "AAMC QPack -- Biology Vol 2", 3),
-    ("CP", "AAMC QPack -- Chemistry Vol 2", 3),
-    ("CARS", "AAMC CARS QPack Vol 1", 3),
-    ("CARS", "AAMC CARS QPack Vol 2", 3),
-    ("BB", "AAMC Section Bank -- BB", 3),
-    ("CP", "AAMC Section Bank -- CP", 3),
-    ("PS", "AAMC Section Bank -- PS", 3),
-    ("ALL", "Section Bank Full Review Day", 3),
-    ("ALL", "AAMC FL 1 (Full-Length)", 3),
-    ("ALL", "AAMC FL 1 -- Full Review", 3),
-    ("ALL", "Targeted Weak Area Review", 3),
-    ("ALL", "AAMC FL 2 (Full-Length)", 3),
-    ("ALL", "AAMC FL 2 -- Full Review", 3),
-    ("ALL", "High-Yield Content Blitz + Leech Review", 3),
-    ("CARS/PS", "CARS Maintenance + PS Final Vocabulary Drill", 3),
-    ("ALL", "AAMC FL 3 (Full-Length)", 3),
-    ("ALL", "AAMC FL 3 -- Full Review", 3),
-    ("ALL", "AAMC FL 4 (Full-Length)", 3),
-    ("ALL", "AAMC FL 4 -- Full Review", 3),
-    ("ALL", "Light Review + Confidence Building", 3),
-    ("ALL", "Test Day Logistics + Gentle Review", 3),
-    ("BB/CP", "Final Light Review -- BB & CP Highlights", 3),
-    ("PS/CARS", "Final Light Review -- PS & CARS Highlights", 3),
+
+# Week 1 starts May 4 (Mon). Week N = (date - May 4) // 7 + 1.
+WEEK1_START = D(5, 4)
+def week_for(d):
+    return (d - WEEK1_START).days // 7 + 1
+
+
+# === SCHEDULE ===
+# (date, kind, section, topic)
+# kind: STUDY | SUNDAY | FL | EXAM | OFF | REST
+SCHEDULE = [
+    # ---------- Week 1 (May 4-10): Bio Ch01-04, 2 OFF, Sun Anki ----------
+    (D(5, 4),  "STUDY",  "BB",   "Bio Ch01 -- The Cell"),
+    (D(5, 5),  "STUDY",  "BB",   "Bio Ch02 -- Reproduction"),
+    (D(5, 6),  "OFF",    "--",   "OFF (planned)"),
+    (D(5, 7),  "STUDY",  "BB",   "Bio Ch03 -- Embryogenesis"),
+    (D(5, 8),  "STUDY",  "BB",   "Bio Ch04 -- Nervous System"),
+    (D(5, 9),  "OFF",    "--",   "OFF (planned)"),
+    (D(5, 10), "SUNDAY", "ANKI", "Anki backlog + CARS + week review"),
+
+    # ---------- Week 2 (May 11-17): Bio Ch05-10 ----------
+    (D(5, 11), "STUDY",  "BB",   "Bio Ch05 -- Endocrine"),
+    (D(5, 12), "STUDY",  "BB",   "Bio Ch06 -- Respiratory"),
+    (D(5, 13), "STUDY",  "BB",   "Bio Ch07 -- Cardiovascular"),
+    (D(5, 14), "STUDY",  "BB",   "Bio Ch08 -- Immune"),
+    (D(5, 15), "STUDY",  "BB",   "Bio Ch09 -- Digestive"),
+    (D(5, 16), "STUDY",  "BB",   "Bio Ch10 -- Homeostasis"),
+    (D(5, 17), "SUNDAY", "ANKI", "Anki backlog + CARS + week review"),
+
+    # ---------- Week 3 (May 18-24): Bio Ch11-12 -> Biochem Ch01-04 + Sun BB FL #1 ----------
+    (D(5, 18), "STUDY",  "BB",   "Bio Ch11 -- Musculoskeletal"),
+    (D(5, 19), "STUDY",  "BB",   "Bio Ch12 -- Genetics & Evolution (BIO COMPLETE)"),
+    (D(5, 20), "STUDY",  "BB",   "Biochem Ch01 -- Amino Acids & Proteins"),
+    (D(5, 21), "STUDY",  "BB",   "Biochem Ch02 -- Enzymes"),
+    (D(5, 22), "STUDY",  "BB",   "Biochem Ch03 -- Non-Enzymatic Protein Function"),
+    (D(5, 23), "STUDY",  "BB",   "Biochem Ch04 -- Carbohydrates"),
+    (D(5, 24), "SUNDAY", "BB",   "Half-length #1 (Biology focus, ~60 Qs)"),
+
+    # ---------- Week 4 (May 25-31): Biochem Ch05-10 ----------
+    (D(5, 25), "STUDY",  "BB",   "Biochem Ch05 -- Lipids"),
+    (D(5, 26), "STUDY",  "BB",   "Biochem Ch06 -- DNA & Biotechnology"),
+    (D(5, 27), "STUDY",  "BB",   "Biochem Ch07 -- RNA & the Genetic Code"),
+    (D(5, 28), "STUDY",  "BB",   "Biochem Ch08 -- Membranes"),
+    (D(5, 29), "STUDY",  "BB",   "Biochem Ch09 -- Carb Metabolism I"),
+    (D(5, 30), "STUDY",  "BB",   "Biochem Ch10 -- Carb Metabolism II"),
+    (D(5, 31), "SUNDAY", "ANKI", "Anki backlog + CARS + week review"),
+
+    # ---------- Week 5 (Jun 1-7): Biochem Ch11-12 -> GChem Ch01-04 + Sun BB FL #2 ----------
+    (D(6, 1),  "STUDY",  "BB",   "Biochem Ch11 -- Lipid & AA Metabolism"),
+    (D(6, 2),  "STUDY",  "BB",   "Biochem Ch12 -- Bioenergetics & Regulation (BIOCHEM COMPLETE)"),
+    (D(6, 3),  "STUDY",  "CP",   "GenChem Ch01 -- Atomic Structure"),
+    (D(6, 4),  "STUDY",  "CP",   "GenChem Ch02 -- Periodic Table"),
+    (D(6, 5),  "STUDY",  "CP",   "GenChem Ch03 -- Bonding"),
+    (D(6, 6),  "STUDY",  "CP",   "GenChem Ch04 -- Compounds & Stoichiometry"),
+    (D(6, 7),  "SUNDAY", "BB",   "Half-length #2 (Biochemistry focus, ~60 Qs)"),
+
+    # ---------- Week 6 (Jun 8-14): GChem Ch05-10 ----------
+    (D(6, 8),  "STUDY",  "CP",   "GenChem Ch05 -- Kinetics"),
+    (D(6, 9),  "STUDY",  "CP",   "GenChem Ch06 -- Equilibrium"),
+    (D(6, 10), "STUDY",  "CP",   "GenChem Ch07 -- Thermochemistry"),
+    (D(6, 11), "STUDY",  "CP",   "GenChem Ch08 -- Gas Phase"),
+    (D(6, 12), "STUDY",  "CP",   "GenChem Ch09 -- Solutions"),
+    (D(6, 13), "STUDY",  "CP",   "GenChem Ch10 -- Acids & Bases"),
+    (D(6, 14), "SUNDAY", "ANKI", "Anki backlog + CARS + week review"),
+
+    # ---------- Week 7 (Jun 15-21): GChem Ch11-12 -> OChem Ch01-04 + Sun CP FL #1 ----------
+    (D(6, 15), "STUDY",  "CP",   "GenChem Ch11 -- Redox"),
+    (D(6, 16), "STUDY",  "CP",   "GenChem Ch12 -- Electrochemistry (GCHEM COMPLETE)"),
+    (D(6, 17), "STUDY",  "CP",   "OrgChem Ch01 -- Nomenclature"),
+    (D(6, 18), "STUDY",  "CP",   "OrgChem Ch02 -- Isomers"),
+    (D(6, 19), "STUDY",  "CP",   "OrgChem Ch03 -- Bonding"),
+    (D(6, 20), "STUDY",  "CP",   "OrgChem Ch04 -- Analyzing Reactions"),
+    (D(6, 21), "SUNDAY", "CP",   "Half-length #3 (GenChem focus, ~60 Qs)"),
+
+    # ---------- Week 8 (Jun 22-28): OChem Ch05-10 ----------
+    (D(6, 22), "STUDY",  "CP",   "OrgChem Ch05 -- Alcohols"),
+    (D(6, 23), "STUDY",  "CP",   "OrgChem Ch06 -- Aldehydes & Ketones I"),
+    (D(6, 24), "STUDY",  "CP",   "OrgChem Ch07 -- Aldehydes & Ketones II (Enolates)"),
+    (D(6, 25), "STUDY",  "CP",   "OrgChem Ch08 -- Carboxylic Acids"),
+    (D(6, 26), "STUDY",  "CP",   "OrgChem Ch09 -- Carboxylic Acid Derivatives"),
+    (D(6, 27), "STUDY",  "CP",   "OrgChem Ch10 -- Nitrogen & Phosphorus Compounds"),
+    (D(6, 28), "SUNDAY", "ANKI", "Anki backlog + CARS + week review"),
+
+    # ---------- Week 9 (Jun 29-Jul 5): OChem Ch11-12 -> PhysicsMath Ch01-04 + Sun CP FL #2 ----------
+    (D(6, 29), "STUDY",  "CP",   "OrgChem Ch11 -- Spectroscopy (NMR/IR/UV-Vis/MS)"),
+    (D(6, 30), "STUDY",  "CP",   "OrgChem Ch12 -- Separations & Purifications (OCHEM COMPLETE)"),
+    (D(7, 1),  "STUDY",  "CP",   "PhysicsMath Ch01 -- Kinematics & Dynamics"),
+    (D(7, 2),  "STUDY",  "CP",   "PhysicsMath Ch02 -- Work & Energy"),
+    (D(7, 3),  "STUDY",  "CP",   "PhysicsMath Ch03 -- Thermodynamics (CONTENT GAP - expand)"),
+    (D(7, 4),  "STUDY",  "CP",   "PhysicsMath Ch04 -- Fluids (US Independence Day - cascade if off)"),
+    (D(7, 5),  "SUNDAY", "CP",   "Half-length #4 (OrgChem focus, ~60 Qs)"),
+
+    # ---------- Week 10 (Jul 6-12): PhysicsMath Ch05-10 ----------
+    (D(7, 6),  "STUDY",  "CP",   "PhysicsMath Ch05 -- Electrostatics & Magnetism"),
+    (D(7, 7),  "STUDY",  "CP",   "PhysicsMath Ch06 -- Circuits"),
+    (D(7, 8),  "STUDY",  "CP",   "PhysicsMath Ch07 -- Waves & Sound"),
+    (D(7, 9),  "STUDY",  "CP",   "PhysicsMath Ch08 -- Light & Optics"),
+    (D(7, 10), "STUDY",  "CP",   "PhysicsMath Ch09 -- Atomic & Nuclear"),
+    (D(7, 11), "STUDY",  "CP",   "PhysicsMath Ch10 -- Mathematics"),
+    (D(7, 12), "SUNDAY", "ANKI", "Anki backlog + CARS + week review"),
+
+    # ---------- Week 11 (Jul 13-19): PhysicsMath Ch11-12 -> Psych Ch01-04 + Sun CP FL #3 ----------
+    (D(7, 13), "STUDY",  "CP",   "PhysicsMath Ch11 -- Research Design"),
+    (D(7, 14), "STUDY",  "CP",   "PhysicsMath Ch12 -- Statistics (PHYSICS COMPLETE)"),
+    (D(7, 15), "STUDY",  "PS",   "Psychology Ch01 -- Biology of Behavior"),
+    (D(7, 16), "STUDY",  "PS",   "Psychology Ch02 -- Sensation & Perception"),
+    (D(7, 17), "STUDY",  "PS",   "Psychology Ch03 -- Learning & Memory"),
+    (D(7, 18), "STUDY",  "PS",   "Psychology Ch04 -- Cognition & Consciousness"),
+    (D(7, 19), "SUNDAY", "CP",   "Half-length #5 (PhysicsMath focus, ~60 Qs)"),
+
+    # ---------- Week 12 (Jul 20-26): Psych Ch05-10 + ORDER UWORLD by Jul 25 ----------
+    (D(7, 20), "STUDY",  "PS",   "Psychology Ch05 -- Motivation, Emotion & Stress"),
+    (D(7, 21), "STUDY",  "PS",   "Psychology Ch06 -- Identity & Personality"),
+    (D(7, 22), "STUDY",  "PS",   "Psychology Ch07 -- Psychological Disorders"),
+    (D(7, 23), "STUDY",  "PS",   "Psychology Ch08 -- Social Processes"),
+    (D(7, 24), "STUDY",  "PS",   "Psychology Ch09 -- Social Interaction"),
+    (D(7, 25), "STUDY",  "PS",   "Psychology Ch10 -- Social Thinking [BUY UWORLD TODAY]"),
+    (D(7, 26), "SUNDAY", "ANKI", "Anki backlog + CARS + week review"),
+
+    # ---------- Week 13 (Jul 27-Aug 2): Psych Ch11-12 -> PHASE 2 starts Wed + Sun PS FL #6 ----------
+    (D(7, 27), "STUDY",  "PS",   "Psychology Ch11 -- Social Structure & Demographics"),
+    (D(7, 28), "STUDY",  "PS",   "Psychology Ch12 -- Social Stratification (PHASE 1 COMPLETE)"),
+    (D(7, 29), "STUDY",  "UW",   "Phase 2 Day 1 -- UWorld diagnostic block (40 Qs mixed)"),
+    (D(7, 30), "STUDY",  "UW",   "UWorld -- top weak topic from Wed (40 Qs targeted)"),
+    (D(7, 31), "STUDY",  "UW",   "UWorld -- second weak topic (40 Qs) + CARS (3 passages)"),
+    (D(8, 1),  "STUDY",  "UW",   "UWorld -- mixed timed block (60 Qs all sections)"),
+    (D(8, 2),  "SUNDAY", "PS",   "Half-length #6 (Psychology focus, ~60 Qs)"),
+
+    # ---------- Week 14 (Aug 3-9): UWorld grind + 3rd-party FL #1 (Sat) ----------
+    (D(8, 3),  "STUDY",  "UW",   "UWorld weak-topic deep dive #1 (BB, ~50 Qs untimed)"),
+    (D(8, 4),  "STUDY",  "UW",   "UWorld weak-topic deep dive #2 (CP, ~50 Qs untimed)"),
+    (D(8, 5),  "STUDY",  "UW",   "UWorld CARS focus (5 passages timed) + content re-read"),
+    (D(8, 6),  "STUDY",  "UW",   "UWorld mixed timed block (60 Qs) + research re-read"),
+    (D(8, 7),  "STUDY",  "UW",   "UWorld + JackSparrow Anki cleanup"),
+    (D(8, 8),  "FL",     "ALL",  "3rd-Party Full-Length #1 (Blueprint free)"),
+    (D(8, 9),  "SUNDAY", "ALL",  "FL #1 deep review + weekly review"),
+
+    # ---------- Week 15 (Aug 10-16): UWorld + 3rd-party FL #2 (Thu) + BUY AAMC by Fri ----------
+    (D(8, 10), "STUDY",  "UW",   "UWorld -- weak topics from FL #1 (priority order)"),
+    (D(8, 11), "STUDY",  "UW",   "UWorld -- weak topics + targeted research re-read"),
+    (D(8, 12), "STUDY",  "UW",   "UWorld -- CARS (5 passages) + mixed block (40 Qs)"),
+    (D(8, 13), "FL",     "ALL",  "3rd-Party Full-Length #2"),
+    (D(8, 14), "STUDY",  "ALL",  "FL #2 deep review [BUY AAMC ONLINE PREP BUNDLE TODAY]"),
+    (D(8, 15), "STUDY",  "AAMC", "AAMC familiarization -- explore Section Bank + QPack interface"),
+    (D(8, 16), "SUNDAY", "ANKI", "Phase 2 retrospective + Phase 3 prep"),
+
+    # ---------- Week 16 (Aug 17-23): AAMC Section Banks ----------
+    (D(8, 17), "STUDY",  "AAMC", "AAMC BB Section Bank -- first half (~140 Qs timed)"),
+    (D(8, 18), "STUDY",  "AAMC", "AAMC BB Section Bank -- second half + deep review"),
+    (D(8, 19), "STUDY",  "AAMC", "AAMC CP Section Bank -- first half (~140 Qs timed)"),
+    (D(8, 20), "STUDY",  "AAMC", "AAMC CP Section Bank -- second half + deep review"),
+    (D(8, 21), "STUDY",  "AAMC", "AAMC CARS Section Bank (~140 Qs timed) + review"),
+    (D(8, 22), "STUDY",  "AAMC", "AAMC PS Section Bank -- first half (~140 Qs timed)"),
+    (D(8, 23), "SUNDAY", "AAMC", "Finish PS Section Bank + weekly review"),
+
+    # ---------- Week 17 (Aug 24-30): AAMC QPacks + AAMC FL #1 (Wed) + AAMC FL #2 (Fri) ----------
+    (D(8, 24), "STUDY",  "AAMC", "AAMC QPack -- Biology Vol 1 + 2 (~120 Qs)"),
+    (D(8, 25), "STUDY",  "AAMC", "AAMC QPack -- Chemistry Vol 1 + 2 (~120 Qs)"),
+    (D(8, 26), "FL",     "AAMC", "AAMC Full-Length #1 (full simulation)"),
+    (D(8, 27), "STUDY",  "AAMC", "AAMC FL #1 deep review (every wrong + every guessed)"),
+    (D(8, 28), "FL",     "AAMC", "AAMC Full-Length #2 (full simulation)"),
+    (D(8, 29), "STUDY",  "AAMC", "AAMC FL #2 deep review"),
+    (D(8, 30), "SUNDAY", "AAMC", "AAMC QPack remaining (Physics + Psych) + Anki"),
+
+    # ---------- Week 18 (Aug 31-Sep 6): AAMC FL #3 (Mon) + AAMC FL #4 (Thu) ----------
+    (D(8, 31), "FL",     "AAMC", "AAMC Full-Length #3 (full simulation)"),
+    (D(9, 1),  "STUDY",  "AAMC", "AAMC FL #3 deep review (CONTENT TARGET DATE)"),
+    (D(9, 2),  "STUDY",  "AAMC", "Weak-topic remediation: top 3 from FL #1-3"),
+    (D(9, 3),  "FL",     "AAMC", "AAMC Full-Length #4 (full simulation)"),
+    (D(9, 4),  "STUDY",  "AAMC", "AAMC FL #4 deep review"),
+    (D(9, 5),  "STUDY",  "ALL",  "Light Anki + weak-topic drill (no FLs)"),
+    (D(9, 6),  "SUNDAY", "ALL",  "Anki + CARS + final weak-topic pass"),
+
+    # ---------- Week 19 (Sep 7-11): AAMC Sample (Wed) -> REST -> EXAM ----------
+    (D(9, 7),  "STUDY",  "ALL",  "Light Anki + targeted weak-topic review (Content outlines only)"),
+    (D(9, 8),  "SUNDAY", "ALL",  "Half-day -- Light Anki + 2 CARS passages + AAMC QPack picks"),
+    (D(9, 9),  "FL",     "AAMC", "AAMC Sample FL (free) -- final dress rehearsal"),
+    (D(9, 10), "REST",   "--",   "REST DAY -- pack test bag, light Anki, sleep early"),
+    (D(9, 11), "EXAM",   "ALL",  "MCAT EXAM"),
 ]
 
-assert len(content_queue) == 125, f"Queue length mismatch: {len(content_queue)}"
 
-# === Walk day-by-day from Apr 22 (+1 cascade), assigning content (Mon-Sat) + Anki (Sun) ===
-cursor = datetime.date(2026, 4, 22)
-queue_idx = 0
-ANKI_TOPIC = "Anki Consolidation -- backlog, weak-spot drilling, weekly review + mixed quiz"
+# === Generate ICS ===
+def make_uid(d, section, kind):
+    """Deterministic UID so reimport updates events instead of duplicating."""
+    h = hashlib.md5(f"{d.isoformat()}-{section}-{kind}".encode()).hexdigest()[:12]
+    return f"mcat-{d.strftime('%Y%m%d')}-{h}@mcat-coach"
 
-while queue_idx < len(content_queue):
-    if cursor.weekday() == 6:  # Sunday
-        add_event(cursor, "ANKI", ANKI_TOPIC, week_number(cursor), 0)
-    else:
-        sec, topic, phase = content_queue[queue_idx]
-        add_event(cursor, sec, topic, week_number(cursor), phase)
-        queue_idx += 1
-    cursor += datetime.timedelta(days=1)
 
-# Trailing Sunday after last content day (Sat -> Sun)
-if cursor.weekday() == 6:
-    add_event(cursor, "ANKI", ANKI_TOPIC + " -- final pre-buffer", week_number(cursor), 0)
-
-# === Write ICS file ===
-phase_names = {0: "Anki Consolidation", 1: "Content Review",
-               2: "Practice & Integration", 3: "AAMC Materials"}
 ics_lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
     "PRODID:-//MCAT Study Coach//EN",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
-    "X-WR-CALNAME:MCAT Study Schedule",
+    "X-WR-CALNAME:MCAT Study Schedule (rebuilt 2026-05-03)",
 ]
-for dtstart, dtend, section, topic, week, phase in events:
-    uid = str(uuid.uuid4())
-    summary = f"MCAT [{section}]: {topic}"
-    desc = f"Phase {phase}: {phase_names[phase]} | Week {week}"
-    ics_lines.extend([
-        "BEGIN:VEVENT",
-        f"UID:{uid}",
-        f"DTSTART:{dtstart.strftime('%Y%m%dT%H%M%S')}",
-        f"DTEND:{dtend.strftime('%Y%m%dT%H%M%S')}",
-        f"SUMMARY:{summary}",
-        f"DESCRIPTION:{desc}",
-        "STATUS:CONFIRMED",
-        "END:VEVENT",
-    ])
+
+written = 0
+all_day = 0
+timed = 0
+
+for d, kind, section, topic in SCHEDULE:
+    week = week_for(d)
+    phase = phase_for(d)
+    uid = make_uid(d, section, kind)
+    summary = f"MCAT [{section}]: {topic}" if section != "--" else f"MCAT: {topic}"
+    desc = f"Phase {phase}: {PHASE_NAMES[phase]} | Week {week} | {DAY_LABELS[d.weekday()]}"
+
+    if kind in ("OFF", "REST"):
+        # All-day event
+        next_day = d + datetime.timedelta(days=1)
+        ics_lines.extend([
+            "BEGIN:VEVENT",
+            f"UID:{uid}",
+            f"DTSTART;VALUE=DATE:{d.strftime('%Y%m%d')}",
+            f"DTEND;VALUE=DATE:{next_day.strftime('%Y%m%d')}",
+            f"SUMMARY:{summary}",
+            f"DESCRIPTION:{desc}",
+            "STATUS:CONFIRMED",
+            "TRANSP:TRANSPARENT",
+            "END:VEVENT",
+        ])
+        all_day += 1
+    else:
+        start_str, end_str = TIMES[kind]
+        sh, sm = map(int, start_str.split(":"))
+        eh, em = map(int, end_str.split(":"))
+        dtstart = datetime.datetime(d.year, d.month, d.day, sh, sm)
+        dtend = datetime.datetime(d.year, d.month, d.day, eh, em)
+        ics_lines.extend([
+            "BEGIN:VEVENT",
+            f"UID:{uid}",
+            f"DTSTART:{dtstart.strftime('%Y%m%dT%H%M%S')}",
+            f"DTEND:{dtend.strftime('%Y%m%dT%H%M%S')}",
+            f"SUMMARY:{summary}",
+            f"DESCRIPTION:{desc}",
+            "STATUS:CONFIRMED",
+            "END:VEVENT",
+        ])
+        timed += 1
+    written += 1
+
 ics_lines.append("END:VCALENDAR")
 
+# Write ICS file
 script_dir = os.path.dirname(os.path.abspath(__file__))
 ics_path = os.path.join(script_dir, "mcat_schedule.ics")
 with open(ics_path, "w", newline="\r\n") as f:
     f.write("\r\n".join(ics_lines))
 
-# === Generate week_03.md through week_22.md ===
-# Phase label per week based on majority content days
-def phase_label_for_week(wk):
-    days = schedule_by_week.get(wk, [])
-    phase_counts = {}
-    for _, _, _, p in days:
-        if p == 0:  # skip Anki
-            continue
-        phase_counts[p] = phase_counts.get(p, 0) + 1
-    phases = sorted(phase_counts.keys())
-    if len(phases) == 1:
-        p = phases[0]
-        return f"Phase {p}: {phase_names[p]}"
-    elif len(phases) == 2:
-        a, b = phases
-        return f"Phase {a}/{b}: Transition ({phase_names[a]} → {phase_names[b]})"
-    return "Mixed"
-
-
-def format_date(d):
-    return d.strftime("%b %d").replace(" 0", " ")  # "Apr 27" not "Apr 27"
-
-
-def format_week_md(wk):
-    days = schedule_by_week.get(wk, [])
-    if not days:
-        return None
-    first = days[0][0]
-    last = days[-1][0]
-    phase_str = phase_label_for_week(wk)
-
-    lines = []
-    lines.append(f"# Week {wk} — {phase_str}")
-    lines.append(f"**{format_date(first)} - {format_date(last)}, 2026**")
-    lines.append("")
-    lines.append("## Pre-flight")
-    lines.append("- **Previous week:** [pending check]")
-    lines.append("- **Carry-over:** --")
-    lines.append("")
-    lines.append("## Schedule")
-    lines.append("")
-    lines.append("| Date | Day | Time | Section | Topic | Logged |")
-    lines.append("|------|-----|------|---------|-------|--------|")
-    for d, sec, top, _ph in days:
-        date_s = format_date(d)
-        day_s = DAY_LABELS[d.weekday()]
-        time_s = TIME_LABELS[d.weekday()]
-        # Anki row: render slightly differently
-        lines.append(f"| {date_s} | {day_s} | {time_s} | {sec} | {top} | [ ] |")
-    lines.append("")
-    lines.append("## Session Logs")
-    lines.append("")
-    lines.append("<!-- Paste session log entries below after each study day -->")
-    lines.append("")
-    lines.append("## Weekly Review (Sunday Anki Day)")
-    lines.append("- [ ] All session logs complete")
-    lines.append("- [ ] Confidence map updated")
-    lines.append("- [ ] Section confidence tracker updated")
-    lines.append("- [ ] Top 3 weak topics reviewed")
-    lines.append("- [ ] Anki backlog cleared (or logged for next week)")
-    return "\n".join(lines) + "\n"
-
-
-weeks_written = []
-for wk in sorted(schedule_by_week.keys()):
-    if wk < 3:  # Week 0/1/2 not regenerated (1 = logged past; 2 = live session log preserved)
-        continue
-    if wk >= 22:  # Week 22 has manual cascade spillover note; Week 23+ is buffer
-        continue
-    md = format_week_md(wk)
-    if md is None:
-        continue
-    out_path = os.path.join(script_dir, f"week_{wk:02d}.md")
-    with open(out_path, "w", encoding="utf-8", newline="\n") as f:
-        f.write(md)
-    weeks_written.append(wk)
-
 # === Report ===
-print(f"Generated {len(events)} calendar events -> {ics_path}")
-print(f"Content queue consumed: {queue_idx}/{len(content_queue)}")
-anki_count = sum(1 for _, _, sec, _, _, _ in events if sec == "ANKI")
-print(f"Anki consolidation days: {anki_count}")
-print(f"Week files written: {weeks_written}")
-print(f"First content day: Apr 21 (Week 2 Tue)")
-print(f"Last content day: {events[-1][0].date().isoformat() if events[-1][2] != 'ANKI' else 'see above'}")
-content_events = [e for e in events if e[2] != 'ANKI' and e[5] != 0]
-last_content = max(content_events, key=lambda e: e[0])
-last_anki = max([e for e in events if e[2] == 'ANKI'], key=lambda e: e[0])
-print(f"Last content day: {last_content[0].date().isoformat()} — {last_content[2]}: {last_content[3]}")
-print(f"Last Anki day:    {last_anki[0].date().isoformat()}")
+study = sum(1 for _, k, _, _ in SCHEDULE if k == "STUDY")
+sundays = sum(1 for _, k, _, _ in SCHEDULE if k == "SUNDAY")
+fls = sum(1 for _, k, _, _ in SCHEDULE if k == "FL")
+offs = sum(1 for _, k, _, _ in SCHEDULE if k == "OFF")
+rests = sum(1 for _, k, _, _ in SCHEDULE if k == "REST")
+exams = sum(1 for _, k, _, _ in SCHEDULE if k == "EXAM")
+
+print(f"Wrote {ics_path}")
+print(f"Total events: {written} ({timed} timed + {all_day} all-day)")
+print(f"  STUDY (Mon-Sat 8a-3p):    {study}")
+print(f"  SUNDAY (half-day 8a-12p): {sundays}")
+print(f"  FL (full-length 8a-4p):   {fls}")
+print(f"  OFF (planned off):        {offs}")
+print(f"  REST (pre-exam rest):     {rests}")
+print(f"  EXAM:                     {exams}")
+print(f"First day: {SCHEDULE[0][0]} ({DAY_LABELS[SCHEDULE[0][0].weekday()]})")
+print(f"Last day:  {SCHEDULE[-1][0]} ({DAY_LABELS[SCHEDULE[-1][0].weekday()]}) -- exam")

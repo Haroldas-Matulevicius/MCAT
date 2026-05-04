@@ -1,33 +1,35 @@
 # Mnemonics Index
 
-Verified memory aids for every MCAT topic area. Files mirror the Content/Research structure 1:1.
+Verified memory aids for every MCAT topic. Files mirror `Content/` and `research/` 1:1.
 
-## How to Route
+**Loading rule:** Do NOT load unless the student explicitly asks for a memory aid. When loading, load only the single matching chapter file.
 
-1. Identify the subject area from the student's question.
-2. Navigate to the right subfolder or root-level file.
-3. Search for mnemonics matching the specific topic.
-
-## Folder Structure
+## Folder Structure (post-2026-05-03 Kaplan-book reorg)
 
 ```
 mnemonics/
   INDEX.md          <-- You are here
-  BB/               <-- Bio/Biochem mnemonics (9 files)
-    INDEX.md         <-- BB-specific routing with trigger keywords
-  CP/               <-- Chem/Phys mnemonics (12 files)
-    INDEX.md         <-- CP-specific routing with trigger keywords
-  PS_Psych_Soc.md   <-- Psychology & Sociology mnemonics
-  CARS.md           <-- CARS strategies and frameworks
-  Research_Methods.md <-- Study design, statistics, bias mnemonics
-  Lab_Techniques.md  <-- Lab methods mnemonics (blotting, PCR, chromatography)
+  Biology/          Kaplan Biology 2024 — Ch01..Ch12 + INDEX.md
+  Biochemistry/     Kaplan Biochem 2024 — Ch01..Ch12 + INDEX.md
+  GenChem/          Kaplan GChem 2024 — Ch01..Ch12 + INDEX.md
+  OrgChem/          Kaplan OChem 2024 — Ch01..Ch12 + INDEX.md
+  PhysicsMath/      Kaplan Physics & Math 2024 — Ch01..Ch12 + INDEX.md (Ch11–12 cover research design + statistics)
+  Psychology/       Kaplan Behavioral Sciences 2024 — Ch01..Ch12 + INDEX.md
+  CARS/             CARS strategy mnemonics
+  LabTechniques/    Cross-cutting lab method mnemonics
 ```
 
-## Root-Level File Routing
+## Folder-Level Routing
 
-| File | Trigger Keywords |
-|------|-----------------|
-| `PS_Psych_Soc.md` | Piaget, Erikson, Freud, Kohlberg, OCEAN, personality, brain regions, memory, sleep, conditioning, reinforcement, emotion theories, attribution, strain theory |
-| `CARS.md` | CARS, passage strategy, question types, wrong answer elimination |
-| `Research_Methods.md` | sensitivity, specificity, Type I/II error, power, study types, skew, Belmont |
-| `Lab_Techniques.md` | blotting, SNoW DRoP, PCR, chromatography, TLC, SDS-PAGE, size exclusion |
+| Folder | When to load | Sub-INDEX |
+|--------|--------------|-----------|
+| `Biology/` | cell, organelle, organ system, embryology, genetics, evolution, viruses, prokaryotes | `Biology/INDEX.md` |
+| `Biochemistry/` | amino acid, enzyme, metabolism, DNA, RNA, membrane, signaling | `Biochemistry/INDEX.md` |
+| `GenChem/` | atomic structure, periodic, bonding, stoichiometry, kinetics, equilibrium, thermo, gas, solution, acid-base, redox, electrochem | `GenChem/INDEX.md` |
+| `OrgChem/` | nomenclature, isomer, functional group, reaction mechanism, alcohol, aldehyde/ketone, carboxylic acid, spectroscopy, separation | `OrgChem/INDEX.md` |
+| `PhysicsMath/` | mechanics, fluid, electricity, optics, sound, nuclear, math/units, research design, statistics | `PhysicsMath/INDEX.md` |
+| `Psychology/` | psychology, sociology, behavior, cognition, learning, identity, social structure | `Psychology/INDEX.md` |
+| `CARS/` | CARS, passage strategy, question types, wrong answer elimination | `CARS/CARS.md` (no sub-INDEX) |
+| `LabTechniques/` | blotting, SNoW DRoP, PCR, chromatography, TLC, SDS-PAGE, size exclusion | `LabTechniques/Lab_Techniques.md` (no sub-INDEX) |
+
+**Coverage note:** Many chapters have stub files (no verified mnemonics yet). Build them up as the student encounters memorable patterns during study.

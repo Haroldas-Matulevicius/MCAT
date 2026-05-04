@@ -24,20 +24,19 @@ MCAT/
 | research | Full teaching material, mechanisms, MCAT tips | 100–800 lines |
 | mnemonics | Verified memory aids | 60–130 lines |
 
-## Folder layout (post-2026-04-28 Kaplan-book reorg)
+## Folder layout (post-2026-05-03 Kaplan-book reorg, all 6 books restructured)
 
-Both `Content/` and `research/` mirror this exact folder structure. Each subject folder has an `INDEX.md` with chapter-level routing.
+`Content/`, `research/`, and `mnemonics/` mirror this exact folder structure. Each subject folder has an `INDEX.md` (research/ side) with chapter-level routing.
 
 ```
 Biology/         Ch01..Ch12 + INDEX.md   (Kaplan Biology 2024)
 Biochemistry/    Ch01..Ch12 + INDEX.md   (Kaplan Biochem 2024)
 GenChem/         Ch01..Ch12 + INDEX.md   (Kaplan General Chem 2024)
 OrgChem/         Ch01..Ch12 + INDEX.md   (Kaplan Organic Chem 2024)
-PhysicsMath/     Mechanics / Fluids / Circuits / Light_Sound / Nuclear / Math_Skills + INDEX.md   (PENDING Kaplan Physics chapter restructure)
-Psychology/      PS_Psych_Soc.md + INDEX.md   (PENDING split — single file in Kaplan Ch 1–12 order)
+PhysicsMath/     Ch01..Ch12 + INDEX.md   (Kaplan Physics & Math 2024; Ch11–12 also hold the former ResearchMethods/ content)
+Psychology/      Ch01..Ch12 + INDEX.md   (Kaplan Behavioral Sciences 2024)
 CARS/            CARS.md
 LabTechniques/   Lab_Techniques.md
-ResearchMethods/ Research_Methods.md
 KaplanMap/       Kaplan_Map_and_Gaps.md   (Content/ side only)
 ```
 
@@ -49,11 +48,6 @@ KaplanMap/       Kaplan_Map_and_Gaps.md   (Content/ side only)
 - `Content/CP_Chemical_Physical.md` — AAMC CP section overview
 
 These are not Kaplan-book content; they document the AAMC section as a whole.
-
-**Pending restructures:**
-
-- Physics chapters — split `PhysicsMath/` into Ch01..ChNN once Kaplan list is provided. Will also prune duplicated GenChem content from `Fluids.md`, `Circuits.md`, `Nuclear.md`.
-- Psychology split — break `Psychology/PS_Psych_Soc.md` into 12 chapter files.
 
 ## Progression tier
 
@@ -97,7 +91,7 @@ Each subject folder has an `INDEX.md` with trigger keywords for file routing:
 |------|---------------|
 | Study / teach | Week file → routed Content + Research pair |
 | Quiz | Content + Research for the section |
-| Gaps / "what's left" | `Content/Kaplan_Map_and_Gaps.md` + `progression/MCAT TOPIC CONFIDENCE MAP v2.txt` only |
+| Gaps / "what's left" | `Content/KaplanMap/Kaplan_Map_and_Gaps.md` + `progression/MCAT TOPIC CONFIDENCE MAP v2.txt` only |
 | Schedule changes | Current + adjacent week files + gap map + confidence map |
 | Progress / trends | Recent week files + confidence map (no content files unless asked) |
 

@@ -7,7 +7,7 @@ Scope: Rate laws; reaction order; method of initial rates; integrated rate laws 
 **AAMC FC mapping:** FC5E (kinetics portion)
 **Yield:** HIGH — first-order half-life and rate-law determination from initial-rates tables appear on nearly every exam.
 
-> Note: Enzyme kinetics (Michaelis-Menten, Lineweaver-Burk, inhibition types) lives in `BB_Ch02_Enzymes.md` — cross-load when the topic involves biological catalysts.
+> Note: Enzyme kinetics (Michaelis-Menten, Lineweaver-Burk, inhibition types) lives in `research/Biochemistry/Ch02_Enzymes.md` — cross-load when the topic involves biological catalysts.
 
 ---
 

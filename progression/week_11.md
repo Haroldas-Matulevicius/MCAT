@@ -28,7 +28,7 @@
 - **Jul 16 (Psych Ch02):** `Content/Psychology/Ch02_Sensation_Perception.md`, `research/Psychology/Ch02_Sensation_Perception.md`
 - **Jul 17 (Psych Ch03):** `Content/Psychology/Ch03_Learning_Memory.md`, `research/Psychology/Ch03_Learning_Memory.md`
 - **Jul 18 (Psych Ch04):** `Content/Psychology/Ch04_Cognition_Consciousness.md`, `research/Psychology/Ch04_Cognition_Consciousness.md`
-- **Jul 19 (Sunday — CP Half-length):** Third-party PhysicsMath QBank; load PhysicsMath outlines as reference
+- **Jul 19 (Sunday — CP Half-length):** Third-party PhysicsMath QBank. **Do not preload chapter files.** Wrong-answer review pulls specific `Content/PhysicsMath/ChNN.md` only as needed (1–2 chapters max).
 
 ## Session Logs
 

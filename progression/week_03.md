@@ -28,7 +28,7 @@
 - **May 21 (Biochem Ch02):** `Content/Biochemistry/Ch02_Enzymes.md`, `research/Biochemistry/Ch02_Enzymes.md` — cross-load `research/GenChem/Ch05_Kinetics.md` for kinetics depth
 - **May 22 (Biochem Ch03):** `Content/Biochemistry/Ch03_NonEnzymatic_Protein.md`, `research/Biochemistry/Ch03_NonEnzymatic_Protein.md`
 - **May 23 (Biochem Ch04):** `Content/Biochemistry/Ch04_Carbohydrates.md`, `research/Biochemistry/Ch04_Carbohydrates.md`
-- **May 24 (Sunday — BB Half-length):** Use third-party Bio QBank or Khan Academy Bio section practice; load Bio chapter outlines as reference
+- **May 24 (Sunday — BB Half-length):** Third-party Bio QBank (or Khan Academy Bio section). **Do not preload chapter files.** During wrong-answer review, load only the specific `Content/Biology/ChNN.md` for the chapter the missed question maps to (1–2 chapters max).
 
 ## Session Logs
 

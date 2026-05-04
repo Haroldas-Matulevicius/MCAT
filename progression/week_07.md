@@ -28,7 +28,7 @@
 - **Jun 18 (OrgChem Ch02):** `Content/OrgChem/Ch02_Isomers.md`, `research/OrgChem/Ch02_Isomers.md`
 - **Jun 19 (OrgChem Ch03):** `Content/OrgChem/Ch03_Bonding.md`, `research/OrgChem/Ch03_Bonding.md` — cross-load `research/GenChem/Ch01_Atomic_Structure.md` and `Ch03_Bonding.md`
 - **Jun 20 (OrgChem Ch04):** `Content/OrgChem/Ch04_Analyzing_Reactions.md`, `research/OrgChem/Ch04_Analyzing_Reactions.md`
-- **Jun 21 (Sunday — CP Half-length):** Third-party GenChem QBank; load GChem outlines as reference
+- **Jun 21 (Sunday — CP Half-length):** Third-party GenChem QBank. **Do not preload chapter files.** Wrong-answer review pulls specific `Content/GenChem/ChNN.md` only as needed (1–2 chapters max).
 
 ## Session Logs
 

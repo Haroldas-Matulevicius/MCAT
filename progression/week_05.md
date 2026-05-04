@@ -28,7 +28,7 @@
 - **Jun 4 (GenChem Ch02):** `Content/GenChem/Ch02_Periodic_Table.md`, `research/GenChem/Ch02_Periodic_Table.md`
 - **Jun 5 (GenChem Ch03):** `Content/GenChem/Ch03_Bonding.md`, `research/GenChem/Ch03_Bonding.md`
 - **Jun 6 (GenChem Ch04):** `Content/GenChem/Ch04_Compounds_Stoichiometry.md`, `research/GenChem/Ch04_Compounds_Stoichiometry.md`
-- **Jun 7 (Sunday — BB Half-length):** Third-party Biochem QBank; load Biochem outlines as reference
+- **Jun 7 (Sunday — BB Half-length):** Third-party Biochem QBank. **Do not preload chapter files.** Wrong-answer review pulls specific `Content/Biochemistry/ChNN.md` only as needed (1–2 chapters max).
 
 ## Session Logs
 

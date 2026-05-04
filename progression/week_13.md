@@ -26,7 +26,7 @@
 - **Jul 28 (Psych Ch12):** `Content/Psychology/Ch12_Social_Stratification.md`, `research/Psychology/Ch12_Social_Stratification.md`
 - **Jul 29 (Phase 2 start):** UWorld web app — no chapter files. Phase 1 retrospective: `progression/PHASE_SUMMARIES.md`, `progression/TRACKER.md`, `progression/MCAT TOPIC CONFIDENCE MAP v2.txt`. Write Phase 1 summary entry.
 - **Jul 30–Aug 1 (UWorld days):** Load specific chapter files only as needed for wrong-answer review (research/X/ChNN.md for the topic UWorld surfaces as weak)
-- **Aug 2 (Sunday — PS Half-length):** Third-party Psych QBank; load Psych outlines as reference
+- **Aug 2 (Sunday — PS Half-length):** Third-party Psych QBank. **Do not preload chapter files.** Wrong-answer review pulls specific `Content/Psychology/ChNN.md` only as needed (1–2 chapters max).
 
 ## Session Logs
 

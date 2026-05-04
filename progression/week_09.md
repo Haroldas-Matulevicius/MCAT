@@ -29,7 +29,7 @@
 - **Jul 2 (PhysicsMath Ch02):** `Content/PhysicsMath/Ch02_Work_Energy.md`, `research/PhysicsMath/Ch02_Work_Energy.md`
 - **Jul 3 (PhysicsMath Ch03 — CONTENT GAP):** `Content/PhysicsMath/Ch03_Thermodynamics.md`, `research/PhysicsMath/Ch03_Thermodynamics.md` — research file is a stub. Expand inline from Kaplan book Ch 3 + cross-load `research/GenChem/Ch07_Thermochemistry.md` for chem-side overlap
 - **Jul 4 (PhysicsMath Ch04):** `Content/PhysicsMath/Ch04_Fluids.md`, `research/PhysicsMath/Ch04_Fluids.md` — cross-load `research/Biology/Ch07_Cardiovascular.md`
-- **Jul 5 (Sunday — CP Half-length):** Third-party OrgChem QBank; load OChem outlines as reference
+- **Jul 5 (Sunday — CP Half-length):** Third-party OrgChem QBank. **Do not preload chapter files.** Wrong-answer review pulls specific `Content/OrgChem/ChNN.md` only as needed (1–2 chapters max).
 
 ## Session Logs
 

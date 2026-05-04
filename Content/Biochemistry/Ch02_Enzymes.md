@@ -8,7 +8,7 @@ Kaplan: Biochem Ch 2
 
 ---
 
-ENZYME KINETICS: Primary content lives in `Content/CP/` FC5E (tested in both CP and BB). Core concepts:
+ENZYME KINETICS: Dual-tested topic (BB FC1A, CP FC5E). For the full kinetics outline cross-load `Content/GenChem/Ch05_Kinetics.md`. Core concepts:
 - Enzymes as biological catalysts (lower activation energy, do not change ΔG)
 - Mechanisms: proximity/orientation, acid-base catalysis, covalent catalysis, strain
 - Michaelis-Menten: Km, Vmax, kcat

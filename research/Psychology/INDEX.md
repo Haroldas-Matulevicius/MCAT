@@ -20,5 +20,5 @@
 ## Cross-loading
 
 - Biology of behavior (Ch1) → cross-ref `research/Biology/Ch04_Nervous_System.md` and `Ch05_Endocrine.md`
-- Sensation & perception (Ch2) → physics of light/sound → `research/PhysicsMath/Light_Sound.md`
-- Health disparities, weathering (Ch12) → research design considerations → `research/ResearchMethods/Research_Methods.md`
+- Sensation & perception (Ch2) → physics of light/sound → `research/PhysicsMath/Ch07_Waves_Sound.md` and `research/PhysicsMath/Ch08_Light_Optics.md`
+- Health disparities, weathering (Ch12) → research design considerations → `research/PhysicsMath/Ch11_Research_Design.md` and `research/PhysicsMath/Ch12_Statistics.md`

@@ -10,7 +10,7 @@ Scope: Enzymes as biological catalysts, mechanisms of enzyme activity, enzyme ki
 
 ## Note on Primary Coverage
 
-Enzyme kinetics is dual-listed AAMC content: it lives primarily in **CP FC5E** in this project (tested in both CP and BB sections). Load `Content/CP/` and `research/CP/` enzyme kinetics materials for the full deep-dive.
+Enzyme kinetics is dual-listed AAMC content (FC1A in BB, FC5E in CP — tested in both sections). For the full kinetics deep-dive (rate laws, Arrhenius, transition state) cross-load `research/GenChem/Ch05_Kinetics.md` alongside this chapter.
 
 This chapter file exists to preserve the Kaplan Ch 2 slot in the BB chapter order and surface the high-level topics.
 

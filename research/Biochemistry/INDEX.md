@@ -20,6 +20,6 @@ Deep-dive teaching files mirrored 1:1 with `Content/Biochemistry/`. AAMC FC mapp
 ## Cross-loading
 
 - Lab techniques (PCR, gel, blots, centrifugation) → also load `research/LabTechniques/Lab_Techniques.md`
-- Research methods/stats → `research/ResearchMethods/Research_Methods.md`
+- Research methods/stats → `research/PhysicsMath/Ch11_Research_Design.md` and `research/PhysicsMath/Ch12_Statistics.md`
 - Metabolism + organ overlap → load relevant `research/Biology/ChNN_*.md`
 - Enzyme kinetics → also load `research/GenChem/Ch05_Kinetics.md`

@@ -191,7 +191,7 @@ The hypothalamus controls the pituitary, which controls most other endocrine gla
 
 ### Neural Signaling (covered in BB)
 
-> Neuron anatomy, glial cells, resting potential, action potentials, and synaptic transmission are covered in depth in `research/BB/BB_Nervous_Endocrine.md` §2–3 (Neuron Structure, Neural Signaling). Kaplan Behavioral Sciences Ch 1 does not cover these topics — they belong to the Biology book (Ch 4, Nervous System). The neurotransmitter table below is kept in this file because Kaplan BS Ch 1 *does* cover it, and PS questions hit NT-disease pairings directly.
+> Neuron anatomy, glial cells, resting potential, action potentials, and synaptic transmission are covered in depth in `research/Biology/Ch04_Nervous_System.md` (Kaplan Biology Ch 4). Kaplan Behavioral Sciences Ch 1 does not cover these topics — they belong to the Biology book. The neurotransmitter table below is kept in this file because Kaplan BS Ch 1 *does* cover it, and PS questions hit NT-disease pairings directly.
 
 ### Neurotransmitters Table (high-yield)
 

@@ -1,5 +1,8 @@
 # Week 7 — Phase 1: Content Review
-**May 25 - May 31, 2026**
+**Jun 15 – Jun 21, 2026**
+
+**Books:** General Chemistry (Ch 11–12, finish) → Organic Chemistry (Ch 1–4, start)
+**Sunday:** CP Half-length #1 (GenChem focus)
 
 ## Pre-flight
 - **Previous week:** [pending check]
@@ -7,23 +10,33 @@
 
 ## Schedule
 
-| Date | Day | Time | Section | Topic | Logged |
-|------|-----|------|---------|-------|--------|
-| May 25 | Mon | 7:00 AM – 12:00 PM | CP | SN1/SN2/E1/E2 Reactions | [ ] |
-| May 26 | Tue | 1:00 PM – 6:00 PM | PS | Motivation, Emotion & Stress | [ ] |
-| May 27 | Wed | 4:00 PM – 9:00 PM | BB | Cell Cycle, Mitosis & Cancer Biology | [ ] |
-| May 28 | Thu | 1:00 PM – 6:00 PM | CP | Carbonyl Chemistry & Carboxylic Acid Derivatives | [ ] |
-| May 29 | Fri | 12:30 PM – 5:30 PM | CARS | Reasoning Beyond the Text | [ ] |
-| May 30 | Sat | 7:00 AM – 12:00 PM | BB | Meiosis & Mendelian Genetics | [ ] |
-| May 31 | Sun | 7:00 AM – 12:00 PM | ANKI | Anki Consolidation -- backlog, weak-spot drilling, weekly review + mixed quiz | [ ] |
+| Date   | Day | Time         | Topic                                                            | Logged |
+|--------|-----|--------------|------------------------------------------------------------------|--------|
+| Jun 15 | Mon | 8 AM – 3 PM  | GenChem Ch11 — Redox                                             | [ ]   |
+| Jun 16 | Tue | 8 AM – 3 PM  | GenChem Ch12 — Electrochemistry (GENCHEM COMPLETE)               | [ ]   |
+| Jun 17 | Wed | 8 AM – 3 PM  | OrgChem Ch01 — Nomenclature                                      | [ ]   |
+| Jun 18 | Thu | 8 AM – 3 PM  | OrgChem Ch02 — Isomers                                           | [ ]   |
+| Jun 19 | Fri | 8 AM – 3 PM  | OrgChem Ch03 — Bonding (MO theory, hybridization, aromaticity)   | [ ]   |
+| Jun 20 | Sat | 8 AM – 3 PM  | OrgChem Ch04 — Analyzing Reactions                               | [ ]   |
+| Jun 21 | Sun | 8 AM – 12 PM | **CP Half-length #1** (GenChem focus, ~60 Qs) + deep review      | [ ]   |
+
+## Files to load per day
+
+- **Jun 15 (GenChem Ch11):** `Content/GenChem/Ch11_Redox.md`, `research/GenChem/Ch11_Redox.md`
+- **Jun 16 (GenChem Ch12):** `Content/GenChem/Ch12_Electrochemistry.md`, `research/GenChem/Ch12_Electrochemistry.md`
+- **Jun 17 (OrgChem Ch01):** `Content/OrgChem/Ch01_Nomenclature.md`, `research/OrgChem/Ch01_Nomenclature.md` — also `research/OrgChem/INDEX.md`
+- **Jun 18 (OrgChem Ch02):** `Content/OrgChem/Ch02_Isomers.md`, `research/OrgChem/Ch02_Isomers.md`
+- **Jun 19 (OrgChem Ch03):** `Content/OrgChem/Ch03_Bonding.md`, `research/OrgChem/Ch03_Bonding.md` — cross-load `research/GenChem/Ch01_Atomic_Structure.md` and `Ch03_Bonding.md`
+- **Jun 20 (OrgChem Ch04):** `Content/OrgChem/Ch04_Analyzing_Reactions.md`, `research/OrgChem/Ch04_Analyzing_Reactions.md`
+- **Jun 21 (Sunday — CP Half-length):** Third-party GenChem QBank; load GChem outlines as reference
 
 ## Session Logs
 
 <!-- Paste session log entries below after each study day -->
 
-## Weekly Review (Sunday Anki Day)
-- [ ] All session logs complete
+## Weekly Review (Sunday)
+- [ ] All session logs complete (6 study days)
+- [ ] Half-length #3 (CP-GChem) score logged in `progression/TRACKER.md`
 - [ ] Confidence map updated
-- [ ] Section confidence tracker updated
-- [ ] Top 3 weak topics reviewed
-- [ ] Anki backlog cleared (or logged for next week)
+- [ ] Top 3 weak topics identified
+- [ ] GenChem weak areas flagged for Phase 2 UWorld targeting

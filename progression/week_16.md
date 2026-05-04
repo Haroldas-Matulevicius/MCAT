@@ -1,5 +1,7 @@
-# Week 16 — Phase 2: Practice & Integration
-**Jul 27 - Aug 2, 2026**
+# Week 16 — Phase 3: AAMC Materials
+**Aug 17 – Aug 23, 2026**
+
+**Focus:** AAMC Section Banks (the most representative non-FL practice in the AAMC bundle)
 
 ## Pre-flight
 - **Previous week:** [pending check]
@@ -7,23 +9,29 @@
 
 ## Schedule
 
-| Date | Day | Time | Section | Topic | Logged |
-|------|-----|------|---------|-------|--------|
-| Jul 27 | Mon | 7:00 AM – 12:00 PM | ALL | FL #3 Full Review + Error Pattern Analysis | [ ] |
-| Jul 28 | Tue | 1:00 PM – 6:00 PM | BB/CP | Data Interpretation & Experimental Design | [ ] |
-| Jul 29 | Wed | 4:00 PM – 9:00 PM | PS | PS Deep Dive -- Research Methods & Epidemiology | [ ] |
-| Jul 30 | Thu | 1:00 PM – 6:00 PM | CP | CP Calculation Drill + Physics Problem Workshop | [ ] |
-| Jul 31 | Fri | 12:30 PM – 5:30 PM | CARS | CARS Full Section + Weekly Review | [ ] |
-| Aug 1 | Sat | 7:00 AM – 12:00 PM | ALL | Third-Party FL #4 (Full-Length) | [ ] |
-| Aug 2 | Sun | 7:00 AM – 12:00 PM | ANKI | Anki Consolidation -- backlog, weak-spot drilling, weekly review + mixed quiz | [ ] |
+| Date   | Day | Time         | Topic                                                                    | Logged |
+|--------|-----|--------------|--------------------------------------------------------------------------|--------|
+| Aug 17 | Mon | 8 AM – 3 PM  | AAMC BB Section Bank — first half (~140 Qs timed)                        | [ ]   |
+| Aug 18 | Tue | 8 AM – 3 PM  | AAMC BB Section Bank — second half + full deep review                    | [ ]   |
+| Aug 19 | Wed | 8 AM – 3 PM  | AAMC CP Section Bank — first half (~140 Qs timed)                        | [ ]   |
+| Aug 20 | Thu | 8 AM – 3 PM  | AAMC CP Section Bank — second half + full deep review                    | [ ]   |
+| Aug 21 | Fri | 8 AM – 3 PM  | AAMC CARS Section Bank (~140 Qs timed) + review                          | [ ]   |
+| Aug 22 | Sat | 8 AM – 3 PM  | AAMC PS Section Bank — first half (~140 Qs timed)                        | [ ]   |
+| Aug 23 | Sun | 8 AM – 12 PM | Half-day — finish PS Section Bank second half + weekly review            | [ ]   |
+
+## Files to load per day
+
+- **Aug 17–18 (BB Section Bank):** AAMC web app. Wrong-answer review pulls from `research/Biology/` + `research/Biochemistry/`
+- **Aug 19–20 (CP Section Bank):** AAMC web app. Wrong-answer review pulls from `research/GenChem/`, `research/OrgChem/`, `research/PhysicsMath/`
+- **Aug 21 (CARS Section Bank):** AAMC web app. No content files — strategy review only
+- **Aug 22–23 (PS Section Bank):** AAMC web app. Wrong-answer review pulls from `research/Psychology/`
 
 ## Session Logs
 
 <!-- Paste session log entries below after each study day -->
 
-## Weekly Review (Sunday Anki Day)
+## Weekly Review (Sunday)
+- [ ] All 4 Section Bank scores logged in `progression/TRACKER.md` (BB / CP / CARS / PS)
+- [ ] Pattern analysis: which AAMC question style (passage type, trap type) hits hardest?
+- [ ] Top 3 weak topics for Week 17 QPack + FL prep
 - [ ] All session logs complete
-- [ ] Confidence map updated
-- [ ] Section confidence tracker updated
-- [ ] Top 3 weak topics reviewed
-- [ ] Anki backlog cleared (or logged for next week)

@@ -36,22 +36,53 @@ User says "done", "wrap up", "end session", "push back", "shift schedule" → re
 
 ## Current Phase
 
-**SCHEDULE RESET — 2026-05-03.** All prior week logs cleared. Full rebuild pending in new session.
+**Schedule rebuilt 2026-05-03** — single-book progression (Bio → Biochem → GChem → OChem → PhysicsMath → Psych).
 
-**Start date:** May 4, 2026. **Exam:** Sep 11, 2026. **Content target:** Sep 1, 2026.
-**Study block:** 8 AM – 4 PM daily. **Known days off:** May 6, May 9 (others TBD).
-**CARS:** woven into daily content sessions (not a separate day).
+**Start:** May 4, 2026 (Mon). **Exam:** Sep 11, 2026 (Fri). **Phase 1 ends:** Jul 28 (well ahead of Sep 1 content target).
+**Study block (Mon–Sat):** 8 AM – 3 PM, lunch 11 AM – 12 PM = 6 hr work.
+**Sunday:** half-day 8 AM – 12 PM — Anki catch-up + CARS + practice Qs (or scheduled half-length). No new chapter.
+**Known days off:** May 6 (Wed), May 9 (Sat). Cascade as needed for additional off days.
+**CARS:** 1 timed passage every Mon–Sat (8:30–9:00 AM block).
 
-**Phase structure (to be rebuilt — placeholder):**
+| Phase | Weeks | Dates | Focus |
+|-------|-------|-------|-------|
+| 1. Content Review | 1–13 | May 4 – Jul 28 | 6 books × 12 chapters, 1 ch/day Mon–Sat |
+| 2. Practice & Integration | 13–15 | Jul 29 – Aug 16 | UWorld by weak topic + 2 third-party FLs |
+| 3. AAMC Materials | 16–17 | Aug 17 – Aug 30 | AAMC Section Banks + QPacks + AAMC FL 1 & 2 |
+| 4. Buffer + Final FLs | 18–19 | Aug 31 – Sep 10 | AAMC FL 3 & 4 + Sample + light review |
+| Exam | — | Sep 11 (Fri) | — |
 
-| Phase | Dates | Focus |
-|-------|-------|-------|
-| 1. Content Review | May 4 – ~Jul 20 | All 6 books, 1 chapter/day, CARS woven in |
-| 2. Practice & Integration | ~Jul 21 – ~Aug 10 | Third-party Qs, mixed review |
-| 3. AAMC Materials | ~Aug 11 – Sep 1 | Official AAMC practice |
-| 4. Buffer | Sep 1 – Sep 10 | Final Anki + rest |
+**Daily template (Mon–Sat, 8 AM – 3 PM):**
+| Time | Block |
+|------|-------|
+| 8:00–8:30 | Anki review (yesterday + due) |
+| 8:30–9:00 | CARS — 1 timed passage + review |
+| 9:00–11:00 | Read Kaplan chapter (Content + research files loaded explicitly) |
+| 11:00–12:00 | LUNCH |
+| 12:00–12:30 | JackSparrow Anki — new chapter cards |
+| 12:30–2:00 | Practice Qs (chapter bank → UWorld in Phase 2 → AAMC in Phase 3) |
+| 2:00–2:45 | Wrong-answer deep review |
+| 2:45–3:00 | Session log + git commit |
 
-Update this section when schedule rebuild is complete.
+**Sunday template (half-day, 8 AM – 12 PM):**
+| Time | Block |
+|------|-------|
+| 8:00–8:30 | Anki backlog |
+| 8:30–9:30 | CARS (3 passages timed) OR scheduled half-length test |
+| 9:30–10:30 | Practice Qs (mixed topic from past week) OR FL deep review |
+| 10:30–11:30 | Weak-topic drill (top 3 from week's logs) |
+| 11:30–12:00 | Weekly review checklist + log + commit |
+
+**Question banks to buy:**
+- **UWorld MCAT QBank** — ~$319 for 6 months. Buy by **Jul 25** (start of Phase 2). ~2,200 Qs, best-in-class explanations.
+- **AAMC Online MCAT Prep Bundle** — ~$259. Buy by **Aug 14**. Contains 4 FLs + Sample + 4 Section Banks + 4 QPacks + Official Guide.
+
+**Practice exams (~12 total):**
+- 5 book-end half-lengths (Phase 1 Sundays, third-party 60-Q sets)
+- 2 third-party FLs (Phase 2): Aug 8, Aug 14 (Blueprint free + 1 paid)
+- AAMC FL 1, 2 (Phase 3): Aug 26, Aug 28
+- AAMC FL 3, 4 (Phase 4): Aug 31, Sep 3
+- AAMC Sample free (Phase 4): Sep 9 — final dress rehearsal
 
 ## How to Respond
 

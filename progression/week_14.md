@@ -1,5 +1,7 @@
 # Week 14 — Phase 2: Practice & Integration
-**Jul 13 - Jul 19, 2026**
+**Aug 3 – Aug 9, 2026**
+
+**Focus:** UWorld weak-topic grind + 3rd-party FL #1 (Sat Aug 8)
 
 ## Pre-flight
 - **Previous week:** [pending check]
@@ -7,23 +9,33 @@
 
 ## Schedule
 
-| Date | Day | Time | Section | Topic | Logged |
-|------|-----|------|---------|-------|--------|
-| Jul 13 | Mon | 7:00 AM – 12:00 PM | CP/CARS | FL #1 Review -- CP & CARS | [ ] |
-| Jul 14 | Tue | 1:00 PM – 6:00 PM | BB/PS | FL #1 Review -- BB & PS | [ ] |
-| Jul 15 | Wed | 4:00 PM – 9:00 PM | BB | BB Passage-Based Practice (59 Qs timed) | [ ] |
-| Jul 16 | Thu | 1:00 PM – 6:00 PM | CP | CP Passage-Based Practice (59 Qs timed) | [ ] |
-| Jul 17 | Fri | 12:30 PM – 5:30 PM | CARS/PS | CARS Full Section + PS Practice | [ ] |
-| Jul 18 | Sat | 7:00 AM – 12:00 PM | VARIES | Weak Area Deep Dive #1 -- Highest Priority | [ ] |
-| Jul 19 | Sun | 7:00 AM – 12:00 PM | ANKI | Anki Consolidation -- backlog, weak-spot drilling, weekly review + mixed quiz | [ ] |
+| Date  | Day | Time         | Topic                                                                    | Logged |
+|-------|-----|--------------|--------------------------------------------------------------------------|--------|
+| Aug 3 | Mon | 8 AM – 3 PM  | UWorld weak-topic deep dive #1 (BB section, ~50 Qs untimed → review)     | [ ]   |
+| Aug 4 | Tue | 8 AM – 3 PM  | UWorld weak-topic deep dive #2 (CP section, ~50 Qs untimed → review)     | [ ]   |
+| Aug 5 | Wed | 8 AM – 3 PM  | UWorld CARS focus (5 passages timed) + content re-read on weak topics     | [ ]   |
+| Aug 6 | Thu | 8 AM – 3 PM  | UWorld mixed timed block (60 Qs, all sections) + research re-read         | [ ]   |
+| Aug 7 | Fri | 8 AM – 3 PM  | UWorld + JackSparrow Anki cleanup (clear backlog, drill weak cards)       | [ ]   |
+| Aug 8 | Sat | 8 AM – 3 PM  | **3rd-party Full-Length #1** (Blueprint free FL, ~7.5 hrs incl. review setup) | [ ]   |
+| Aug 9 | Sun | 8 AM – 12 PM | Half-day — FL #1 deep review + weekly review                             | [ ]   |
+
+## Files to load per day
+
+- **Aug 3 (UWorld BB weak topics):** UWorld web app. Load specific `research/Biology/ChNN.md` or `research/Biochemistry/ChNN.md` as wrong-answer review surfaces them
+- **Aug 4 (UWorld CP weak topics):** UWorld web app. Load `research/GenChem/`, `research/OrgChem/`, or `research/PhysicsMath/` as needed
+- **Aug 5 (CARS):** UWorld web app. CARS doesn't pair with content files — focus on strategy
+- **Aug 6 (Mixed):** UWorld web app. Track which sections you miss most in this block
+- **Aug 7 (UWorld + Anki):** UWorld + Anki app
+- **Aug 8 (FL #1):** Blueprint web app (or whichever 3rd-party). Run as full simulation: 8 AM start, full timed sections, 10-min breaks, lunch break per AAMC schedule
+- **Aug 9 (FL review):** FL platform's review interface + relevant `research/X/ChNN.md` for content gaps surfaced
 
 ## Session Logs
 
 <!-- Paste session log entries below after each study day -->
 
-## Weekly Review (Sunday Anki Day)
+## Weekly Review (Sunday)
 - [ ] All session logs complete
+- [ ] **3rd-party FL #1 score logged** in `progression/TRACKER.md` (CP / CARS / BB / PS / Total)
+- [ ] Wrong-answer pattern analysis: top 3 content gaps for next week
+- [ ] Top 3 weak topics updated
 - [ ] Confidence map updated
-- [ ] Section confidence tracker updated
-- [ ] Top 3 weak topics reviewed
-- [ ] Anki backlog cleared (or logged for next week)

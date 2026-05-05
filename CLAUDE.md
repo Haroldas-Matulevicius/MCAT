@@ -47,7 +47,7 @@ User says "done", "wrap up", "end session", "push back", "shift schedule" → re
 **Study block (Mon–Sat):** 8 AM – 3 PM, lunch 11 AM – 12 PM = 6 hr work.
 **Sunday:** half-day 8 AM – 12 PM — Anki catch-up + CARS + practice Qs (or scheduled half-length). No new chapter.
 **Known days off:** May 6 (Wed), May 9 (Sat). Cascade as needed for additional off days.
-**CARS:** 1 timed passage every Mon–Sat (8:30–9:00 AM block).
+**CARS:** 30 min self-paced **Jack Westin** CARS daily passages every Mon–Sat (8:30–9:00 AM block). Limitz reads + reviews on JW's site directly — Claude does NOT generate CARS passages or run the block. Just confirm at session start that the block is happening and check it's logged at end-of-day. Sunday CARS = same Jack Westin source, 3 passages timed (or scheduled half-length test instead).
 
 | Phase | Weeks | Dates | Focus |
 |-------|-------|-------|-------|
@@ -61,19 +61,19 @@ User says "done", "wrap up", "end session", "push back", "shift schedule" → re
 | Time | Block |
 |------|-------|
 | 8:00–8:30 | Anki review (yesterday + due) |
-| 8:30–9:00 | CARS — 1 timed passage + review |
+| 8:30–9:00 | CARS — Jack Westin daily passages (self-paced, ~30 min) |
 | 9:00–11:00 | Read Kaplan chapter (Content + research files loaded explicitly) |
 | 11:00–12:00 | LUNCH |
 | 12:00–12:30 | JackSparrow Anki — new chapter cards |
-| 12:30–2:00 | Practice Qs (chapter bank → UWorld in Phase 2 → AAMC in Phase 3) |
-| 2:00–2:45 | Wrong-answer deep review |
+| 12:30–2:00 | Practice Qs — Kaplan pre-chapter quiz (uploaded by Limitz post-chapter) → UWorld in Phase 2 → AAMC in Phase 3 |
+| 2:00–2:45 | Wrong-answer deep review (Kaplan answer bank used as ground truth) |
 | 2:45–3:00 | Session log + git commit |
 
 **Sunday template (half-day, 8 AM – 12 PM):**
 | Time | Block |
 |------|-------|
 | 8:00–8:30 | Anki backlog |
-| 8:30–9:30 | CARS (3 passages timed) OR scheduled half-length test |
+| 8:30–9:30 | CARS — Jack Westin (3 passages timed) OR scheduled half-length test |
 | 9:30–10:30 | Practice Qs (mixed topic from past week) OR FL deep review |
 | 10:30–11:30 | Weak-topic drill (top 3 from week's logs) |
 | 11:30–12:00 | Weekly review checklist + log + commit |
@@ -102,10 +102,10 @@ User says "done", "wrap up", "end session", "push back", "shift schedule" → re
 
 - Prioritize high-yield over low-yield.
 - Teaching: connect across subjects; flag what's most testable.
-- Quizzing: reasoning over memorization.
+- Quizzing: Phase 1 chapter Qs come from **Kaplan pre-chapter quiz** (uploaded by Limitz post-chapter as text/screenshot, with Kaplan's answer bank). Claude does NOT generate practice Qs in Phase 1 — Kaplan + UWorld (Phase 2) + AAMC (Phase 3) are the authoritative sources. Claude's role is to grade against the uploaded answer bank, explain why each answer is right/wrong, and pull weak-topic threads. If Limitz asks for additional reasoning Qs on a specific concept, generate them — but reactively, not as the default.
 - Mistakes: identify root cause (content gap, misread, reasoning error, timing).
 - Recurring weak topic (3+ appearances in error logs) → flag for a dedicated review day.
-- CARS: passage-based reasoning only, never outside knowledge.
+- CARS: handled exclusively via Jack Westin daily passages (self-paced). Claude does NOT generate CARS passages or grade them. If Limitz wants to discuss a JW passage he just did, then engage — but only on what he brings up, never preemptively.
 - Adapt difficulty upward as confidence grows.
 - Every 4 weeks: suggest a lighter review/consolidation day.
 - Topic not in research files? Research inline and flag the gap for future addition.

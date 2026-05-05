@@ -12,7 +12,7 @@
 
 | Date   | Day | Time         | Topic                                             | Logged |
 |--------|-----|--------------|---------------------------------------------------|--------|
-| May 4  | Mon | 8 AM – 3 PM  | Bio Ch01 — The Cell (eukaryote, prokaryote, virus) | [ ]   |
+| May 4  | Mon | 8 AM – 3 PM  | Bio Ch01 — The Cell (eukaryote, prokaryote, virus) | [x]   |
 | May 5  | Tue | 8 AM – 3 PM  | Bio Ch02 — Reproduction (mitosis, meiosis)        | [ ]   |
 | May 6  | Wed | OFF          | OFF (planned)                                     | [ ]   |
 | May 7  | Thu | 8 AM – 3 PM  | Bio Ch03 — Embryogenesis                          | [ ]   |
@@ -31,6 +31,37 @@
 ## Session Logs
 
 <!-- Paste session log entries below after each study day. Format from END_SESSION.md. -->
+
+### Mon May 4, 2026 — Bio Ch01: The Cell
+
+**Time:** 3:15 PM – ~7:30 PM (late start, ran Option B compressed schedule)
+**Confidence:** 3.75 / 5
+
+**What happened:**
+- Read full Bio Ch01 with Claude teaching: organelles, cytoskeleton, prokaryotes, viruses, prions, fungi.
+- CARS: 1 Claude-generated passage, 3/6, 5:18. Pattern — missed when author rejected both extremes of a dichotomy. **Switched format permanently — CARS will be Jack Westin daily passages from tomorrow on.**
+- Anki: ~1/3 of ~120 JackSparrow new cards for Ch01. Deck density is unsustainable as-is — needs filtering or daily card cap before Day 2.
+- Practice Qs: 5/12 on Claude-generated set. Calibration was off (closer to USMLE/UWorld difficulty than AAMC). **Switched format permanently — Practice Qs will come from Kaplan pre-chapter quiz uploads with Kaplan answer bank from tomorrow on.**
+
+**Real content gaps to drill (Anki cards needed):**
+1. Mitochondrial matrix is alkaline (~7.8), not acidic — protons pumped OUT into IMS.
+2. M6P tag failure (I-cell disease) → lysosomal enzymes secreted extracellularly via constitutive pathway.
+3. Kartagener syndrome = axonemal dynein defect → immotile cilia, situs inversus, infertility, chronic respiratory infections.
+
+**Strengths confirmed:**
+- Synthetic virus-passage reasoning (Baltimore class inference, envelope-from-detergent-sensitivity inference): 3/3.
+- Microtubule pharmacology (taxol stabilization mechanism).
+- Gram-negative outer membrane permeability logic.
+
+**Workflow changes locked in (CLAUDE.md + INDEX.md + memory):**
+- CARS → Jack Westin self-paced, no Claude generation.
+- Practice Qs → Kaplan pre-chapter quiz uploaded by Limitz + Kaplan answer bank, no Claude generation in Phase 1.
+
+**Open issues for tomorrow morning:**
+- Anki strategy decision: filter JackSparrow chapter tag, suspend low-yield cards, or cap at ~50 new/day with leftover spilling into next day. ~80 cards still in queue from Ch01.
+- Tomorrow is Bio Ch02 (Reproduction) — finish Ch01 Anki backlog before starting Ch02 new cards.
+
+**Limitz's note:** "things went great. I think the foundation at least for sure developed on chapter 1"
 
 ## Weekly Review (Sunday)
 - [ ] All session logs complete (4 days: Mon, Tue, Thu, Fri)

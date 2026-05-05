@@ -28,7 +28,7 @@ Date-to-week lookup. Read this file to find the current week file based on today
 
 ## Sunday Half-Day Template (8 AM – 12 PM, 4 hrs)
 - 30 min Anki backlog
-- 1 hr CARS (3 passages timed) OR scheduled half-length test
+- 1 hr CARS — Jack Westin (3 passages timed) OR scheduled half-length test
 - 1 hr practice Qs (mixed topic from past week) OR FL deep review
 - 1 hr weak-topic drill (top 3 from week's logs)
 - 30 min weekly review checklist + log + commit
@@ -36,10 +36,10 @@ Date-to-week lookup. Read this file to find the current week file based on today
 ## Mon–Sat Daily Template (8 AM – 3 PM, 6 hrs work)
 See CLAUDE.md "Current Phase" section for the full 8-block template. Quick view:
 1. Anki review (8:00–8:30)
-2. CARS passage (8:30–9:00)
+2. CARS — Jack Westin self-paced (8:30–9:00)
 3. Read Kaplan chapter (9:00–11:00)
 4. LUNCH (11:00–12:00)
 5. JackSparrow Anki new cards (12:00–12:30)
-6. Practice Qs (12:30–2:00)
-7. Wrong-answer deep review (2:00–2:45)
+6. Practice Qs — Kaplan pre-chapter quiz uploaded by Limitz post-chapter (12:30–2:00)
+7. Wrong-answer deep review against Kaplan answer bank (2:00–2:45)
 8. Session log + git commit (2:45–3:00)
